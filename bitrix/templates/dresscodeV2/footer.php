@@ -119,11 +119,11 @@
 				<div class="limiter">
 					<div class="creator">
 						<?if(!empty($TEMPLATE_FOOTER_VARIANT) && ($TEMPLATE_FOOTER_VARIANT == "6" || $TEMPLATE_FOOTER_VARIANT == "7")):?>
-							<img src="<?=SITE_TEMPLATE_PATH?>/images/dwC.png" alt="Digital Web">
+							<img class="lazy" src="<?=SITE_TEMPLATE_PATH?>/images/loading.svg" data-src="<?=SITE_TEMPLATE_PATH?>/images/dwC.png" alt="Digital Web">
 						<?elseif(!empty($TEMPLATE_FOOTER_VARIANT) && ($TEMPLATE_FOOTER_VARIANT == "4" || $TEMPLATE_FOOTER_VARIANT == "5" || $TEMPLATE_FOOTER_VARIANT == "6")):?>
-							<img src="<?=SITE_TEMPLATE_PATH?>/images/dwW.png" alt="Digital Web">
+							<img class="lazy" src="<?=SITE_TEMPLATE_PATH?>/images/loading.svg" data-src="<?=SITE_TEMPLATE_PATH?>/images/dwW.png" alt="Digital Web">
 						<?else:?>
-							<img src="<?=SITE_TEMPLATE_PATH?>/images/dw.png" alt="Digital Web">
+							<img class="lazy" src="<?=SITE_TEMPLATE_PATH?>/images/loading.svg" data-src="<?=SITE_TEMPLATE_PATH?>/images/dw.png" alt="Digital Web">
 						<?endif;?>
 					</div>
 					<div class="social">
@@ -299,6 +299,12 @@
 			}
 		<?endif;?>
 	</script>
-
+    
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/lazyload.min.js"></script>
+    <script>
+        var myLazyLoad = new LazyLoad({
+            elements_selector: ".lazy"
+        });
+    </script>
 </body>
 </html>

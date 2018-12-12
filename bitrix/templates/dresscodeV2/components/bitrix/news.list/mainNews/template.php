@@ -18,7 +18,7 @@
 									<li class="item" id="<?=$this->GetEditAreaId($arElement["ID"]);?>">
 										<div class="wrap">
 											<?if(!empty($image["src"])):?>
-												<div class="bigPicture"><a href="<?=$arElement["DETAIL_PAGE_URL"]?>"><img src="<?=$image["src"]?>" alt="<?=$arElement["NAME"]?>"></a></div>
+												<div class="bigPicture"><a href="<?=$arElement["DETAIL_PAGE_URL"]?>"><img class="lazy" src="<?=SITE_TEMPLATE_PATH?>/images/loading.svg" data-src="<?=$image["src"]?>" alt="<?=$arElement["NAME"]?>"></a></div>
 											<?endif;?>
 											<div class="title"><a href="<?=$arElement["DETAIL_PAGE_URL"]?>"><span><?=$arElement["NAME"]?></span></a></div>
 											<a href="<?=$arElement["DETAIL_PAGE_URL"]?>" class="more"><?=GetMessage("MAIN_NEWS_MORE")?></a>

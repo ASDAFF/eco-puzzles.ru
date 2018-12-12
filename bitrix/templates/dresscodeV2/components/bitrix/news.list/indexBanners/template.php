@@ -22,7 +22,8 @@ $currentIndex = 0;
 				<?endif;?>
 						<div class="elem-wrap" id="<?=$this->GetEditAreaId($arNextElement["ID"]);?>">
 							<div class="elem">
-								<div class="bg" style="background-image: url('<?=$arNextElement["RESIZE_PICTURE"]["src"]?>');"></div>
+								<?php // <div class="bg" style="background-image: url('?><?php //$arNextElement["RESIZE_PICTURE"]["src"]?><?php //');"></div> ?>
+                                <div class="bg lazy" data-bg="url(<?=$arNextElement["RESIZE_PICTURE"]["src"]?>)"></div>
 								<div class="text-wrap">
 									<?=$arNextElement["~DETAIL_TEXT"]?>
 								</div>

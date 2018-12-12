@@ -24,6 +24,9 @@ $(window).on("ready", function(event){
 				$_sectionMenuEChild.removeClass(__sectionMenuActive).find("." + __sectionMenuDrop).hide();
 				$_eChild.removeClass(__active).find("." + __drop).hide();
 				$_this.addClass(__sectionMenuActive).find("." + __sectionMenuDrop).css("display", "table");
+
+                myLazyLoad.update();
+
 				return clearTimeout(__sectionMenuTimeoutID);
 			}
 		}, 300);
@@ -59,6 +62,9 @@ $(window).on("ready", function(event){
 					$_sectionMenuEChild.removeClass(__sectionMenuActive).find("." + __sectionMenuDrop).hide();
 					$_eChild.removeClass(__active).find("." + __drop).hide();
 					$_this.addClass(__active).find("." + __drop).css("display", "table");
+
+                    myLazyLoad.update();
+
 					return clearTimeout(__menuTimeoutID);
 				}
 			}, 300);

@@ -25,7 +25,7 @@
 								</div>
 							<?endif;?>
 							<a href="<?=$arElement["DETAIL_PAGE_URL"]?>" class="picture">
-								<img src="<?=$picture["src"]?>" alt="<?=$arElement["NAME"]?>">
+								<img <?if(empty($arParams["AJAX"])):?>class="lazy" src="<?=SITE_TEMPLATE_PATH?>/images/loading.svg" data-<?endif;?>src="<?=$picture["src"]?>" alt="<?=$arElement["NAME"]?>">
 							</a>
 						</div>
 					</div>
@@ -34,7 +34,7 @@
 					<div class="item last">
 						<a href="#" class="showMore">
 							<span class="wp">
-								<span class="icon"><img src="<?=SITE_TEMPLATE_PATH?>/images/showMoreSmall.png" alt="<?=GetMessage("BRAND_LIST_SHOW_MORE")?>"></span>
+								<span class="icon"><img <?if(empty($arParams["AJAX"])):?>class="lazy" src="<?=SITE_TEMPLATE_PATH?>/images/loading.svg" data-<?endif;?>src="<?=SITE_TEMPLATE_PATH?>/images/showMoreSmall.png" alt="<?=GetMessage("BRAND_LIST_SHOW_MORE")?>"></span>
 								<span class="ps"><?=GetMessage("BRAND_LIST_SHOW_MORE")?></span><span class="value"><?=$arResult["NEXT_ELEMENTS_COUNT"]?></span>
 
 							</span>

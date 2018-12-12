@@ -14,7 +14,7 @@
 						<?if(!empty($arElement["PROPERTIES"]["LINK"]["VALUE"])):?>
 							<a href="<?=str_replace("#SITE_DIR#", SITE_DIR, $arElement["PROPERTIES"]["LINK"]["VALUE"])?>">
 						<?endif;?>
-						<img src="<?=$arElement["DETAIL_PICTURE"]["src"]?>" alt="">
+						<img class="lazy" src="<?=SITE_TEMPLATE_PATH?>/images/loading.svg" data-src="<?=$arElement["DETAIL_PICTURE"]["src"]?>" alt="слайдер">
 						<?if(!empty($arElement["PROPERTIES"]["LINK"]["VALUE"])):?>
 							</a>
 						<?endif;?>

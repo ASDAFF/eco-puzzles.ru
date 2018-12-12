@@ -20,7 +20,7 @@
 													<div class="container">
 														<?if(!empty($nextElement["DETAIL_PICTURE"])):?>
 															<a href="<?=$nextElement["LINK"]?>" class="picture">
-																<img src="<?=$nextElement["DETAIL_PICTURE"]["src"]?>" alt="<?=$nextElement["TEXT"]?>">
+																<img class="lazy" src="<?=SITE_TEMPLATE_PATH?>/images/loading.svg" data-src="<?=$nextElement["DETAIL_PICTURE"]["src"]?>" alt="<?=$nextElement["TEXT"]?>">
 															</a>
 														<?endif;?>
 														<a href="<?=$nextElement["LINK"]?>" class="menuLink<?if ($nextElement["SELECTED"]):?> selected<?endif?>">
@@ -54,7 +54,7 @@
 														<li>
 															<?if(!empty($next2Element["PICTURE"]["src"])):?>
 																<a href="<?=$next2Element["LINK"]?>" class="menu2Link">
-																	<img src="<?=$next2Element["PICTURE"]["src"]?>" alt="<?=$next2Element["TEXT"]?>">
+																	<img class="lazy" src="<?=SITE_TEMPLATE_PATH?>/images/loading.svg" data-src="<?=$next2Element["PICTURE"]["src"]?>" alt="<?=$next2Element["TEXT"]?>">
 																</a>
 															<?endif;?>
 															<a href="<?=$next2Element["LINK"]?>" class="menu2Link<?if ($next2Element["SELECTED"]):?> selected<?endif?>">

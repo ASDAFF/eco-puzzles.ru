@@ -23,7 +23,7 @@
 										</div>
 									<?endif;?>
 									<a href="<?=$arElement["SECTION_PAGE_URL"]?>" class="picture">
-										<img src="<?=$picture["src"]?>" alt="<?=$arElement["NAME"]?>">
+										<img <?if(empty($arParams["AJAX"])):?>class="lazy" src="<?=SITE_TEMPLATE_PATH?>/images/loading.svg" data-<?endif;?>src="<?=$picture["src"]?>" alt="<?=$arElement["NAME"]?>">
 									</a>
 									<div class="nameWrap">
 										<a href="<?=$arElement["SECTION_PAGE_URL"]?>" class="name"><?=$arElement["NAME"]?></a>
@@ -35,7 +35,7 @@
 							<div class="item last">
 								<a href="#" class="showMore">
 									<span class="wp">
-										<span class="icon"><img src="<?=SITE_TEMPLATE_PATH?>/images/showMoreSmall.png" alt="<?=GetMessage("SHOW_MORE")?>"></span>
+										<span class="icon"><img <?if(empty($arParams["AJAX"])):?>class="lazy" src="<?=SITE_TEMPLATE_PATH?>/images/loading.svg" data-<?endif;?>src="<?=SITE_TEMPLATE_PATH?>/images/showMoreSmall.png" alt="<?=GetMessage("SHOW_MORE")?>"></span>
 										<span class="ps"><?=GetMessage("SHOW_MORE")?></span><span class="value"><?=$arResult["NEXT_ELEMENTS_COUNT"]?></span>
 										<span class="small"><?=GetMessage("SHOWS")?> <?=$arResult["ELEMENTS_COUNT_SHOW"]?> <?=GetMessage("FROM")?> <?=$arResult["ITEMS_ALL_COUNT"]?></span>
 									</span>
