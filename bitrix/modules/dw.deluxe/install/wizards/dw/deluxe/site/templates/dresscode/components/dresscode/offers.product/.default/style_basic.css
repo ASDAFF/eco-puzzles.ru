@@ -1,0 +1,96 @@
+#homeCatalog{
+	margin-top: 24px;
+}
+
+#homeCatalog .captionList{
+	height: 60px;
+	line-height: 60px;
+	background-color: #2b2b2b;
+}
+
+#homeCatalog .captionList .slideBox{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	left: 0px;
+}
+
+#homeCatalog .captionList .cItem{
+	list-style: none;
+	float: left;
+}
+
+#homeCatalog .caption{
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	border-left: 1px solid #313131;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 0 12px;
+}
+
+#homeCatalog .caption:hover{
+	background-color: #202020;
+}
+
+#homeCatalog .caption.loading{
+	opacity: 0.6;
+}
+
+#homeCatalog .cItem:first-child .caption{
+	border: none;
+}
+
+#homeCatalog .caption a{
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#homeCatalog .cItem{
+	float: left;
+	width: 20%;
+}
+
+#homeCatalog .captionBtnRight,
+#homeCatalog .captionBtnLeft{
+	background: url(images/offerArrowSmall.png) 0 0 no-repeat transparent;
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	top: 0;
+}
+
+#homeCatalog .captionBtnLeft{
+	left: 0px;
+}
+
+#homeCatalog .captionBtnRight{
+	right: 0px;
+}
+
+#homeCatalog .captionBtnLeft:hover{
+	background-position: -0px -60px;
+}
+
+#homeCatalog .captionBtnLeft:active{
+	background-position: -0px -120px;
+}
+
+#homeCatalog .captionBtnRight{
+	background-position: -60px 0px;
+}
+
+#homeCatalog .captionBtnRight:hover{
+	background-position: -60px -60px;
+}
+
+#homeCatalog .captionBtnRight:active{
+	background-position: -60px -120px;
+}

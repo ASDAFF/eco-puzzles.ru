@@ -1,0 +1,5 @@
+#subHeader5 .topWishlist .value,
+#subHeader5 .topCompare .value,
+#subHeader5 .cart .count{
+	border-radius: 8px;
+}

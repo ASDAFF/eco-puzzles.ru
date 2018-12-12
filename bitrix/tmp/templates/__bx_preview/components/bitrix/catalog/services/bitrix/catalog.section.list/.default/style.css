@@ -1,0 +1,47 @@
+@media screen and (max-width: 1300px){
+	.services-banners-list .banner-elem .h2{
+		font-size: 18px;
+		max-height: 44px;
+		line-height: 22px;
+	}
+
+	.services-banners-list .banner-elem .image{
+		width: 55%;
+	}
+
+	.services-banners-list .banner-elem{
+		height: 190px;
+	}
+	.services-banners-list .banner-elem .image img{
+		max-height: 190px;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.services-banners-list .banner-elem{
+		height: 160px;
+	}
+	.services-banners-list .banner-elem .image img{
+		max-height: 160px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.services-banners-list .banner-elem .image{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.services-banners-list .banner-elem{
+		height: 150px;
+	}
+	.services-banners-list .banner-elem .image img{
+		max-height: 150px;
+	}
+	.services-banners-list .banner-elem .h2{
+		font-size: 16px;
+		line-height: 20px;
+		max-height: 40px;
+	}
+}

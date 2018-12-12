@@ -1,0 +1,150 @@
+.sale-profile-detail-link-list a{
+	margin-bottom: 24px;
+	display: block;
+	color: #000000;
+}
+
+.sale-profile-detail-link-list a:hover{
+	opacity: 0.7;
+}
+
+.sale-profile-detail-link-list a:active{
+	position: relative;
+	top: 1px;
+}
+
+.sale-personal-profile-detail-form-title-row h4{
+	font: normal normal 16px "roboto_ltregular" , arial , sans-serif;
+	font-weight: 600;
+	margin-top: 12px;
+}
+
+.personal-profile-title-name h4{
+	font-size: 18px;
+}
+
+.sale-personal-profile-name{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.sale-personal-profile-detail-form-label-name{
+	margin-bottom: 0px !important;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.form-group-profile-name{
+	margin-bottom: 12px;
+}
+
+.sale-profile-detail-form input[type="text"]:not(.bx-ui-sls-fake) {
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #f3f3f3;
+	margin-bottom: 12px;
+	min-width: 180px;
+	padding: 0 12px;
+	height: 48px;
+	width: 100%;
+	border: 0;
+}
+
+.sale-profile-detail-form input[type="text"]:focus:not(.bx-ui-sls-fake) {
+	background-color: #eeeeee;
+}
+
+.sale-profile-detail-form textarea {
+	font: normal normal 13px "roboto_ltregular" , arial , sans-serif;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #f3f3f3;
+	margin-bottom: 8px;
+	padding: 12px 12px;
+	min-width: 180px;
+	outline: none;
+	height: 106px;
+	resize: none;
+	width: 100%;
+	border: 0;
+}
+
+.sale-profile-detail-form textarea:focus {
+	background-color: #eeeeee;
+}
+
+.sale-profile-detail-form label{
+	vertical-align: middle;
+	display: inline-block;
+	margin-bottom: 12px;
+}
+
+.bx-sls .dropdown-block{
+	height: 40px;
+}
+
+.sale-profile-detail-form .bx-ui-sls-container input[type="text"]{
+	background-color: #ffffff;
+	height: 40px;
+}
+
+.sale-profile-detail-form .desc{
+	vertical-align: middle;
+	display: inline-block;
+	margin-bottom: 12px;
+	margin-left: 12px;
+	font-size: 13px;
+	color: #888888;
+}
+
+.sale-personal-profile-btn-block{
+	margin-top: 24px;
+}
+
+.sale-profile-detail-form .bx-sls .bx-ui-sls-container{
+	min-height: 40px;
+}
+
+.sale-profile-detail-form .bx-sls .dropdown-icon{
+	top: 14px;
+}
+
+.sale-profile-detail-form .bx-sls .bx-ui-sls-clear{
+	margin-top: 6px;
+}
+
+.location-block-wrapper .bx-sls .dropdown-block{
+	border-color: #eeeeee;
+	box-shadow: none;
+}
+
+.sale-personal-profile-btn-block input[type="submit"]{
+	border-radius: 2px;
+	padding: 10px 24px;
+	cursor: pointer;
+	color: #ffffff;
+	border: 0;
+}
+
+.sale-personal-profile-btn-block input[type="submit"]:active{
+	position: relative;
+	top: 1px;
+}
+
+.sale-personal-profile-btn-block input[name="reset"]{
+	background-color: #eeeeee !important;
+	border: 1px solid #eeeeee;
+	color: #000000;
+}
+
+.sale-personal-profile-btn-block input[name="reset"]:hover{
+	opacity: 0.7;
+}

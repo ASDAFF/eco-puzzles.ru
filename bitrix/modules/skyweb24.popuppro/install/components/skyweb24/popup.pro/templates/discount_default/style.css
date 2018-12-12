@@ -1,0 +1,77 @@
+.skyweb24_discount {background: #fff; width: 600px; height: 450px; position: relative; box-sizing: border-box; display: block; margin: 0 auto;}
+	.skyweb24_discount>.background {position: absolute; top: 0; left: 0; height: 450px; width: 600px; overflow: hidden;}
+		.skyweb24_discount>.background>span {position: absolute; background: #f7c2cd80; border-radius: 50%;}
+			.skyweb24_discount>.background>span:nth-child(1) {width: 85px; height: 85px; top: -15px; left: -42px;}
+			.skyweb24_discount>.background>span:nth-child(2) {width: 60px; height: 60px; top: -22px; left: 64px;}
+			.skyweb24_discount>.background>span:nth-child(3) {width: 105px; height: 105px; top: 30px; left: 39px;}
+			.skyweb24_discount>.background>span:nth-child(4) {width: 36px; height: 36px; top: -13px; left: 227px;}
+			.skyweb24_discount>.background>span:nth-child(5) {width: 75px; height: 75px; top: 193px; left: -10px;}
+			.skyweb24_discount>.background>span:nth-child(6) {width: 25px; height: 25px; top: 158px; left: 237px;}
+			.skyweb24_discount>.background>span:nth-child(7) {width: 57px; height: 57px; top: 197px; left: 254px;}
+			.skyweb24_discount>.background>span:nth-child(8) {width: 33px; height: 33px; top: 297px; left: 23px;}
+			.skyweb24_discount>.background>span:nth-child(9) {width: 70px; height: 70px; top: 334px; left: -10px;}
+			.skyweb24_discount>.background>span:nth-child(10) {width: 40px; height: 40px; top: 360px; left: 185px;}
+			.skyweb24_discount>.background>span:nth-child(11) {width: 105px; height: 105px; top: 390px; left: 79px;}
+
+	.skyweb24_discount>.card {width: 245px; height: 154px; position: absolute; top: 222px; left: 39px; border-radius: 7px; background: radial-gradient(ellipse at center, #862257 62%,#6b2445 100%); text-align: center; box-shadow: -4px 4px 21px 1px rgba(0,0,0,0.61);}
+		.skyweb24_discount>.card>img {margin-top: 30px; filter: drop-shadow(1px 1px 1px rgba(34, 47, 62, 0.5));}
+		.skyweb24_discount>.card>.number{margin-top: 15px;font-weight: bold; filter: drop-shadow(1px 1px 1px rgba(34, 47, 62, 0.5)); font-size: 16px;color: #fff;}
+	.skyweb24_discount>img {position: absolute; top: 0; left: 0; filter: drop-shadow(-3px 7px 4px rgba(34, 47, 62, 0.5)); max-width: 340px;}
+	.skyweb24_discount>div.content {padding: 20px 37px 20px 40%; height: 100%; width: 100%; position: absolute; top: 0; left: 0; box-sizing: border-box;}
+		.skyweb24_discount>div.content>h2 {margin: 15px 0 0 0; line-height: 1; font-size: 23px; height: 72px; text-transform: uppercase; font-family: 'Old Standard TT', serif; color: #a01d5f;}
+			.skyweb24_discount>div.content>h2>span:nth-child(1) {font-size: 72px; float:left;}
+			.skyweb24_discount>div.content>h2>span:nth-child(2) {font-size: 37px;}
+		.skyweb24_discount>div.content>p {font-size: 13px; text-align: right; line-height: 16px; margin: 0 0 18px; color: #4f546e;}
+			.skyweb24_discount>div.content>p>b {text-transform: uppercase; font-size: 13px; float: left; line-height: 16px;}
+		.skyweb24_discount>div.content>div.send {text-align: right;}
+	.skyweb24_discount fieldset {width: 220px; float: right;}
+		.skyweb24_discount fieldset span.not_new {color: red; display: none;}
+		.skyweb24_discount fieldset span.not_valid{color:red;display:none;}
+		.skyweb24_discount fieldset label {width: 100%; position: relative; margin: 0 0 2px;}
+		.skyweb24_discount fieldset label>input {width: 100%; padding: 7px; border: 1px solid #b6bcd3; border-radius: 3px;}
+		.skyweb24_discount fieldset label>input+span {position: absolute; top: 4px; left: 5px; color: red;}
+		.skyweb24_discount fieldset label:not(.required)>input+span {display: none;}
+		.skyweb24_discount fieldset label.submit {margin-top: 9px;}
+		.skyweb24_discount fieldset label.submit>input {background: #e61082; color: white; border-color: #e61082; text-transform: uppercase; transition: .3s all;}
+		.skyweb24_discount fieldset label input::-webkit-input-placeholder {font-weight: initial; color: #ccc;}
+		.skyweb24_discount fieldset label input::-moz-placeholder {font-weight: initial; color: #ccc;}
+		.skyweb24_discount fieldset label input:-moz-placeholder {font-weight: initial; color: #ccc;}
+		.skyweb24_discount fieldset label input:-ms-input-placeholder {font-weight: initial; color: #ccc;}
+		.skyweb24_discount fieldset label textarea::-webkit-input-placeholder {font-weight: initial; color: #ccc;}
+		.skyweb24_discount fieldset label textarea::-moz-placeholder {font-weight: initial; color: #ccc;}
+		.skyweb24_discount fieldset label textarea:-moz-placeholder {font-weight: initial; color: #ccc;}
+		.skyweb24_discount fieldset label textarea:-ms-input-placeholder {font-weight: initial; color: #ccc;}
+
+		.skyweb24_discount fieldset label input:focus::-webkit-input-placeholder {font-weight: initial; color: #ccc;}
+		.skyweb24_discount fieldset label input:focus::-moz-placeholder {font-weight: initial; color: #ccc;}
+		.skyweb24_discount fieldset label input:focus:-moz-placeholder {font-weight: initial; color: #ccc;}
+		.skyweb24_discount fieldset label input:focus:-ms-input-placeholder {font-weight: initial; color: #ccc;}
+		.skyweb24_discount fieldset label textarea:focus::-webkit-input-placeholder {font-weight: initial; color: #ccc;}
+		.skyweb24_discount fieldset label textarea:focus::-moz-placeholder {font-weight: initial; color: #ccc;}
+		.skyweb24_discount fieldset label textarea:focus:-moz-placeholder {font-weight: initial; color: #ccc;}
+		.skyweb24_discount fieldset label textarea:focus:-ms-input-placeholder {font-weight: initial; color: #ccc;}
+
+		.skyweb24_discount fieldset .consentBlock {line-height: 0;}
+			.skyweb24_discount fieldset .consentBlock>a {color: #8c93ad; text-decoration: none; font-size: 8px; line-height: 1;}
+			.skyweb24_discount fieldset .consentBlock>input[type="checkbox"] {margin: 0;}
+		.skyweb24_discount fieldset>.notshow {display: none;}
+		
+	.skyweb24_discount .sw24TextCloseButton {display: inline-block; margin-top: 10px; font-size: 14px; border-bottom: 1px dashed #2c3e50; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; color: #2c3e50;}
+	.skyweb24_discount .sw24TextCloseButton:hover {border-bottom: 1px dashed transparent;}
+
+@media screen and (max-width:640px) {
+    .skyweb24_discount {display: flex; width: 320px; flex-direction: column; height: unset;}
+		.skyweb24_discount>.background {width: 320px; z-index: 0;}
+		.skyweb24_discount>.card {position: unset; flex:0 1 320px; left: unset; top: unset; margin: 0 auto; max-width: 245px; z-index: 3; order: 1; max-height: 154px; margin-bottom: 20px;}
+		.skyweb24_discount>img {display: none;}
+		.skyweb24_discount>div.content {flex: 0 1 320px; position: unset; top: unset; left: unset; height: unset; width: 320px; padding: 20px 35px; order: 0; z-index: 3;}
+			.skyweb24_discount>div.content>h2 {font-size: 18px; height: 55px;}
+				.skyweb24_discount>div.content>h2>span:nth-child(1) {font-size: 54px;}
+				.skyweb24_discount>div.content>h2>span:nth-child(2) {font-size: 29px;}
+			.skyweb24_discount>div.content>p {font-size: 13px; text-align: justify; line-height: 16px;}
+				.skyweb24_discount>div.content>p>b {text-transform: uppercase; font-size: 13px; float: unset; line-height: 16px;}
+		.skyweb24_discount fieldset {width: 100%;}
+		.skyweb24_popup_pro_timer>svg{display:none;}
+		.skyweb24_popup_pro_timer{width:100%;}
+	
+}

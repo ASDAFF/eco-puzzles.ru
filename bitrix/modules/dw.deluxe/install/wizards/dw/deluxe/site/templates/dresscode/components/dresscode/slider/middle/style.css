@@ -1,0 +1,110 @@
+#middleSlider{
+	position: relative;
+	margin-top: 24px;
+}
+
+#middleSlider .wrap{
+	position: relative;
+	overflow: hidden;
+}
+
+#middleSlider ul{
+	position:relative;
+}
+
+#middleSlider ul li{
+	float:left;
+	display: block;
+}
+
+#middleSlider ul li img{
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+#middleSlider ul li:hover img{
+	transform: scale(1.03);
+}
+
+#middleSlider ol{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;	
+	position: absolute;
+	left: 50%;
+	bottom:12px;
+}
+
+#middleSlider ol{
+	position: absolute;
+	left: 50%;
+	bottom: 12px;
+}
+
+#middleSlider ol li{
+	background: url(images/slideButton.png) 0 0 no-repeat transparent;
+	margin-right: 4px;
+	width: 18px;
+	height: 18px;
+	float:left;
+	cursor: pointer;
+}
+
+#middleSlider ol li:hover{
+	background: url(images/slideButton.png) -18px 0  no-repeat transparent;
+}
+
+#middleSlider ol li:active{
+	background: url(images/slideButton.png) -36px 0  no-repeat transparent;
+}
+
+#middleSlider ol li.selected{
+	background: url(images/slideButton.png) -54px 0  no-repeat transparent;	
+}
+
+#middleSlider ol li.selected:hover{
+	background: url(images/slideButton.png) -72px 0  no-repeat transparent;	
+}
+
+#middleSlider ol li.selected:active{
+	background: url(images/slideButton.png) -90px 0  no-repeat transparent;	
+}
+
+#middleSlider .middleSliderBtnLeft, 
+#middleSlider .middleSliderBtnRight{
+	background: url(images/slideArrow.png) no-repeat transparent;
+	position: absolute;
+	margin-top: -30px;
+	display: block;
+	height: 60px;
+	width: 30px;
+	top: 50%;
+
+}
+
+#middleSlider .middleSliderBtnLeft{
+	background-position: 0 0;
+	left: 0px;
+}
+
+#middleSlider .middleSliderBtnLeft:hover{
+	background-position: -30px 0;	
+}
+
+#middleSlider .middleSliderBtnLeft:active{
+	background-position: -60px 0;		
+}
+
+#middleSlider .middleSliderBtnRight{
+	background-position: 0 -60px;
+	right: 0px;
+}
+
+#middleSlider .middleSliderBtnRight:hover{
+	background-position: -30px -60px;
+}
+
+#middleSlider .middleSliderBtnRight:active{
+	background-position: -60px -60px;
+}

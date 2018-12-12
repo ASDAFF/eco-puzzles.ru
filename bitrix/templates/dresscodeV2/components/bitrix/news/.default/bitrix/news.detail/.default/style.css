@@ -1,0 +1,421 @@
+/*start анимация для блока баннера*/
+	.banner-animated .image{
+		opacity: 0;
+		transform: translate3d(30px,0,0);
+		transition: all 0.6s 0.4s ease-in-out;
+	}
+	.banner-animated.banner-image-load .image{
+		opacity: 1;
+		transform: translate3d(0,0,0);
+	}
+/*end анимация для блока баннера*/
+
+/*start стили для детальной блога*/
+	.blog-banner{
+		margin-bottom: 30px;
+	}
+	.blog-banner .banner-elem{
+		height: 460px;
+	}
+	.blog-banner .banner-elem .text-wrap{
+		padding-left: 72px;
+	}
+
+	.blog-banner .fullscreen-banner .tb .text-wrap{
+		padding-left: 0;
+	}
+	.blog-banner .banner-elem .image img{
+		max-height: 460px;
+		margin: 0 auto;
+	}
+	.blog-banner .banner-elem h1{
+		font-size: 30px;
+		margin-bottom: 15px;
+		line-height: 36px;
+		max-height: 108px;
+	}
+	.blog-banner .banner-elem .descr{
+		max-height: 92px;
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.blog-banner.banner-no-bg .banner-elem{
+		height: 380px;
+	}
+	.blog-banner.banner-no-bg .banner-elem .image{
+		vertical-align: middle;
+	}
+	.blog-banner.banner-no-bg .banner-elem .image img{
+		max-height: 380px;
+	}
+	.blog-banner.banner-no-bg .banner-elem .date{
+		color: #888888;
+	}
+	.blog-banner.banner-no-bg .banner-elem h1{
+		font-family: "roboto_ltregular";
+		font-size: 24px;
+		margin-bottom: 12px;
+		line-height: 29px;
+		max-height: 57px;
+	}
+	.blog-banner.banner-no-bg .banner-elem .image{
+		width: 50%;
+	}
+
+	.blog-banner.banner-no-image .banner-elem .text-wrap{
+		padding: 0;
+	}
+	.blog-banner.banner-no-image .banner-elem{
+		height: auto;
+	}
+	.blog-banner.banner-no-image .banner-elem .date{
+		color: #888888;
+	}
+	.blog-banner.banner-no-image .banner-elem h1{
+		font-family: "roboto_ltregular";
+		font-size: 24px;
+		margin-bottom: 12px;
+		line-height: 29px;
+		max-height: 87px;
+	}
+	.blog-banner.banner-no-image .banner-elem .social{
+		height: auto;
+	}
+
+	.h2.blog-title-product{
+		margin-bottom: 12px;
+	}
+
+	@media screen and (max-width: 1800px){
+		.blog-banner.banner-no-bg .banner-elem{
+			height: 320px;
+		}
+		.blog-banner.banner-no-bg .banner-elem .image img{
+			max-height: 320px;
+		}
+		.blog-banner.banner-no-bg .banner-elem .text-wrap{
+			padding-left: 48px;
+		}
+	}
+
+	@media screen and (max-width: 1600px){
+		.blog-banner .banner-elem .text-wrap{
+			padding-left: 48px;
+		}
+		.blog-banner .banner-elem{
+			height: 420px;
+		}
+		.blog-banner .banner-elem .image img{
+			max-height: 420px;
+		}
+
+		.blog-banner.banner-no-bg .banner-elem .text-wrap{
+			padding-left: 30px;
+		}
+		.blog-banner.banner-no-bg .banner-elem{
+			height: 300px;
+		}
+		.blog-banner.banner-no-bg .banner-elem .image img{
+			max-height: 300px;
+		}
+		.blog-banner.banner-no-bg .banner-elem .social{
+			height: 36px;
+		}
+	}
+
+	@media screen and (max-width: 1400px){
+		.blog-banner .banner-elem .text-wrap{
+			padding-left: 30px;
+		}
+		.blog-banner .banner-elem{
+			height: 340px;
+		}
+		.blog-banner .banner-elem .image img{
+			max-height: 340px;
+		}
+		.blog-banner .banner-elem .descr{
+			line-height: 20px;
+			max-height: 80px;
+		}
+
+		.blog-banner.banner-no-bg .banner-elem .text-wrap{
+			padding-left: 18px;
+		}
+		.blog-banner.banner-no-bg .banner-elem h1{
+			font-size: 20px;
+			margin-bottom: 10px;
+			line-height: 24px;
+			max-height: 72px;
+		}
+		.blog-banner.banner-no-bg .banner-elem{
+			height: 280px;
+		}
+		.blog-banner.banner-no-bg .banner-elem .image img{
+			max-height: 280px;
+		}
+
+		.blog-banner.banner-no-image .banner-elem h1{
+			font-size: 20px;
+			margin-bottom: 10px;
+			line-height: 24px;
+			max-height: 72px;
+		}
+	}
+
+	@media screen and (max-width: 1200px){
+		.blog-banner .banner-elem h1{
+			font-size: 24px;
+			margin-bottom: 12px;
+			line-height: 29px;
+			max-height: 87px;
+		}
+		.blog-banner .banner-elem{
+			height: 300px;
+		}
+		.blog-banner .banner-elem .image img{
+			max-height: 300px;
+		}
+	}
+
+	@media screen and (max-width: 1024px){
+		.blog-banner .banner-elem h1{
+			font-size: 20px;
+			margin-bottom: 10px;
+			line-height: 24px;
+			max-height: 72px;
+		}
+		.blog-banner .banner-elem .text-wrap{
+			padding-left: 18px;
+		}
+		.blog-banner .banner-elem{
+			height: 260px;
+		}
+		.blog-banner .banner-elem .image img{
+			max-height: 260px;
+		}
+	}
+
+	@media screen and (max-width: 800px){
+		.blog-banner{
+			margin-bottom: 18px;
+		}
+		.blog-banner .banner-elem h1{
+			font-size: 18px;
+			margin-bottom: 8px;
+			line-height: 22px;
+			max-height: 66px;
+		}
+		.blog-banner .banner-elem .text-wrap{
+			padding-left: 12px;
+		}
+		.blog-banner .banner-elem{
+			height: 250px;
+		}
+		.blog-banner .banner-elem .image img{
+			max-height: 250px;
+			margin: 0 0 0 auto;
+		}
+
+		.blog-banner.banner-no-bg .banner-elem h1{
+			font-size: 18px;
+			margin-bottom: 8px;
+			line-height: 22px;
+			max-height: 66px;
+		}
+		.blog-banner.banner-no-bg .banner-elem .text-wrap{
+			padding-left: 12px;
+		}
+		.blog-banner.banner-no-bg .banner-elem{
+			height: 250px;
+		}
+		.blog-banner.banner-no-bg .banner-elem .image img{
+			max-height: 250px;
+		}
+
+		.blog-banner.banner-no-image .banner-elem h1{
+			font-size: 18px;
+			margin-bottom: 8px;
+			line-height: 22px;
+			max-height: 66px;
+		}
+	}
+
+	@media screen and (max-width: 700px){
+		.blog-banner.banner-bg .banner-elem{
+			display: block;
+		}
+		.blog-banner.banner-bg .banner-elem .text-wrap{
+			display: block;
+			padding: 12px 12px 0;
+		}
+
+		.blog-banner.banner-bg .fullscreen-banner.banner-elem .tb .text-wrap{
+			padding: 12px 0 0;
+		}
+		.blog-banner.banner-bg .banner-elem .image{
+			display: block;
+			width: 100%;
+			padding: 0;
+		}
+		.blog-banner.banner-bg .banner-elem .image img{
+			margin: 0 auto;
+		}
+		.blog-banner.banner-bg .banner-elem{
+			height: auto;
+		}
+
+		.blog-banner.banner-no-bg .banner-elem{
+			display: block;
+		}
+		.blog-banner.banner-no-bg .banner-elem .text-wrap{
+			display: block;
+			padding: 12px 12px 0;
+		}
+		.blog-banner.banner-no-bg .banner-elem .image{
+			display: block;
+			width: 100%;
+			padding: 0 12px;
+		}
+		.blog-banner.banner-no-bg .banner-elem .image img{
+			margin: 0 auto;
+			max-height: none;
+			width: 100%;
+		}
+		.blog-banner.banner-no-bg .banner-elem{
+			height: auto;
+		}
+	}
+
+	@media screen and (max-width: 500px){
+		/*.blog-banner .banner-elem{
+			background: none !important;
+		}*/
+		/*.blog-banner .banner-elem .descr{
+			display: none;
+		}*/
+		/*.blog-banner .banner-elem{
+			height: 120px;
+		}*/
+		.blog-banner .banner-elem h1{
+			margin-bottom: 12px;
+			font-size: 16px;
+			margin-bottom: 8px;
+			line-height: 20px;
+			max-height: 60px;
+		}
+		.blog-banner .banner-elem .image img{
+			max-height: 200px;
+		}
+
+		.blog-banner.banner-no-bg .banner-elem h1{
+			font-size: 16px;
+			margin-bottom: 8px;
+			line-height: 20px;
+			max-height: 60px;
+		}
+		/*.blog-banner.banner-no-bg .banner-elem{
+			height: 120px;
+		}*/
+/*		.blog-banner.banner-no-bg .banner-elem .image img{
+			max-height: 120px;
+		}*/
+
+		.blog-banner.banner-no-image .banner-elem h1{
+			font-size: 16px;
+			margin-bottom: 8px;
+			line-height: 20px;
+			max-height: 60px;
+		}
+		.blog-banner.banner-no-image .banner-elem .descr{
+			display: block;
+		}
+	}
+
+	@media screen and (max-width: 350px){
+		.blog-banner .banner-elem{
+			height: auto;
+			border: none;
+		}
+		.blog-banner .banner-elem .text-wrap{
+			padding: 0;
+		}
+		.blog-banner .banner-elem .descr{
+			display: block;
+		}
+		.blog-banner .banner-elem .image{
+			display: none;
+		}
+
+		.blog-banner.banner-no-bg .banner-elem{
+			height: auto;
+		}
+		.blog-banner.banner-no-bg .banner-elem .image{
+			padding: 0;
+		}
+		.blog-banner.banner-no-bg .banner-elem .text-wrap{
+			/*padding: 0;*/
+		}
+	}
+
+	.other-news{
+		border: 1px solid #e7e8ea;
+	}
+	.other-news-title.h3{
+		text-align: center;
+		height: 60px;
+		line-height: 60px;
+		padding: 0 12px;
+		border-bottom: 1px solid #e7e8ea;
+		background: #f9f9f9;
+	}
+	.other-news-list {	 }
+	.other-news .news{
+		padding: 24px;
+		border-bottom: 1px solid #e7e8ea;
+	}
+	.other-news .news:last-child{
+		border-bottom: none;
+	}
+	.other-news .image{
+		padding: 6px 0 30px;
+		text-align: center;
+	}
+	.other-news .image a{
+		display: inline-block;
+	}
+	.other-news .image img{
+		display: inline-block;
+		max-width: 100%;
+		max-height: 150px;
+		width: auto;
+		height: auto;
+		transition: all 0.2s ease-in-out;
+	}
+	.other-news .image a:hover img{
+		opacity: 0.9;
+	}
+	.other-news .image a:active img{
+		position: relative;
+		top: 1px;
+	}
+	.other-news .name{
+		display: inline-block;
+		margin-bottom: 6px;
+		font-size: 14px;
+		line-height: 18px;
+		max-height: 54px;
+		overflow: hidden;
+		color: #000000;
+		text-decoration: none;
+		transition: all 0.2s ease-in-out;
+	}
+	.other-news .announcement{
+		margin-bottom: 6px;
+		font-size: 13px;
+		line-height: 16px;
+		max-height: 48px;
+		overflow: hidden;
+		color: #888888;
+	}
+/*end стили для детальной блога*/

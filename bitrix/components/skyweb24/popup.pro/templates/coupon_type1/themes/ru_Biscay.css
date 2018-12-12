@@ -1,0 +1,8 @@
+#skyweb24_coupon_coupon button {background: #303952;}
+	#skyweb24_coupon_coupon button:hover {background: #596275;}
+#skyweb24_coupon_coupon span.sale {color: white; background: rgba(48, 57, 82, 0.5);}
+#skyweb24_coupon_coupon input {color: #303952;}
+#skyweb24_coupon_coupon .coupon_block input.goodCoupon {color: #596275; border: 2px dashed #303952;}
+
+.skyweb24_popup_pro_timer {background: #303952;}
+.popup-window.sw24PopupPro .popup-window-close-icon {background: #303952;}

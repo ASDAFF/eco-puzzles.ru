@@ -1,0 +1,13 @@
+#skyweb24_social_all {margin: 0 auto; max-width: 100%; box-sizing: border-box; border-top-left-radius:10px;	border-top-right-radius:10px;}
+	#skyweb24_social_all h2 {text-align:center;	padding: 20px; color: white; margin: 0;}
+	#skyweb24_social_all #inst_wid, #skyweb24_social_all #vk_groups, #skyweb24_social_all #ok_group_widget {display: inline-block; float: left;	vertical-align: top;}
+	#skyweb24_social_all>.social_holder {background: white; text-align: center;}
+	#skyweb24_social_all .clear {clear: both;}
+	
+	#skyweb24_social_all .sw24TextCloseButton {display: inline-block; margin-top: 10px; margin-bottom: 10px; font-size: 14px; border-bottom: 1px dashed #2c3e50; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; color: #2c3e50;}
+	#skyweb24_social_all .sw24TextCloseButton:hover {border-bottom: 1px dashed transparent;}
+
+@media screen and (max-width:900px) {
+	#skyweb24_social_all #inst_wid,	#skyweb24_social_all #vk_groups, #skyweb24_social_all #ok_group_widget {float: initial;	display: block; margin: 0 auto;	text-align: center;}
+	#skyweb24_social_all {width: auto!important; max-width: auto!important;}
+}

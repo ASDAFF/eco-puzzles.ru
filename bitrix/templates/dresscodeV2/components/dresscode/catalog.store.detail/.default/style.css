@@ -1,0 +1,133 @@
+#storeDetail .allStores{
+	margin-top: 24px;
+}
+
+#storeDetail .allStoresText{
+	font-family: "robotoMedium";
+	margin-right: 24px;
+	font-size: 16px;
+}
+
+#storeDetail .storeDetailContainer{
+	overflow: hidden;
+}
+
+#storeDetail .storePictureContainer{
+	margin-right: 24px;
+	max-width: 550px;
+	float: left;
+}
+
+#storeDetail .storePictureContainer img{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	vertical-align: middle;
+	max-height: 200px;
+	max-width: 100%;
+	cursor: zoom-in;
+}
+
+#storeDetail .storePictureContainer:hover img{
+	opacity: 0.8;
+}
+
+#storeDetail .storePictureContainer:active img{
+	position: relative;
+	top: 1px;
+}
+
+#storeDetail .storeInformationName{
+	font-family: "robotoMedium";
+	font-size: 21px;
+}
+
+#storeDetail .storeInformationDescription{
+	margin-top: 12px;
+	color: #555555;
+}
+
+#storeDetail .showByMap{
+	margin-top: 12px;
+	color: #000000;
+}
+
+#storeDetail .showByMapLink{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+#storeDetail .storeTools{
+	margin-bottom: 24px;
+	overflow: hidden;
+}
+
+#storeDetail .storeToolsContainer{
+	max-width: 1000px;
+}
+
+#storeDetail .storeToolsItem{
+	width: 33.333333%;
+	margin-top: 24px;
+	float: left;
+}
+
+#storeDetail .storeToolsItemTable{
+	table-layout: fixed;
+	display: table;
+	width: 100%;
+}
+
+#storeDetail .storeToolsItemColumn{
+	vertical-align: middle;
+	display: table-cell;
+	text-align: left;
+}
+
+#storeDetail .storeToolsItemColumn:first-child{
+	padding-right: 12px;
+	width: 36px;
+}
+
+#storeDetail .storeToolsItemColumn img{
+	vertical-align: middle;
+}
+
+#storeDetail .storeToolsItemLabel{
+	font-family: "robotoMedium";
+	display: block;
+}
+
+@media all and (max-width: 1600px) {
+	#storeDetail .storePictureContainer{
+		max-width: 500px;
+	}
+}
+
+@media all and (max-width: 1440px) {
+	#storeDetail .storePictureContainer{
+		max-width: 400px;
+	}
+}
+
+@media all and (max-width: 1280px) {
+	#storeDetail .storePictureContainer{
+		max-width: 300px;
+	}
+}
+
+@media all and (max-width: 900px) {
+	#storeDetail .storePictureContainer{
+		margin-bottom: 24px;
+		width: auto;
+		float: none;
+	}
+}
+
+@media all and (max-width: 700px) {
+	#storeDetail .storeToolsItem{
+		width: 100%;
+		float: none;
+	}
+}

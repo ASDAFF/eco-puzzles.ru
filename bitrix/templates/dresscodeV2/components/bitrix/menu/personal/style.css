@@ -1,0 +1,83 @@
+#personalMenu{
+	border-bottom: 1px solid #f1f1f1;
+	margin: 0px 0px 24px 0px;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+}
+
+#personalMenu li{
+	margin-bottom: 24px;
+	margin-right: 24px;
+	float: left;
+}
+
+#personalMenu li:last-child{
+	margin-right: 0;
+}
+
+#personalMenu li a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	/*text-transform: uppercase;*/
+	text-decoration: none;
+	font-size: 16px;
+	color: #000000;
+}
+
+#personalMenu li a:active{
+	position: relative;
+	top: 1px;
+}
+
+#personalMenu li .selected{
+	border-bottom: 1px dashed #000000;
+	font-family: 'robotobold';
+	padding-bottom: 4px;
+}
+
+#personalMenu li .selected:hover{
+	color: #000000;
+}
+
+@media all and (max-width: 1024px) {
+
+	#personalMenuWrap{
+		position: relative;
+		min-width: 100%;
+		overflow: hidden;
+		overflow-x: auto;
+		height: 40px;
+	}
+
+	#personalMenuWrap ul{
+		white-space: nowrap;
+		overflow: auto;
+	}
+
+	#personalMenu li{
+		white-space: nowrap;
+		float: none;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 18px;
+		margin-bottom: 18px;
+	}
+
+	#personalMenu::after {
+	    background: -moz-linear-gradient(left, rgba(255,255, 255, 0.2), #ffffff 100%);
+	    background: -webkit-linear-gradient(left, rgba(255,255, 255, 0.2), #ffffff 100%);
+	    background: -o-linear-gradient(left, rgba(255,255, 255, 0.2), #ffffff 100%);
+	    background: -ms-linear-gradient(left, rgba(255,255, 255, 0.2), #ffffff 100%);
+	    background: linear-gradient(to right, rgba(255,255, 255, 0.2), #ffffff 100%);
+	    pointer-events: none;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    height: 100%;
+	    content: '';
+	    width: 35px;
+	}
+
+}

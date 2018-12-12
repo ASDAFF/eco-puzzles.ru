@@ -1,0 +1,87 @@
+.cart .heading{
+	background-color: #ffffff;
+    border: 1px solid #f3f3f3;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: middle;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    line-height: 50px;
+    padding: 0 12px;
+    color: #aaaaaa;
+    height: 50px;
+	width: 238px;
+}
+
+
+#subHeader2.color_black .cart .heading,
+#subHeader2.color_theme .cart .heading{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.7);
+    background: transparent;
+}
+
+.cart .heading:active{
+    position: relative;
+    top: 1px;
+}
+
+.cart .heading.active{
+    color: #ffffff;
+}
+
+#subHeader2.color_black .cart .heading.active,
+#subHeader2.color_theme .cart .heading.active{
+    color: #ffffff;
+    border: none;
+}
+
+.cart .heading ins{
+	text-decoration: none;
+}
+
+.cart .icon{
+	background: url(images/cartH2.png) 0 0 no-repeat transparent;
+	vertical-align: middle;
+	display: inline-block;
+    margin-right: 12px;
+    position: relative;
+	height: 50px;
+	width: 26px;
+}
+
+#subHeader2.color_black .cart .icon,
+#subHeader2.color_theme .cart .icon{
+    background: url(images/cartH2W.png) 0 0px no-repeat transparent;
+}
+
+#subHeader2.color_theme .cart .heading.active{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cart .count{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 0 5px;
+    display: none;
+    left: 12px;
+    top: 6px;
+}
+
+.cart .active .count{
+    display: inline-block;
+}
+
+#subHeader2.color_black .cart .icon,
+#subHeader2.color_theme .cart .icon,
+.cart .active .icon{
+    background-position: 0 -50px;
+}

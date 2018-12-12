@@ -1,0 +1,8 @@
+.actions-list .tile-wrap:first-child { text-align: center; }
+.actions-list .tile-wrap:first-child .tile-time { display: none; }
+.actions-list .tile-wrap:first-child .btn-simple { display: none; }
+
+@media screen and (max-width: 800px){
+	.actions-list .tile-wrap:first-child .tile-time { display: block; }
+	.actions-list .tile-wrap:first-child .btn-simple { display: inline-block; }
+}

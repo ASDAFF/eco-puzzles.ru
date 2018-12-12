@@ -1,0 +1,78 @@
+#viewedProduct{
+	position: relative;
+}
+
+#viewedProduct .wrap{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin: 0 24px;
+}
+
+#viewedProduct .productList{
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	clear: both;
+	margin: 0px;
+	left: 0px;
+}
+
+#viewedProduct .productList > li{
+	float: left;
+}
+
+#viewedProduct .productList .item{
+	border-left: 0px;
+	height: 360px !important;
+	width: 100% !important;
+	float: none;
+}
+
+#viewedProduct .productList > li:first-child .item{
+	border-left: 1px solid #e7e8ea;
+}
+
+#viewedProduct .productList .item .tabloid{
+	height: 358px !important;
+}
+
+#viewedProduct .viewedBtnLeft,
+#viewedProduct .viewedBtnRight{
+	background: url(images/slideArrowSmall.png) 0 0 no-repeat transparent;
+	transform: translateY(-50%);
+	position: absolute;
+	height: 70px;
+	width: 35px;
+	z-index: 22;
+	top: 50%;
+}
+
+#viewedProduct .viewedBtnLeft{
+	left: 24px;
+}
+
+#viewedProduct .viewedBtnRight{
+	right: 24px;
+}
+
+#viewedProduct .viewedBtnLeft:hover{
+	background-position: -35px 0;
+}
+
+#viewedProduct .viewedBtnLeft:active{
+	background-position: -70px 0;
+}
+
+#viewedProduct .viewedBtnRight{
+	background-position: 0 -70px;
+}
+
+#viewedProduct .viewedBtnRight:hover{
+	background-position: -35px -70px;
+}
+
+#viewedProduct .viewedBtnRight:active{
+	background-position: -70px -70px;
+}

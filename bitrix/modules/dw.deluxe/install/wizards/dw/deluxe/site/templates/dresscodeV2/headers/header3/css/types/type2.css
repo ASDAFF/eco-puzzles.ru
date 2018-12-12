@@ -1,0 +1,19 @@
+#subHeader3 .cart .order{
+	border-radius: 2px;
+}
+
+#topSearch2 .searchContainerInner{
+	border-radius: 2px;
+}
+
+#subHeaderLine .topWishlist .value{
+	border-radius: 2px;
+}
+
+#subHeaderLine .topCompare .value{
+	border-radius: 2px;
+}
+
+#subHeader3 .cart .count{
+	border-radius: 6px;
+}

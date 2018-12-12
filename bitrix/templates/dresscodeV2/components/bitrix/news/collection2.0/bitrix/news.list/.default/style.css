@@ -1,0 +1,53 @@
+.collections.banners-list { margin: 0 -8px 33px; }
+.collections.banners-list .banner-wrap { width: 40%; padding: 8px; }
+.collections .banner-elem { height: 280px; }
+.collections .banner-elem .h2 { margin-bottom: 8px; }
+.collections .banner-elem .image { width: 50%; }
+.collections .banner-elem .image img { max-height: 280px; }
+.collections.banners-list .banner-wrap:nth-child(4n) { width: 60%; }
+.collections.banners-list .banner-wrap:nth-child(4n+1) { width: 60%; }
+.collections.banners-list .banner-wrap:nth-child(4n) .image { width: 70%; }
+.collections.banners-list .banner-wrap:nth-child(4n+1) .image { width: 70%; }
+
+@media screen and (max-width: 1600px){
+	.collections .banner-elem { height: 260px; }
+	.collections .banner-elem .text-wrap { padding-left: 24px; }
+	.collections .banner-elem .image img { max-height: 260px; }
+}
+
+@media screen and (max-width: 1400px){
+	.collections.banners-list .banner-wrap:nth-child(n) { width: 50%; }
+	.collections.banners-list .banner-wrap:nth-child(n) .image { width: 55%; }
+	.collections .banner-elem { height: 210px; }
+	.collections .banner-elem .image img { max-height: 210px; }
+}
+
+@media screen and (max-width: 1024px){
+	.collections.banners-list { margin: 0 -6px 18px; }
+	.collections.banners-list .banner-wrap { padding: 6px; }
+	.collections .banner-elem { height: 170px; }
+	.collections .banner-elem .image img { max-height: 170px; }
+}
+
+@media screen and (max-width: 800px){
+	.collections.banners-list .banner-wrap:nth-child(n) { width: 100%; }
+}
+
+
+@media screen and (max-width: 600px){
+	.collections .banner-elem { height: 160px; }
+	.collections .banner-elem .image img { max-height: 160px; }
+}
+
+@media screen and (max-width: 400px){
+	.collections .banner-elem { height: 150px; }
+	.collections .banner-elem .text-wrap { padding-left: 12px; }
+	.collections .banner-elem .image img { max-height: 150px; }
+	.collections.banners-list .banner-elem .image { display: table-cell; }
+}
+
+@media screen and (max-width: 360px){
+	.collections .banner-elem .descr  {display: none;}
+	.collections .banner-elem { height: 116px; }
+	.collections .banner-elem .image img { max-height: 116px; }
+}

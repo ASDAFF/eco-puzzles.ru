@@ -1,0 +1,229 @@
+#leftMenu{
+	
+	background: #2b2b2b;
+	padding: 12px 0 12px 0;
+	position:relative;
+	list-style: none;
+	z-index: 33;
+	margin: 0;
+}
+
+#leftMenu li{
+	list-style: none;
+}
+
+#leftMenu > li:first-child{
+	border: 0;
+}
+
+#leftMenu > li{
+	-webkit-transition:all 0.1s ease;
+    -moz-transition:all 0.1s ease;
+    -o-transition:all 0.1s ease;
+    transition: all 0.1s ease;
+	background: #2b2b2b;
+	display: block;
+}
+
+
+#leftMenu > li:hover,
+#leftMenu .activeDrop{
+	background: #ffffff;
+}
+
+#leftMenu li:hover .menuLink,
+#leftMenu .activeDrop .menuLink{
+	color: #000000;
+}
+
+#leftMenu li .menuLink{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-decoration: none;
+	padding-right: 8px;
+	position: relative;
+	line-height: 18px;
+	font-size: 13px;
+	display: block;
+	color: #ffffff;
+}
+
+#leftMenu .menuLink img{
+	vertical-align: middle;
+}
+
+#leftMenu li .tb{
+	display: table;
+	width: 100%;
+}
+
+#leftMenu .pc, #leftMenu .tx{
+	vertical-align: middle;
+	display: table-cell;
+	padding: 8px;
+}
+
+#leftMenu li .pc{
+	-webkit-transition:all 0.1s;
+    -moz-transition:all 0.1s;
+    -o-transition:all 0.1s;
+    transition: all 0.1s;
+    padding-left: 18px;
+    text-align:center;
+	height: 21px;
+	width: 24px;
+}
+
+#leftMenu .pc img{
+	max-width: 100%;
+}
+
+#leftMenu ul{
+	padding: 0;
+	margin: 0;
+}
+
+#leftMenu .drop{
+	box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+	border-collapse: collapse;
+	background: #ffffff;
+	table-layout: fixed;
+	position: absolute;
+	min-height: 400px;
+	overflow: hidden;
+	z-index: 999999;
+	display: none;
+	left: 100%;
+	width: 1%;
+	top: 0%;
+}
+
+#leftMenu .menuItems{
+	border-right: 1px solid #e7e8ea;
+	background-color: #ffffff;
+	display: table-cell;
+	vertical-align: top;
+	padding: 12px;
+	width: 245px;
+}
+
+#leftMenu .menuItems > li:first-child{
+	margin-top: 0px;
+}
+
+#leftMenu .menuItems > li{
+	position: relative;
+	margin-top: 8px;
+}
+
+#leftMenu .menuItems span{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-transform: uppercase;
+	font-family: 'robotobold';
+	font-size: 14px;
+	color: #444444;
+}
+
+#leftMenu .menuItems small{
+	position: absolute;
+	margin-top: -11px;
+	line-height: 22px;
+	height: 22px;
+	color: #888;
+	right: 0px;
+	top: 50%;
+}
+
+#leftMenu .menuItems a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	line-height: 21px;
+	display: block;
+	color: #000;
+}
+
+#leftMenu .menuItems a:hover{
+	color: #999;
+}
+
+#leftMenu .menuSlider{
+
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 50%, #f9fafc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#ffffff), color-stop(100%,#f9fafc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 50%,#f9fafc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 50%,#f9fafc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 50%,#f9fafc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 50%,#f9fafc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9fafc',GradientType=0 ); /* IE6-9 */
+
+	vertical-align: middle;
+	display: table-cell;
+	position: relative;
+	overflow: hidden;
+	width: 280px;
+}
+
+#leftMenu .menuSlider > ul{
+	position: relative;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#leftMenu .menuSlider > ul > li{
+	position: relative;
+	float: left;
+}
+
+#leftMenu .menuSlider .slideBtnLeft,
+#leftMenu .menuSlider .slideBtnRight{
+	background: url(images/slideArrow.png) 0 0 no-repeat transparent;
+	position: absolute;
+	margin-top: 3px;
+	z-index: 99;
+	height: 16px;
+	opacity: 0.5;
+	width: 14px;
+	top: 30%;
+}
+
+#leftMenu .menuSlider .slideBtnLeft:hover,
+#leftMenu .menuSlider .slideBtnRight:hover{
+	opacity: 0.8;
+}
+
+#leftMenu .menuSlider .slideBtnLeft:active,
+#leftMenu .menuSlider .slideBtnRight:active{
+	opacity: 1;
+}
+
+#leftMenu .menuSlider .slideBtnLeft{
+	left: 12px;
+}
+
+#leftMenu .menuSlider .slideBtnRight{
+	background-position: -14px 0;
+	right: 12px;
+}
+
+#leftMenu .product{
+	position: relative !important;
+	height: auto !important;
+	width: 100% !important;
+	border: 0 !important;
+}
+
+#leftMenu .product .tabloid{
+	border: 0 !important;
+	height: auto !important;
+	position: static !important;
+	background: transparent !important;
+}

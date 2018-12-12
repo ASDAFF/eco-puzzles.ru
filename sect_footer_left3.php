@@ -1,0 +1,1 @@
+<p class="hr">Наш адрес: г. Москва, ул Бауманская, д.16 <a href="<?=SITE_DIR?>about/contacts/" class="showMap">Посмотреть на карте</a></p>

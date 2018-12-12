@@ -1,0 +1,6 @@
+#skyweb24_contact_type1 .bgColorBlock {background: linear-gradient(-45deg, rgba(192, 57, 43, 0.5)  0%, rgba(142, 68, 173, 0.5) 100%);}
+#skyweb24_contact_type1 .fieldset label.submit>button {background: #c0392b;}
+	#skyweb24_contact_type1 .fieldset label.submit>button:hover {background: #e74c3c;}
+
+.skyweb24_popup_pro_timer {background: linear-gradient(-45deg, rgba(192, 57, 43, 0.5)  0%, rgba(142, 68, 173, 0.5) 100%); background-color: #fff;}
+.popup-window.sw24PopupPro .popup-window-close-icon {background: #c0392b;}

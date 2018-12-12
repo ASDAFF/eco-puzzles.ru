@@ -1,0 +1,191 @@
+.stores { width:34%; }
+#ModalPVZ{
+    z-index:1750 !important;
+    position: fixed !important;
+    top: 0px !important;
+}
+#shd_pvz_info{
+    font-weight:bold;
+}
+#shd_pvz_pick button{
+    margin-top:5px;
+    color:white;
+    background-color:#2b7788;
+    border: 0;
+    padding: 8px;
+}
+#saveBTN{
+    background: #2b7788;
+    color: white;
+    line-height: 35px;
+    font-size: 20px;
+    width: 190px;
+    border-radius: 0;
+    height: 35px;
+    box-shadow: none;
+    font-weight: normal;
+}
+#saveBTN:hover{
+    background:#3b8798;
+}
+.sh_pvz_pay_icon{
+    font-size: 14px !important;
+    color: #999;
+}
+#ModalPVZ .popup-window-close-icon:after{
+    width: 26px;
+    height: 26px;
+    background-image:none;
+    color: #333;
+    content: "\2716";
+    font-size: 18px;
+}
+#ModalPVZ .popup-window-close-icon{
+    top: 11px;
+    opacity: 1;
+    z-index: 1700;
+}
+.popup-window-content .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+#saveBTN:before,#saveBTN:after{
+    display:none;
+}
+#shd_pvz_pick button:hover{
+    background-color:#3b8798;
+}
+#containerPVZ .rdio { margin: 7px 0; }
+#containerPVZ .rdio > label { padding-left: 24px }
+
+#containerPVZ { height: 600px; padding-left: 2px; overflow-y: auto}
+
+#map { width:100%;height:390px; }
+
+.mCSB_inside>.mCSB_container { margin-right: 15px; }
+
+#containerPVZ .rdio { padding: 3px 0 3px 3px; border-bottom: 1px solid #e5e5e5; margin:0 }
+#containerPVZ .rdio:last-child { border-bottom: none }
+#containerPVZ .rdio.checked { background-color: #f5f3e3; }
+
+#containerPVZ .rdio > label { display: block; font-size: 11px; margin: 0; padding: 0 0 0 24px; position: relative; line-height: 20px; cursor: pointer }
+#containerPVZ .rdio > label > .text { font-size: 9px; line-height: 1.2; font-weight: normal; display: none; }
+#containerPVZ .rdio.checked > label > .text { display: block }
+#containerPVZ .rdio > label > .text > p { margin: 0; font-size: 11px;}
+
+#ModalPVZ .popup-window-content{
+    background-color: #fff;
+}
+strong.error { color: red; }
+strong.success { color: green; }
+#ModalPVZ .shiptor-pvz-list{
+    width:35%;
+    float:left;
+}
+#ModalPVZ .shiptor-map-container{
+    width:65%;
+    float:left;
+}
+#ModalPVZ h3.shiptor-h3-title{
+    white-space: nowrap;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 5px 0;
+    font-size: 1.5em;
+}
+#ModalPVZ .sh_rdio_text{
+    display:table;
+}
+.popup-window-close-icon::after{
+    width: 16px;
+    height: 16px;
+}
+.sh_pvz_pay_icon{
+    font-size: 17px !important;
+    padding-left: 5px;
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+#sh_info_node{
+    font-weight: bold;
+    margin-right: 15px;
+}
+.shd_ico_holder{
+    margin-left: 14px;
+    margin-bottom: 5px;
+    margin-bottom: 5px;
+}
+@media (min-width: 993px){
+    #ModalPVZ .modal-dialog {
+        width: 86%;
+    }
+    #ModalPVZ .col-md-4 {
+        padding-right:0;
+    }
+    #ModalPVZ .col-md-8 {
+        padding-left: 0;
+    }
+    #ModalPVZ .form-group {
+        margin-bottom: 0;
+    }
+    #map, #containerPVZ {
+        height: 600px;
+    }
+    #popup-window-content-ModalPVZ{
+        padding: 0 15px;
+    }
+    #ModalPVZ .popup-window-buttons{
+        padding: 5px 0 10px;
+    }
+}
+@media (max-width: 992px){
+    #map, #popup-window-titlebar-ModalPVZ .shiptor-h3-title,
+    #ModalPVZ .shiptor-map-container{
+        display:none;
+    }
+    #ModalPVZ .shiptor-pvz-list{
+        width:100%;
+    }
+    #containerPVZ .rdio > label{
+        padding-left: 15px;
+    }
+    #containerPVZ{
+        margin-top: 3px;
+        padding-left: 0;
+    }
+    #popup-window-content-ModalPVZ{
+        padding: 0;
+    }
+    #popup-window-titlebar-ModalPVZ .shiptor-h3-title{
+        line-height: 40px !important;
+    }
+    #ModalPVZ {
+        padding: 0;
+        top: 0px !important;
+        position: fixed !important;
+    }
+    #ModalPVZ .popup-window-buttons{
+        box-shadow: 0 5px 4px -3px #bbb;
+        position: absolute;
+        width: 100%;
+        top:0;
+        text-align:left;
+    }
+    #ModalPVZ .popup-window-buttons span{
+        margin-left: 15px;
+        text-align:center;
+        font-size: 13px;
+        text-transform: none;
+        width:auto;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    #containerPVZ .rdio > label{
+        padding-right:15px;
+    }
+    .rdio .text{
+        margin-left:18px;
+    }
+    #ModalPVZ .popup-window-buttons{
+        padding:8px 0;
+    }
+}

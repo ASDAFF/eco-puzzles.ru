@@ -1,0 +1,531 @@
+.user-geo-position-label{
+    margin-right: 6px;
+}
+
+.user-geo-position-label,
+.user-geo-position-value,
+.user-geo-position-value-link{
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.user-geo-position-value-link{
+    vertical-align: middle;
+    max-width: 160px;
+    overflow: hidden;
+}
+
+#geo-location-window{
+	-webkit-transition: 0.1s all ease-in-out;
+    -o-transition: 0.1s all ease-in-out;
+    transition: 0.1s all ease-in-out;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    color: #000000;
+    overflow: auto;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    /*display: none;*/
+}
+
+#geo-location-window .hidden{
+    display: none;
+}
+
+#geo-location-window .geo-location-window-container{
+	-moz-transform: translateY(-50%)  translateX(-50%);
+	-o-transform: translateY(-50%) translateX(-50%);
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	transform: translateY(-50%) translateX(-50%);
+	-webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+    -webkit-animation-name: zoomInLocation;
+    animation-name: zoomInLocation;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    min-height: 276px;
+    max-height: 500px;
+    padding: 0 24px;
+    width: 800px;
+    left: 50%;
+    top: 50%;
+}
+
+#geo-location-window .geo-location-window-container-bg{
+    box-shadow: 1px 1px 12px rgba(60, 60, 60, 0.3);
+    background-color: #ffffff;
+}
+
+.geo-location-window-wp{
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 21px;
+    width: 100%;
+}
+
+#geo-location-window .geo-location-window-heading{
+	background-color: #424242;
+	position: relative;
+	text-align: center;
+	line-height: 60px;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+#geo-location-window .geo-location-window-list{
+    max-height: 180px;
+    margin-top: 24px;
+    padding: 0 24px;
+    overflow: auto;
+}
+
+#geo-location-window .geo-location-window-list-item{
+    /*text-transform: uppercase;*/
+    overflow: hidden;
+    float: left;
+    width: 25%;
+}
+
+#geo-location-window .geo-location-window-list-item a{
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 37px;
+    overflow: hidden;
+    color: #000000;
+    height: 37px;
+}
+
+#geo-location-window .geo-location-window-list-item a:active{
+    position: relative;
+    top: 1px;
+}
+
+#geo-location-window .geo-location-window-list-item span{
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 21px;
+}
+
+.geo-location-window-search{
+    margin-top: 24px;
+    padding: 0 24px;
+}
+
+.geo-location-window-search-input{
+    background: url(images/geo-search.png) 12px 50% no-repeat #f6f6f6;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #e6e6e6;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "roboto_ltregular";
+    border-radius: 2px;
+    padding: 0 42px;
+    font-size: 14px;
+    height: 48px;
+    width: 100%;
+}
+
+.geo-location-window-search-input:focus{
+    border: 1px solid #aaaaaa;
+}
+
+.geo-location-window-city-container{
+    text-align: center;
+    margin-top: 24px;
+}
+
+.geo-location-window-city-label,
+.geo-location-window-city-value{
+    display: inline-block;
+}
+
+.geo-location-window-city-value{
+    /*text-transform: uppercase;*/
+    font-family: "robotoBold";
+}
+
+.geo-location-window-button-container{
+    margin-bottom: 24px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.geo-location-window-button{
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    /*text-transform: uppercase;*/
+    color: #ffffff !important;
+    vertical-align: middle;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 2px;
+    text-align: center;
+    position: relative;
+    line-height: 50px;
+    padding: 0 36px;
+    font-size: 14px;
+    opacity: 0.9;
+    height: 50px;
+}
+
+.geo-location-window-button:active{
+    position: relative;
+    top: 1px;
+}
+
+.geo-location-window-button.modifed{
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.geo-location-window-button.disabled{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.geo-location-window-button.loading{
+    opacity: 0.5;
+}
+
+.geo-location-window-button.loading #geo-location-window-fast-loader{
+    display: block;
+    opacity: 1;
+}
+
+.geo-location-window-search-values-cn{
+    position: relative;
+}
+
+.geo-location-window-search-values{
+    position: absolute;
+    max-height: 141px;
+    overflow: auto;
+    z-index: 99;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.geo-location-window-search-values .geo-location-list-item{
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    border-top: 1px solid #e6e6e6;
+    background-color: #eeeeee;
+}
+
+.geo-location-window-search-values .geo-location-list-item:hover{
+    background-color: #e1e1e1;
+}
+
+.geo-location-window-search-values .geo-location-list-item:first-child{
+    border: none;
+}
+
+.geo-location-window-search-values .geo-location-list-item a{
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #000000 !important;
+    text-decoration: none;
+    line-height: 35px;
+    padding: 0 24px;
+    display: block;
+    height: 35px;
+}
+
+.geo-location-window-search-values .geo-location-list-item a:hover{
+    opacity: 0.8;
+}
+
+.geo-location-window-search-values .geo-location-list-item a:active{
+    position: relative;
+    top: 1px;
+}
+
+#geo-location-window .geo-location-window-exit{
+	position: absolute;
+	display: block;
+	height: 21px;
+	width: 21px;
+    right: 20px;
+    top: 20px;
+}
+
+#geo-location-window .geo-location-window-exit{
+	background: url(images/exit.png) 0 0 no-repeat transparent;
+}
+
+#geo-location-window .geo-location-window-exit:hover{
+	background-position: 0 -21px ;
+}
+
+#geo-location-window .geo-location-window-exit:active{
+	background-position: 0 -42px ;
+}
+
+@media all and (max-width: 850px){
+
+    #geo-location-window .geo-location-window-container{
+        transform: translateX(0) translateY(-50%);
+        width: 100%;
+        left: 0px;
+    }
+
+}
+
+@media all and (max-width: 700px) {
+
+    #geo-location-window .geo-location-window-list-item{
+        width: 33.333%;
+    }
+
+    #geo-location-window .geo-location-window-container{
+        padding: 0 12px;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+
+    #geo-location-window .geo-location-window-list-item{
+        width: 50%;
+    }
+
+}
+
+@media all and (max-width: 400px) {
+
+    #geo-location-window .geo-location-window-list-item{
+        width: 100%;
+    }
+
+}
+
+/*loader*/
+#geo-location-window-fast-loader{
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    position: absolute;
+    transform:scale(0.6);
+    -o-transform:scale(0.6);
+    -ms-transform:scale(0.6);
+    -webkit-transform:scale(0.6);
+    -moz-transform:scale(0.6);
+    margin-left: -24px;
+    display: none;
+    height: 48px;
+    width: 48px;
+    opacity: 0;
+    left: 50%;
+    top: 0px;
+}
+
+.f_circleG{
+    position:absolute;
+    background-color:rgb(255,255,255);
+    height:9px;
+    width:9px;
+    display: block;
+    border-radius:4px;
+        -o-border-radius:4px;
+        -ms-border-radius:4px;
+        -webkit-border-radius:4px;
+        -moz-border-radius:4px;
+    animation-name:f_fadeG;
+        -o-animation-name:f_fadeG;
+        -ms-animation-name:f_fadeG;
+        -webkit-animation-name:f_fadeG;
+        -moz-animation-name:f_fadeG;
+    animation-duration:0.522s;
+        -o-animation-duration:0.522s;
+        -ms-animation-duration:0.522s;
+        -webkit-animation-duration:0.522s;
+        -moz-animation-duration:0.522s;
+    animation-iteration-count:infinite;
+        -o-animation-iteration-count:infinite;
+        -ms-animation-iteration-count:infinite;
+        -webkit-animation-iteration-count:infinite;
+        -moz-animation-iteration-count:infinite;
+    animation-direction:normal;
+        -o-animation-direction:normal;
+        -ms-animation-direction:normal;
+        -webkit-animation-direction:normal;
+        -moz-animation-direction:normal;
+}
+
+#frotateG_01{
+    left:0;
+    top:19px;
+    animation-delay:0.1995s;
+        -o-animation-delay:0.1995s;
+        -ms-animation-delay:0.1995s;
+        -webkit-animation-delay:0.1995s;
+        -moz-animation-delay:0.1995s;
+}
+
+#frotateG_02{
+    left:6px;
+    top:6px;
+    animation-delay:0.256s;
+        -o-animation-delay:0.256s;
+        -ms-animation-delay:0.256s;
+        -webkit-animation-delay:0.256s;
+        -moz-animation-delay:0.256s;
+}
+
+#frotateG_03{
+    left:19px;
+    top:0;
+    animation-delay:0.3225s;
+        -o-animation-delay:0.3225s;
+        -ms-animation-delay:0.3225s;
+        -webkit-animation-delay:0.3225s;
+        -moz-animation-delay:0.3225s;
+}
+
+#frotateG_04{
+    right:6px;
+    top:6px;
+    animation-delay:0.389s;
+        -o-animation-delay:0.389s;
+        -ms-animation-delay:0.389s;
+        -webkit-animation-delay:0.389s;
+        -moz-animation-delay:0.389s;
+}
+
+#frotateG_05{
+    right:0;
+    top:19px;
+    animation-delay:0.4555s;
+        -o-animation-delay:0.4555s;
+        -ms-animation-delay:0.4555s;
+        -webkit-animation-delay:0.4555s;
+        -moz-animation-delay:0.4555s;
+}
+
+#frotateG_06{
+    right:6px;
+    bottom:6px;
+    animation-delay:0.522s;
+        -o-animation-delay:0.522s;
+        -ms-animation-delay:0.522s;
+        -webkit-animation-delay:0.522s;
+        -moz-animation-delay:0.522s;
+}
+
+#frotateG_07{
+    left:19px;
+    bottom:0;
+    animation-delay:0.5885s;
+        -o-animation-delay:0.5885s;
+        -ms-animation-delay:0.5885s;
+        -webkit-animation-delay:0.5885s;
+        -moz-animation-delay:0.5885s;
+}
+
+#frotateG_08{
+    left:6px;
+    bottom:6px;
+    animation-delay:0.645s;
+        -o-animation-delay:0.645s;
+        -ms-animation-delay:0.645s;
+        -webkit-animation-delay:0.645s;
+        -moz-animation-delay:0.645s;
+}
+
+
+
+@keyframes f_fadeG{
+    0%{
+        background-color:rgb(0,0,0);
+    }
+
+    100%{
+        background-color:rgb(255,255,255);
+    }
+}
+
+@-o-keyframes f_fadeG{
+    0%{
+        background-color:rgb(0,0,0);
+    }
+
+    100%{
+        background-color:rgb(255,255,255);
+    }
+}
+
+@-ms-keyframes f_fadeG{
+    0%{
+        background-color:rgb(0,0,0);
+    }
+
+    100%{
+        background-color:rgb(255,255,255);
+    }
+}
+
+@-webkit-keyframes f_fadeG{
+    0%{
+        background-color:rgb(0,0,0);
+    }
+
+    100%{
+        background-color:rgb(255,255,255);
+    }
+}
+
+@-moz-keyframes f_fadeG{
+    0%{
+        background-color:rgb(0,0,0);
+    }
+
+    100%{
+        background-color:rgb(255,255,255);
+    }
+}
+
+@-webkit-keyframes zoomInLocation {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-50%) translateX(-50%) scale3d(.3, .3, .3);
+    transform: translateY(-50%) translateX(-50%) scale3d(.3, .3, .3);
+	-moz-transform: translateY(-50%) translateX(-50%) scale3d(.3, .3, .3);
+	-o-transform: translateY(-50%) translateX(-50%) scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomInLocation {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-50%) translateX(-50%) scale3d(.3, .3, .3);
+    transform: translateY(-50%) translateX(-50%) scale3d(.3, .3, .3);
+	-moz-transform: translateY(-50%) translateX(-50%) scale3d(.3, .3, .3);
+	-o-transform: translateY(-50%) translateX(-50%) scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

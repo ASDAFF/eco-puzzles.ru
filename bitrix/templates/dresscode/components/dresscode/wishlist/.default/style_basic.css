@@ -1,0 +1,57 @@
+#wishlist .rating{
+	display: none;
+}
+
+#wishlist .removeFromWishlist{
+	background: url(images/delete.png) 0 0 no-repeat transparent;
+	display: block !important;
+	position: absolute;
+	z-index: 21;
+	height: 18px;
+	width: 18px;
+	right: 12px;
+	top: 12px;
+}
+
+#wishlist .removeFromWishlist:hover{
+	background-position: -18px 0;
+}
+
+#wishlist .removeFromWishlist:active{
+	background-position: -36px 0;
+}
+
+#wishlist #catalogTableList .column.out{
+	display: table-cell;
+	width: 1px;
+}
+
+#wishlist #catalogTableList .removeFromWishlist,
+#wishlist #catalogLineList .removeFromWishlist{
+	right: auto !important;
+	left: 24px !important;
+	top: 34px !important;
+}
+
+#wishlist .removeFromWishlist.loading{
+	background: url(images/deleteLoader.gif) 0 0 no-repeat transparent !important;
+}
+
+#wishlist #catalogLineList .markerContainer{
+	display: none;
+}
+
+#wishlist #catalogLineList .rating{
+	display: block;
+}
+
+#wishlist .itemRow{
+	position: relative;
+}
+
+#wishlist .prop a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	color: #000000;
+}

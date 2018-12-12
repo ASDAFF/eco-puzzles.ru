@@ -1,0 +1,47 @@
+$(function(){
+
+	//global vars
+	var openSmartFilterFlag = false;
+	var changeSortParams = function(){
+		window.location.href = $(this).val();
+	};
+
+	$("#selectSortParams, #selectCountElements").on("change", changeSortParams);
+
+
+	var openSmartFilter = function(event){
+
+		var smartFilterOffset = 0;
+
+		if($(".oFilter").length > 0){
+			smartFilterOffset = $(".oFilter").offset().top;
+		}
+
+		// smartFilter block adaptive toggle
+		if(!openSmartFilterFlag){
+			$("#smartFilter").addClass("opened").css({"marginTop": (smartFilterOffset + 36) + "px", "top": "24px"});
+			openSmartFilterFlag = true;
+		}
+
+		else{
+			$("#smartFilter").removeClass("opened").removeAttr("style").css({"marginTop": "", "top": ""});
+			openSmartFilterFlag = false;
+		}
+
+		return event.preventDefault();
+	};
+
+	var closeSmartFilter = function(event){
+		if(openSmartFilterFlag){
+			$("#smartFilter").removeClass("opened");
+			openSmartFilterFlag = false;
+		}
+	};
+
+	$(document).on("click", ".oSmartFilter", openSmartFilter);
+    $(document).on("click", "#smartFilter, .oSmartFilter, .rangeSlider", function(event){
+    	return event.stopImmediatePropagation();
+    });
+	$(document).on("click", closeSmartFilter);
+
+});

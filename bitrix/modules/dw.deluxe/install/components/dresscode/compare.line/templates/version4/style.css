@@ -1,0 +1,56 @@
+.topCompare .text{
+	position: relative;
+	display: block;
+}
+
+.topCompare .icon{
+	background: url(images/compareH4.png) 50% 50% no-repeat transparent;
+	display: inline-block;
+	height: 40px;
+	width: 60px;
+}
+
+#subHeader4.color_black .topCompare .icon,
+#subHeader4.color_theme .topCompare .icon,
+#subHeader5.color_black .topCompare .icon,
+#subHeader5.color_theme .topCompare .icon,
+#subHeader7.color_black .topCompare .icon,
+#subHeader7.color_theme .topCompare .icon,
+#subHeader9.color_black .topCompare .icon,
+#subHeader9.color_theme .topCompare .icon{
+	background: url(images/compareH4w.png) 50% 50% no-repeat transparent;
+}
+
+.topCompare .active .icon:hover{
+	opacity: 0.7;
+}
+
+.topCompare .active .icon:active{
+	position: relative;
+	top: 1px;
+}
+
+.topCompare .value{
+	border: 2px solid #d1d1d1;
+	background-color: #ffffff;
+	border-radius: 50%;
+	position: absolute;
+	text-align: center;
+	overflow: hidden;
+	font-size: 12px;
+	color: #d1d1d1;
+	height: 20px;
+	width: 20px;
+	right: 8px;
+	top: 0;
+}
+
+#subHeader5.color_black .topCompare .value,
+#subHeader7.color_black .topCompare .value,
+#subHeader9.color_black .topCompare .value{
+	background-color: #2b2b2b;
+}
+
+.topCompare .active .value:active{
+	top: 1px;
+}

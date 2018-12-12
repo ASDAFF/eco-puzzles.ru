@@ -1,0 +1,123 @@
+div.blog-comment-form {width: 100% !important;}
+
+div.blog-comment .blog-author {
+  font-size: 14px;
+}
+
+div.blog-comment-date {
+	font-size: 14px;
+	font-weight: 300;
+	padding-left: 24px;
+	color: #555555;
+}
+
+.blog-comment-content {
+  font-size: 13px;
+  overflow: hidden!important;
+  padding-top: 0 !important;
+  margin-top: 12px;
+}
+
+div.blog-comment-buttons{
+	/*margin-left: 10px;*/
+}
+
+div.blog-comment-buttons .btn-simple.btn-small{
+	padding: 10px 8px;
+}
+
+.blog-post-rating {
+  padding: 10px 0 0 0;
+}
+
+.feed-add-post{
+	padding: 0 1px 1px;
+	background: #f1f1f1;
+}
+
+div.blog-comment-fields{
+	padding: 0;
+	background: none;
+}
+
+body .feed-add-post-form{
+	margin: 0;
+}
+
+body .feed-add-post-text{
+	padding: 0;
+}
+
+.workarea_wrap {
+  padding: 0 !important;
+}
+
+.blog-errors.blog-note-box.blog-note-error {
+	border: 1px solid #ff0000;
+	margin: 0 0 24px;
+	padding: 12px 24px;
+	color: #ff0000;
+	background: #fff;
+}
+div.blog-post-rating.rating_vote_graphic{
+	display: none !important;
+}
+
+div.bx_soc_comments_div .bx-catalog-tab-list li {
+	border: none;
+}
+div.bx_soc_comments_div .bx-catalog-tab-list li span {
+	padding: 0;
+	font-family: 'robotobold';
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 800;
+	font-size: 20px;
+	display: block;
+}
+.bx_soc_comments_div .bx-catalog-tab-list{
+	border: none;
+}
+.blog-comment-line + .blog-comment-line {
+	display: none;
+}
+/*.bx_soc_comments_div.bx_important .bx_medium.bx_bt_button.active-link {
+	height: auto;
+	line-height: 22px;
+	padding: 0;
+}*/
+.bx_soc_comments_div.bx_important .bx_medium.bx_bt_button.form-with-comments {
+	display: none;
+}
+.blog-add-comment-left{
+	text-align: left;
+	height: 0;
+	padding: 0;
+}
+.blog-comment-line + .no-comments-wrap{
+	display: none;
+}
+.blog-textinfo.blog-note-box + .no-comments-wrap{
+	display: none;
+}
+.no-comments-wrap + .no-comments-wrap{
+	display: none;
+}
+.no-comments-wrap{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	flex-basis: 0%;
+	margin-top: 12px;
+	padding: 18px;
+	background: #f8f8f8;
+}
+.no-comments-wrap img{
+	display: inline-block;
+	margin-right: 18px;
+	vertical-align: middle;
+}

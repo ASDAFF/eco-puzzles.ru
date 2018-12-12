@@ -1,0 +1,70 @@
+#skyweb24_roulette {text-align: center; padding: 20px; background: #ecf0f1; position: relative; max-width: 800px; box-sizing: border-box; margin: 0 auto;}
+	#skyweb24_roulette h2 {margin: 0; padding: 0;}
+	#skyweb24_roulette h3 {margin: 20px 0 15px; padding: 0; color: #2c3e50; font-size: 16px;}
+	#skyweb24_roulette .rotate_shadow {box-shadow: 9px 11px 20px 0px rgba(0,0,0,0.5); border-radius: 50%; width: 400px; height: 400px; margin: 0 auto; position: relative; margin-bottom: 20px;}
+	#skyweb24_roulette .rotate_block {position: relative; width: 400px; transition: transform 7s ease-out; border-radius: 50%; border:3px solid #fff; box-sizing: content-box;}
+	#skyweb24_roulette .container {width: 400px; height: 400px; overflow: hidden; border-radius: 50%; position: relative;}
+	#skyweb24_roulette .email.input {display: block; margin-bottom: 20px;}
+		#skyweb24_roulette .email.input>input {width: 290px; padding: 10px; box-sizing: border-box; line-height: 1; height: 37px; border-radius: 2px;}
+	#skyweb24_roulette .sector {width: 50%; height: 50%; position: absolute; left: 50%; top: 0; transform-origin: left bottom; box-shadow: 0px 0px 1px 1px #ffffff; border-top: 0; border-right: 0;}
+	#skyweb24_roulette div.text {width: 400px; height: 400px; overflow: hidden; border-radius: 50%; position: absolute; top: 0; left: 0;}
+		#skyweb24_roulette div.text>div {color: white; width: 46%; top: calc(50%); left: 50%; text-align: right; /*margin-top: -50%;*/ position: absolute; font-size: 15px; transform-origin: 0 0;}
+	#skyweb24_roulette .negative {filter:grayscale(90%);}
+	#skyweb24_roulette .contain_roulette {position: relative; margin-bottom: 30px; overflow: hidden; min-width: 600px;}
+	#skyweb24_roulette div.arrow {display: inline; position: absolute; right: calc(50% - 260px); top: calc(50% - 43px); width: 70px;}
+		#skyweb24_roulette div.arrow>svg {filter: drop-shadow(4px -4px 4px #45494C); transform: rotate(90deg);}
+
+	#skyweb24_roulette p.result_roll {font-size: 20px;}
+	#skyweb24_roulette p.result_roll_fail {color: #e74c3c; font-size: 20px;}
+	#skyweb24_roulette p.result_roll_not_unique {color: #e74c3c; font-size: 20px;}
+	#skyweb24_roulette button.roll_roulette {width: 290px; font-weight: bold; text-transform: uppercase; transition: .3s all; color: white; border-radius: 2px; padding: 15px 0px; font-size: 16px; border: none;}
+	#skyweb24_roulette .email.input.blink>input {animation-name: blink; animation-duration: 1s;}
+	
+	#skyweb24_roulette .sw24TextCloseButton {display: inline-block; margin-top: 10px; font-size: 14px; border-bottom: 1px dashed #2c3e50; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; color: #2c3e50;}
+	#skyweb24_roulette .sw24TextCloseButton:hover {border-bottom: 1px dashed transparent;}
+
+@keyframes blink {
+    0%      {background: #e74c3c;}
+    25%     {background: #c9392b;}
+    50%     {background: #e74c3c;}
+    75%     {background: #c9392b;}
+    100%    {background: #e74c3c;}
+}
+
+@media screen and (max-width:700px) {
+	#skyweb24_roulette {width: 100%; box-sizing: border-box;}
+}
+@media screen and (max-width:540px) {
+	/*#skyweb24_roulette div.rotate_shadow {margin-left: -100px;}*/
+	
+	#skyweb24_roulette .rotate_shadow {width: 350px; height: 350px;}
+	#skyweb24_roulette .rotate_block {width: 350px;}
+	#skyweb24_roulette .container {width: 350px; height: 350px;}
+	#skyweb24_roulette div.text {width: 350px; height: 350px;}
+	
+	#skyweb24_roulette div.contain_roulette {min-width: unset;}
+	#skyweb24_roulette div.arrow {display: inline; position: absolute; right: calc(50% - 235px); top: calc(50% - 43px); width: 70px;}
+	#skyweb24_roulette{    padding: 15px;}
+	#skyweb24_roulette h2 {font-size: 22px;}
+	#skyweb24_roulette h3 {font-size: 14px;}
+	#skyweb24_roulette .contain_roulette{margin-bottom: 0px;}
+}
+@media screen and (max-width:400px) {
+	#skyweb24_roulette h3 {margin: 10px 5px;}
+	#skyweb24_roulette .rotate_shadow {width: 330px; height: 330px;}
+	#skyweb24_roulette .rotate_block {width: 330px;}
+	#skyweb24_roulette .container {width: 330px; height: 330px;}
+	#skyweb24_roulette div.text {width: 330px; height: 330px;}
+	#skyweb24_roulette div.text>div {font-size: 12px;}
+	#skyweb24_roulette div.rotate_shadow {margin: 0px 0px 20px 0px;}
+	#skyweb24_roulette div.arrow {display: inline; position: absolute; right: calc(50% - 210px); top: calc(50% - 43px); width: 70px;}
+	#skyweb24_roulette .email.input {margin-bottom: 5px;}
+}
+
+@media screen and (max-width:330px){
+	#skyweb24_roulette div.arrow {right: calc(50% - 185px);}
+	#skyweb24_roulette .rotate_shadow {width: 280px; height: 280px;}
+	#skyweb24_roulette .rotate_block {width: 280px;}
+	#skyweb24_roulette .container {width: 280px; height: 280px;}
+	#skyweb24_roulette div.text {width: 280px; height: 280px;}
+}

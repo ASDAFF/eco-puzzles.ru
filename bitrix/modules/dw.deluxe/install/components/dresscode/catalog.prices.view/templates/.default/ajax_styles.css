@@ -1,0 +1,122 @@
+#appProductPriceVariant{
+	box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.3);
+	-webkit-animation-duration: 0.2s;
+	animation-duration: 0.2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	background-color: #ffffff;
+	position: absolute;
+	width: 320px;
+	z-index: 1001;
+}
+
+#appProductPriceVariant .priceVariantHeading{
+	border-bottom: 1px solid #ececec;
+	text-transform: uppercase;
+	font-family: "robotobold";
+	text-align: center;
+	line-height: 28px;
+	font-size: 18px;
+	padding: 24px 36px;
+}
+
+#appProductPriceVariant .priceVariantListItem:last-child{
+    border-bottom: 1px solid #ececec;
+}
+
+#appProductPriceVariant .priceVariantListItemTable{
+	border-collapse: collapse;
+	table-layout: fixed;
+	display: table;
+	width: 100%;
+}
+
+#appProductPriceVariant .priceVariantListItemRow{
+	display: table-row;
+}
+
+#appProductPriceVariant .priceVariantListItem:nth-child(even) .priceVariantListItemColumn{
+	background-color: #f5f5f5;
+}
+
+#appProductPriceVariant .extentedPrice .priceVariantListItem:nth-child(even) .priceVariantListItemColumn{
+	background-color: transparent;
+}
+
+#appProductPriceVariant .extentedPrice .priceVariantListItem .priceVariantListItemRow:not(.priceVariantListItemIncluded) .priceVariantListItemColumn{
+	background-color: #f5f5f5;
+}
+
+#appProductPriceVariant .priceVariantListItemColumn{
+	vertical-align: middle;
+	display: table-cell;
+	position: relative;
+	padding: 14px;
+}
+
+#appProductPriceVariant .priceVariantListItemIncluded .priceVariantListItemColumn{
+	color: #555555;
+	padding: 6px;
+}
+
+#appProductPriceVariant .priceVariantListItemColumn:first-child{
+	padding-left: 24px;
+	width: 60%;
+}
+
+#appProductPriceVariant .priceVariantListItemColumn:last-child{
+	padding-right: 24px;
+	text-align: right;
+	width: 40%;
+}
+
+#appProductPriceVariant .extentedPrice .discount{
+	display: none;
+}
+
+#appProductPriceVariant .discount{
+	position: absolute;
+	font-size: 12px;
+	color: #999999;
+	right: 12px;
+	top: -1px;
+}
+
+#appProductPriceVariant .priceVariantListItemIncluded .discount{
+	top: -6px;
+}
+
+#appProductPriceVariant .minAvailablePrice{
+	font-family: "robotomedium";
+}
+
+#appProductPriceVariant .linkMore{
+	-webkit-transition: background 0.2s ease-in-out;
+	-o-transition: background 0.2s ease-in-out;
+	transition: background 0.2s ease-in-out;
+	text-decoration: none;
+	border-radius: 4px;
+	line-height: 60px;
+	text-align: center;
+	margin: 24px 24px;
+	font-size: 16px;
+	display: block;
+	color: #ffffff;
+	height: 60px;
+}
+
+#appProductPriceVariant .linkMore:active{
+	position: relative;
+	top: 1px;
+}
+
+#appProductPriceVariant .appPriceVariantExit{
+	position: absolute;
+	display: block;
+	height: 21px;
+	width: 21px;
+    right: 12px;
+    top: 12px;
+}

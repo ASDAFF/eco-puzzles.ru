@@ -1,0 +1,72 @@
+#slider{
+	position: relative;
+}
+#slider .wrap{
+	position: relative;
+	overflow: hidden;
+}
+#slider ul{
+	position:relative;
+}
+#slider ul li{
+	float:left;
+	display: block;
+}
+#slider ol{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	position: absolute;
+	left:50%;
+	bottom:12px;
+}
+#slider ol li{
+	background: url(images/slideButton.png) 0 0 no-repeat transparent;
+	margin-right: 4px;
+	width: 14px;
+	height: 14px;
+	float: left;
+	cursor: pointer;
+}
+#slider ol li:hover{
+	background-position: -14px 0;
+}
+#slider ol li:active{
+	background-position: -28px 0;
+}
+#slider ol li.selected{
+	background-position: -42px 0;	
+}
+#slider ol li.selected:hover{
+	background-position: -56px 0;	
+}
+#slider ol li.selected:active{
+	background-position: -70px 0;	
+}
+#slider .sliderBtnLeft, 
+#slider .sliderBtnRight{
+	display: block;
+	height: 118px;
+	width: 59px;
+	position: absolute;
+	top: 50%;
+	margin-top: -59px;
+	background: url(images/slideArrow.png) no-repeat transparent;
+
+}
+#slider .sliderBtnLeft:hover{
+	background-position: -59px 0;	
+}
+#slider .sliderBtnLeft:active{
+	background-position: -118px 0;		
+}
+#slider .sliderBtnRight{
+	background-position: 0 -118px;
+	right: -0px;
+}
+#slider .sliderBtnRight:hover{
+	background-position: -59px -118px;
+}
+#slider .sliderBtnRight:active{
+	background-position: -118px -118px;
+}

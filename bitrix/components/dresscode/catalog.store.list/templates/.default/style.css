@@ -1,0 +1,191 @@
+#storesList{
+	margin-top: 24px;
+}
+
+#storesList .storesListItem{
+	-webkit-transition: border 0.2s ease-in-out;
+	-o-transition: border 0.2s ease-in-out;
+	transition: border 0.2s ease-in-out;
+	border: 1px solid #dadada;
+	line-height: 150px;
+	margin-top: 24px;
+	overflow: hidden;
+	height: 150px;
+}
+
+#storesList .storesListItem:hover{
+	border: 1px solid #aaaaaa;
+}
+
+#storesList .storesListItem:first-child{
+	margin-top: 0px;
+}
+
+#storesList .storesListItemContainer{
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 0px;
+	width: 100%;
+}
+
+#storesList .storesListItemLeft,
+#storesList .storesListItemRight{
+	float: left;
+	width: 50%;
+}
+
+#storesList .storesListItemRight{
+	float: right;
+}
+
+#storesList .storesListItemPicture,
+#storesList .storesListItemName,
+#storesList .storesListItemPhone,
+#storesList .storesListItemEmail,
+#storesList .storesListItemSchedule{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 24px 12px;
+	line-height: 21px;
+	float: left;
+}
+
+#storesList .storesListItemPicture{
+	text-align: center;
+	padding-left: 24px;
+	max-width: 180px;
+	line-height: 0px;
+	width: 30%
+}
+
+#storesList .storesListItemPicture img{
+	vertical-align: middle;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#storesList .storesListItemName{
+	max-width: 450px;
+	width: 70%;
+}
+
+#storesList .storeItemDescription{
+	margin: 12px 0px 0px 0px;
+	max-height: 62px;
+	overflow: hidden;
+	display: block;
+	color: #555555;
+	padding: 0;
+}
+
+#storesList .storesListItemPhone,
+#storesList .storesListItemEmail,
+#storesList .storesListItemSchedule{
+	text-align: center;
+	width: 33.333333%;
+}
+
+#storesList .storesListItemLabel{
+	display: block;
+}
+
+#storesList .storesListTableLink{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	display: inline-block;
+}
+
+#storesList .storesListTableLink:active,
+#storesList .storesListTableMailLink:active{
+	position: relative;
+	top: 1px;
+}
+
+#storesList .storesListTableLink img{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+#storesList .storesListTableLink:hover img{
+	opacity: 0.9;
+}
+
+#storesList .storesListTableMailLink{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	color: #000000;
+}
+
+#storesList .storesListItemScheduleSmall{
+	margin-top: 12px;
+	display: none;
+}
+
+#storesList .storeListIconSmall{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+#storesList .storesListItemScheduleLabel{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+#storesList .storesListItemPhoneLabel{
+	display: none;
+}
+
+@media all and (max-width: 1440px) {
+	
+	#storesList .storesListItemLeft{
+		width: 70%;
+	}
+
+	#storesList .storesListItemRight{
+		background-color: #fbfbfb;
+		text-align: center;
+		width: 30%;
+	}
+
+	#storesList .storeItemDescription{
+		max-height: 42px;
+	}
+
+	#storesList .storesListItemPhone,
+	#storesList .storesListItemEmail,
+	#storesList .storesListItemSchedule{
+		padding: 0px;
+		width: 100%;
+		float: none;
+	}
+
+	#storesList .storesListItemSchedule{
+		display: none;
+	}
+
+	#storesList .storeListIcon{
+		display: none;
+	}
+
+	#storesList .storesListItemPhone{
+		font-family: "robotoMedium";
+		margin-bottom: 12px;
+		font-size: 16px;
+	}
+
+	#storesList .storesListItemScheduleSmall{
+		display: block;
+	}
+
+	#storesList .storesListItemPhoneLabel{
+		font-family: "roboto_ltregular";
+		margin-bottom: 12px;
+		font-size: 14px;
+		display: block;
+	}
+
+}

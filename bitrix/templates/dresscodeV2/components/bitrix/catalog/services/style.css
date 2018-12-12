@@ -1,0 +1,72 @@
+.banner-elem.fullscreen-banner .image{
+	vertical-align: bottom;
+}
+.banner-elem.fullscreen-banner .text-wrap{
+	padding-left: 0;
+}
+
+@media screen and (max-width: 800px){
+	.banner-elem.fullscreen-banner .btn-simple {
+		padding: 13px 8px 11px;
+	}
+
+	.banner-elem.fullscreen-banner {
+		height: 250px;
+	}
+	
+	.banner-elem.fullscreen-banner .image img{
+		max-height: 250px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.banner-elem.fullscreen-banner{
+		height: auto;
+		margin-bottom: 18px;
+	}
+
+	.banner-elem.fullscreen-banner .descr{
+		max-height: 80px;
+	}
+
+	.banner-elem.fullscreen-banner .text-wrap{
+		display: block;
+		margin-bottom: 6px;
+		padding: 12px 0 0;
+	}
+
+	.banner-elem.fullscreen-banner h1{
+		margin-bottom: 8px;
+		font-size: 18px;
+	}
+
+	.banner-elem.fullscreen-banner .image{
+		display: block;
+		width: 100%;
+		padding: 0;
+	}
+	.banner-elem.fullscreen-banner .image img{
+		max-height: 250px;
+		margin: 0 auto;
+	}
+	.banner-elem.fullscreen-banner.banner-no-bg .image img{
+		max-height: none;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.banner-elem.fullscreen-banner .descr{
+		display: block;
+	}
+
+	.banner-elem.fullscreen-banner h1{
+		font-size: 16px;
+		margin-bottom: 8px;
+		line-height: 20px;
+		max-height: 60px;
+	}
+
+	.banner-elem.fullscreen-banner .image img{
+		max-height: 200px;
+	}
+}

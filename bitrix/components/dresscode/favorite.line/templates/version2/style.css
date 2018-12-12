@@ -1,0 +1,54 @@
+.topWishlist{
+	position: relative;
+	margin-right: 12px;
+}
+
+.topWishlist .icon{
+	background: url(images/wishlistH2.png) 0 0 no-repeat transparent;
+	border: 1px solid #f3f3f3;
+	display: block;
+	height: 50px;
+	width: 50px;
+}
+
+#subHeader2.color_black .topWishlist .icon,
+#subHeader2.color_theme .topWishlist .icon{
+	background: url(images/wishlistH2W.png) 0 0 no-repeat transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.topWishlist .icon:active{
+	position: relative;
+	top: 1px;
+}
+
+.topWishlist .text{
+	background-color: #dedede;
+	text-decoration: none;
+	display: inline-block;
+	position: absolute;
+	border-radius: 50%;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 0 7px;
+	right: 4px;
+	top: -4px;
+}
+
+#subHeader2.color_black .topWishlist .text{
+	background-color: rgba(0, 0, 0, 1);
+	color: #ffffff;
+}
+
+#subHeader2.color_theme .topWishlist .text{
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+.topWishlist .text:active{
+    top: -3px;
+}
+
+#subHeader2.color_theme .topWishlist .text.active{
+	background-color: rgba(255, 255, 255, 0.4);
+}

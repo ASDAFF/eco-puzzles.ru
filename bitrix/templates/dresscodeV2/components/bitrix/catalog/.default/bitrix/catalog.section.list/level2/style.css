@@ -1,0 +1,51 @@
+#nextSection{
+	margin-bottom: 24px;
+	border-radius: 4px;
+	margin-top: 24px;
+}
+
+#nextSection .title{
+	font-family: 'robotobold';
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 12px;
+	padding-top: 12px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+#nextSection ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#nextSection li a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	display: inline-block;
+    padding: 12px 24px;
+	font-size: 13px;
+}
+
+#nextSection li .cnt{
+	float: right;
+}
+
+#nextSection .sectionLine{
+	border-collapse: collapse;
+	table-layout: fixed;
+	display: table;
+	width: 100%;
+}
+
+#nextSection .sectionColumn{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#nextSection .sectionColumn.last{
+	width: 60px;
+}

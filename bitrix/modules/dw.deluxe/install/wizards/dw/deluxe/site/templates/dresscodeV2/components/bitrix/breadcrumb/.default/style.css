@@ -1,0 +1,68 @@
+#breadcrumbs{
+	margin-bottom: 12px;
+	line-height: 21px;
+	margin-top: 24px;
+	overflow: hidden;
+	font-size: 12px;
+}
+
+#breadcrumbs ul{
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#breadcrumbs ul li{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+#breadcrumbs ul li a{
+	text-decoration: none;
+	display: inline-block;
+	line-height: 21px;
+}
+
+#breadcrumbs .arrow{
+	vertical-align: middle;
+	display: inline-block;
+	font-family: arial;
+	font-size: 18px;
+	margin: 0 12px;
+}
+
+@media all and (max-width: 1024px) {
+
+	#breadcrumbs{
+		position: relative;
+		min-width: 100%;
+		overflow-x: auto;
+		height: 21px
+	}
+
+	#breadcrumbs ul{
+		white-space: nowrap;
+		overflow: auto;
+	}
+
+	#breadcrumbs li{
+		white-space: nowrap;
+	}
+
+	#breadcrumbs::after {
+	    background: -moz-linear-gradient(left, rgba(255,255, 255, 0.2), #ffffff 100%);
+	    background: -webkit-linear-gradient(left, rgba(255,255, 255, 0.2), #ffffff 100%);
+	    background: -o-linear-gradient(left, rgba(255,255, 255, 0.2), #ffffff 100%);
+	    background: -ms-linear-gradient(left, rgba(255,255, 255, 0.2), #ffffff 100%);
+	    background: linear-gradient(to right, rgba(255,255, 255, 0.2), #ffffff 100%);
+	    pointer-events: none;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    height: 100%;
+	    content: '';
+	    width: 35px;
+	}
+
+}

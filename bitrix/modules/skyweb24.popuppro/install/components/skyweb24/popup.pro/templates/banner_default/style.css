@@ -1,0 +1,12 @@
+#skyweb24_banner_default {margin: 0 auto; max-width: 1000px; width: 100%;}
+	#skyweb24_banner_default img {width: 100%;}
+	#skyweb24_banner_default a {display: block;}
+	#skyweb24_banner_default a:hover {display: block; color: #fff;}
+	
+#skyweb24_banner_default .sw24TextCloseButton {position: absolute; left: 0; bottom: 0; color: #fff; padding: 10px 15px; opacity: .8; background: #000; transition: opacity 0.2s linear;}
+#skyweb24_banner_default .sw24TextCloseButton:hover {opacity: 1;}
+
+@media screen and (max-width:1024px){
+	.popup-window.sw24PopupPro {max-width: 100%; width: fit-content;}
+	#skyweb24_banner_default {max-width: 100%;}
+}

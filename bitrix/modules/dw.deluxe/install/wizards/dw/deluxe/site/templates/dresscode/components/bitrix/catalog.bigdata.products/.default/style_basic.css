@@ -1,0 +1,60 @@
+#bigDataCarousel .wrap{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 24px;
+}
+#bigDataCarousel .slideBox > li{
+    float: left;
+}
+
+#bigDataCarousel .productList .item{
+    border-left: 0px;
+    height: 360px !important;
+    width: 100% !important;
+    float: none;
+}
+
+#bigDataCarousel .productList .item .tabloid{
+    height: 358px !important;
+}
+
+#bigDataCarousel .bigDataBtnLeft,
+#bigDataCarousel .bigDataBtnRight{
+    background: url(images/slideArrowSmall.png) 0 0 no-repeat transparent;
+    transform: translateY(-50%);
+    position: absolute;
+    height: 70px;
+    width: 35px;
+    z-index: 22;
+    top: 50%;
+}
+
+#bigDataCarousel .bigDataBtnLeft{
+    left: 24px;
+}
+
+#bigDataCarousel .bigDataBtnRight{
+    right: 24px;
+}
+
+#bigDataCarousel .bigDataBtnLeft:hover{
+    background-position: -35px 0;
+}
+
+#bigDataCarousel .bigDataBtnLeft:active{
+    background-position: -70px 0;
+}
+
+#bigDataCarousel .bigDataBtnRight{
+    background-position: 0 -70px;
+}
+
+#bigDataCarousel .bigDataBtnRight:hover{
+    background-position: -35px -70px;
+}
+
+#bigDataCarousel .bigDataBtnRight:active{
+    background-position: -70px -70px;
+}

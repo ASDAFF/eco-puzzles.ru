@@ -1,0 +1,1 @@
+<?require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/up.boxberrydelivery/classes/general/delivery_boxberry.php");?>

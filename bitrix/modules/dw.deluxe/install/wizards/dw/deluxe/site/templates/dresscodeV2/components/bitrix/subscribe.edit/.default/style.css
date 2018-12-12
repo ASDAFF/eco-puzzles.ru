@@ -1,0 +1,195 @@
+#subscribeEdit{
+	font-size: 14px;
+}
+
+#subscribeEdit h3,
+#subscribeEdit h5{
+	text-transform: uppercase;
+	font-family: 'robotobold';
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+#subscribeEdit .first{
+	margin-top: 0;
+}
+
+#subscribeEdit h3{
+	font-size: 16px;
+}
+
+#subscribeEdit p{
+	font-size: 14px;
+}
+
+#subscribeEdit .lb{
+	margin: 12px 0px;
+	font-size: 14px;
+}
+
+#subscribeEdit label{
+	font-size: 14px;
+	display: block;
+}
+
+#subscribeEdit .mCol{
+	display: inline-block;
+	margin-right: 24px;
+}
+
+#subscribeEdit .mCol:last-child{
+	margin-right: 0;
+}
+
+#subscribeEdit a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	color: #000000;
+}
+
+#subscribeEdit input[type="checkbox"] + label,
+#subscribeEdit input[type="radio"] + label {
+	cursor: pointer;
+}
+
+#subscribeEdit input[type="checkbox"]:not(checked),
+#subscribeEdit input[type="radio"]:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+#subscribeEdit input[type="checkbox"]:not(checked) + label,
+#subscribeEdit input[type="radio"]:not(checked) + label {
+	position: relative;
+	padding-left: 28px;
+}
+
+#subscribeEdit input[type="checkbox"] + label:before {
+	background: url(images/checkBox.png) 0 0 no-repeat transparent;
+}
+
+#subscribeEdit input[type="radio"] + label:before {
+	background: url(images/radio.png) 0 0 no-repeat transparent;
+}
+
+#subscribeEdit input[type="checkbox"]:not(checked) + label:before,
+#subscribeEdit input[type="radio"]:not(checked) + label:before {
+	position: absolute;
+	content: " ";
+    height: 17px;
+	width: 17px;
+	left: 0;
+	top: 1px;
+}
+
+#subscribeEdit input[type="checkbox"]:not(checked) + label:hover:before,
+#subscribeEdit input[type="radio"]:not(checked) + label:hover:before {
+	background-position: 0 -17px;
+}
+
+#subscribeEdit input[type="checkbox"]:checked + label:before,
+#subscribeEdit input[type="radio"]:checked + label:before {
+	background-position: 0 -34px;
+}
+
+#subscribeEdit input[type="checkbox"]:checked + label:hover:before,
+#subscribeEdit input[type="radio"]:checked + label:hover:before {
+	background-position: 0 -51px;
+}
+
+#subscribeEdit input[type="checkbox"]:disabled + label,
+#subscribeEdit input[type="radio"]:disabled + label {
+	cursor: default;
+}
+
+#subscribeEdit input[type="checkbox"]:disabled + label:before,
+#subscribeEdit input[type="radio"]:disabled + label:before {
+	background-position: 0 -68px !important;
+}
+
+#subscribeEdit input[type="text"],
+#subscribeEdit input[type="password"] {
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #f3f3f3;
+	margin-bottom: 12px;
+	margin-top: 12xp;
+	padding: 0 12px;
+	width: 420px;
+	height: 48px;
+	border: 0;
+}
+
+#subscribeEdit input[type="text"]:focus,
+#subscribeEdit input[type="password"]:focus {
+	background-color: #eeeeee;
+}
+
+#subscribeEdit .submit {
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	line-height: 48px;
+	margin-top: 24px;
+	cursor: pointer;
+	font-size: 14px;
+	color: #ffffff;
+	height: 48px;
+	width: 160px;
+	border: 0;
+}
+
+#subscribeEdit .submit:active {
+	position: relative;
+	top: 1px;
+}
+
+#subscribeEdit .clear{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	border: 1px solid #e7e8ea;
+	background: transparent;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	margin-left: 12px;
+	line-height: 48px;
+	margin-top: 24px;
+	font-size: 14px;
+	cursor: pointer;
+	color: #000000;
+	height: 48px;
+	width: 160px;
+}
+
+#subscribeEdit .clear:hover {
+	border: 1px solid #cccccc;
+}
+
+#subscribeEdit .submit:active {
+	position: relative;
+	top: 1px;
+}
+
+div.subscribe-edit .red {
+	color:red;
+}
+div.subscribe-edit .green {
+	color:green;
+}
+div.subscribe-edit .errorcolor {
+	color:red;
+}
+div.subscribe-edit .successcolor {
+	color:green;
+}
+	

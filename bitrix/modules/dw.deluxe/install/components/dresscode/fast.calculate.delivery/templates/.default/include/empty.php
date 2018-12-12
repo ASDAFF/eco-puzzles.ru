@@ -1,0 +1,1 @@
+<span class="delivery-error">Службы доставки не обнаружены</span>

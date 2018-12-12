@@ -1,0 +1,146 @@
+	<?php
+		defined('B_PROLOG_INCLUDED') and (B_PROLOG_INCLUDED === true) or die();
+		use Bitrix\Main\Loader;
+		use Bitrix\Main\Localization\Loc;
+		Loc::loadMessages(__FILE__);
+	?>
+	<?php
+	
+	$moduleName = "dw_electro";
+
+	$aTabs = array(
+		array("DIV" => "settings",
+		"TAB" => GetMessage("ELECTRO_TABS_SETTINGS"),
+		"ICON"=>"main_user_edit",
+		"TITLE"=>GetMessage("ELECTRO_TABS_SETTINGS")),
+	);
+	
+	$tabControl = new CAdminTabControl("tabControl", $aTabs);
+	$tabControl->Begin();
+
+	$arMainSettings = array(
+		"PRODUCT",
+		"NEWS",
+		"STOCK",
+		"SURVEY",
+		"BRAND",
+		"SLIDER",
+		"REVIEW"
+	);
+
+	if($_POST["Update"] == Y){
+		foreach ($_POST as $iCode => $postValue) {
+			if($iCode != "Update"){
+				COption::SetOptionString($moduleName, $iCode, $postValue);
+			}
+		}
+	}
+
+	foreach ($arMainSettings as $i => $settingsName) {
+		$arLoadSettings[$settingsName."_IBLOCK_TYPE"] = COption::GetOptionString($moduleName, $settingsName."_IBLOCK_TYPE");
+		$arLoadSettings[$settingsName."_IBLOCK_ID"] = COption::GetOptionString($moduleName, $settingsName."_IBLOCK_ID");
+	}
+
+	foreach (range(1, 3) as $rangeCarousel){
+		$arLoadSettings["CAROUSEL_PROPERTY_".$rangeCarousel] = COption::GetOptionString($moduleName, "CAROUSEL_PROPERTY_".$rangeCarousel);
+	}
+
+?>
+<?php
+if(CModule::IncludeModule("iblock")){ 
+
+	$arIblockTypes = array();
+	$arProperties = array();
+	$arIblock = array();
+
+	$resIT = CIBlockType::GetList();
+	
+	while($arIT = $resIT->Fetch()){
+		if($arIblockTypesLang = CIBlockType::GetByIDLang($arIT["ID"], LANG)){
+			array_push($arIblockTypes, $arIblockTypesLang);
+		}   
+	}
+
+	$resIB = CIBlock::GetList(
+		Array(), 
+		Array(
+			"ACTIVE" => "Y", 
+			"CNT_ACTIVE" => "Y", 
+		)
+	);
+	
+	while($arResIblock = $resIB->Fetch()){
+		array_push($arIblock, $arResIblock);
+	}
+
+	if(!empty($arLoadSettings["PRODUCT_IBLOCK_ID"])){
+		$resPR = CIBlock::GetProperties($arLoadSettings["PRODUCT_IBLOCK_ID"], Array(), Array("PROPERTY_TYPE" => "L"));
+		while($arProp = $resPR->Fetch()){
+			array_push($arProperties, $arProp);
+		}
+	}
+}
+?>
+<div class="adm-detail-content" id="settings">
+	<div class="adm-detail-title"><?=GetMessage("ELECTRO_MAIN_HEADING")?></div>
+		<div class="adm-detail-content-wrap">
+			<form method="POST" action="<?echo $APPLICATION->GetCurPage()?>?mid=<?=htmlspecialcharsbx($mid)?>&lang=<?=LANGUAGE_ID?>">
+				<table class="adm-detail-content-table edit-table" id="edit0_edit_table">
+					<?foreach ($arMainSettings as $is => $settingsName):?>
+						<tr class="heading">
+							<td colspan="2"><?=GetMessage($settingsName."_NAME");?></td>
+						</tr>
+						<tr>
+							<td width="30%" class="adm-detail-content-cell-l"><?=GetMessage($settingsName."_SELECT_IBLOCK_TYPE");?></td>
+							<td width="70%" class="adm-detail-content-cell-r">
+								<?if(!empty($arIblockTypes)):?>
+									<select name="<?=$settingsName?>_IBLOCK_TYPE" id="<?=$settingsName?>_IBLOCK_TYPE">
+										<?foreach ($arIblockTypes as $ibt => $arIblockType):?>
+											<option value="<?=$arIblockType["ID"]?>"<?if($arIblockType["ID"] == $arLoadSettings[$settingsName."_IBLOCK_TYPE"]):?> selected<?endif;?>><?=$arIblockType["NAME"]?> [<?=$arIblockType["ID"]?>]</option>
+										<?endforeach;?>
+									</select>
+								<?endif;?>
+							</td>
+						</tr>
+						<tr>
+							<td width="30%" class="adm-detail-content-cell-l"><?=GetMessage($settingsName."_SELECT_IBLOCK_ID");?></td>
+							<td width="70%" class="adm-detail-content-cell-r">
+								<?if(!empty($arIblock)):?>
+									<select name="<?=$settingsName?>_IBLOCK_ID" id="<?=$settingsName?>_IBLOCK_ID">
+										<?foreach ($arIblock as $ibt => $arNextIblock):?>
+											<option value="<?=$arNextIblock["ID"]?>"<?if($arNextIblock["ID"] == $arLoadSettings[$settingsName."_IBLOCK_ID"]):?> selected<?endif;?>><?=$arNextIblock["NAME"]?> [ID:<?=$arNextIblock["ID"]?>]</option>
+										<?endforeach;?>
+									</select>
+								<?endif;?>
+							</td>
+						</tr>
+					<?endforeach;?>
+					<?foreach (range(1, 3) as $rangeCarousel):?>
+						<tr class="heading">
+							<td colspan="2"><?=GetMessage("CAROUSEL_NAME");?> #<?=$rangeCarousel?></td>
+						</tr>
+						<tr>
+							<td width="30%" class="adm-detail-content-cell-l"><?=GetMessage("CAROUSEL_PROPERTY");?></td>
+							<td width="70%" class="adm-detail-content-cell-r">
+								<?if(!empty($arProperties)):?>
+									<select name="CAROUSEL_PROPERTY_<?=$rangeCarousel?>" id="CAROUSEL_PROPERTY_<?=$rangeCarousel?>">
+										<?foreach ($arProperties as $id => $arProperty):?>
+											<option value="<?=$arProperty["CODE"]?>"<?if($arProperty["CODE"] == $arLoadSettings["CAROUSEL_PROPERTY_".$rangeCarousel]):?> selected<?endif;?>><?=$arProperty["NAME"]?> [<?=$arProperty["CODE"]?>]</option>
+										<?endforeach;?>
+									</select>
+								<?endif;?>
+							</td>
+						</tr>
+					<?endforeach;?>
+				</table>
+				<div class="adm-detail-content-btns">
+					<input type="submit" name="Update" value="<?=GetMessage("FORM_SUBMIT")?>" class="adm-btn-save">
+					<input type="hidden" name="Update" value="Y">
+				</div>
+			</div>
+			<br />
+		</div>
+		</form>
+	</div>
+</div>
+

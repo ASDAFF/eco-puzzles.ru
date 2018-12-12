@@ -1,0 +1,22 @@
+#skyweb24_age_default {margin: 0 auto; width: 600px; box-sizing:border-box; background: #fff; font-family: 'Roboto', sans-serif; padding: 15px;}
+	#skyweb24_age_default img {margin: 0 auto; display: block; max-height: 400px;}
+	#skyweb24_age_default h2 {font-weight: bold; text-align: center; font-size: 20px; margin: 15px 0px;}
+	#skyweb24_age_default .buttons a {display: inline-block; margin-left: -4px; width: 50%; color: white; padding: 15px; font-size: 14px; box-sizing: border-box; text-align: center; font-variant: small-caps;}
+		#skyweb24_age_default .buttons a.yesClick {background: #27ae60;}
+			#skyweb24_age_default .buttons a.yesClick:hover {background: #2ecc71;}
+		#skyweb24_age_default .buttons a.noClick {background: #c0392b;}
+			#skyweb24_age_default .buttons a.noClick:hover {background: #e74c3c;}
+			
+	#skyweb24_age_default .sw24TextCloseButton {display: inline-block; margin-top: 10px; font-size: 14px; border-bottom: 1px dashed #2c3e50; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; color: #2c3e50;}
+	#skyweb24_age_default .sw24TextCloseButton:hover {border-bottom: 1px dashed transparent;}
+
+@media screen and (max-width:600px) {
+	#skyweb24_age_default {width: 100%;}
+}
+@media screen and (max-width:420px) {
+	#skyweb24_age_default img {max-height: 200px;}
+	#skyweb24_age_default .buttons a {vertical-align: middle; font-size: 14px;}
+	
+}
+
+.popup-window-overlay {opacity: .85 !important;}

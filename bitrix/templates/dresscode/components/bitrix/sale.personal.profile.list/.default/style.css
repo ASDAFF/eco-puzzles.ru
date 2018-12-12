@@ -1,0 +1,87 @@
+.sale-personal-profile-list{
+	overflow: auto;
+}
+
+/*Table*/
+table.sale-personal-profile-list-container
+{
+	border-collapse: collapse;
+	font-size: 14px;
+	width: 100%;
+}
+
+/*Table head*/
+table.sale-personal-profile-list-container th{
+	font-family: "robotomedium";
+	background-color: #f7f7f7;
+	border: 1px solid #e4e4e4;
+	font-weight: normal;
+	padding: 12px 24px;
+}
+
+/* Table cells and heads*/
+table.sale-personal-profile-list-container td{
+	border: 1px solid #e4e4e4;
+	vertical-align: middle;
+	padding: 12px 24px;
+	text-align: center;
+	color: #333333;
+}
+
+table.sale-personal-profile-list-container tr:nth-child(odd) td{
+	background-color: #fbfbfb;
+}
+
+table.sale-personal-profile-list-container td a{
+	color: #000000;
+}
+
+table.sale-personal-profile-list-container td a:hover{
+	opacity: 0.7;
+}
+
+table.sale-personal-profile-list-container td a:active{
+	position: relative;
+	top: 1px;
+}
+
+.sale-personal-profile-list-arrow-up,
+.sale-personal-profile-list-arrow-down {
+	color: #d8d8d8;
+	-webkit-transition: color .3s ease;
+	-moz-transition: color .3s ease;
+	transition: color .3s ease;
+}
+
+.sale-personal-profile-list-arrow-up:hover,
+.sale-personal-profile-list-arrow-down:hover {
+	color: #337ab7;
+}
+
+.sale-personal-profile-list-actions {
+	min-width: 120px;
+}
+
+.sale-personal-profile-list-close-button {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	font-size: 0;
+	background: url(images/sale-personal-profile-list-close.svg) 4px 4px no-repeat;
+	-webkit-transition: opacity .3s ease;
+	-moz-transition: opacity .3s ease;
+	transition: opacity .3s ease;
+	opacity: 1;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.sale-personal-profile-list-close-button:hover {
+	opacity: .5;
+}
+
+.sale-personal-profile-list-change-button {
+	transition: border-bottom .3s ease;
+	vertical-align: middle;
+	display: inline-block;
+}

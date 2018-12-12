@@ -1,0 +1,49 @@
+#mainSubscribe{
+	background: url(images/subscribe.jpg) 50% 50% no-repeat transparent;
+	line-height: 250px;
+	height: 250px;
+}
+
+#mainSubscribeContainer{
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 21px;
+	width: 100%;
+}
+
+#mainSubscribeContainer .heading{
+    margin-bottom: 0px !important;
+    text-transform: uppercase;
+    font-family: 'robotobold';
+    padding-bottom: 24px;
+    text-align: center;
+    padding-left: 18px;
+    font-size: 18px;
+    display: block;
+    color: #ffffff;
+}
+
+#mainSubscribeContainer .field,
+#mainSubscribeContainer .submit{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 0 24px;
+	display: block;
+	margin: auto;
+	height: 50px;
+	width: 510px;
+	border: 0px;
+}
+
+#mainSubscribeContainer .field{
+	font-size: 16px;
+}
+
+#mainSubscribeContainer .submit{
+	margin: 12px auto;
+	cursor: pointer;
+	font-size: 16px;
+	color: #ffffff;
+}

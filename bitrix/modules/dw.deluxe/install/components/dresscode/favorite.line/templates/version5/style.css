@@ -1,0 +1,100 @@
+.topWishlist{
+	margin-right: 12px;
+}
+
+.topWishlist .text{
+	position: relative;
+	display: block;
+	float: left;
+}
+
+.topWishlist .link{
+	float: left;
+}
+
+.topWishlist .link.active:hover{
+	opacity: 0.8;
+}
+
+.topWishlist .link.active:active{
+	position: relative;
+	top: 1px;
+}
+
+.topWishlist .label{
+    font-family: "robotomedium";
+    vertical-align: middle;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 6px;
+    margin-top: 8px;
+    color: #000000;
+}
+
+#subHeader6.color_black .topWishlist .label,
+#subHeader6.color_theme .topWishlist .label,
+#subHeader7.color_black .topWishlist .label,
+#subHeader7.color_theme .topWishlist .label,
+#subHeader8.color_black .topWishlist .label,
+#subHeader8.color_theme .topWishlist .label{
+	color: #ffffff;
+}
+
+.topWishlist .icon{
+	background: url(images/wishlistH4.png) 50% 50% no-repeat transparent;
+	display: inline-block;
+	height: 40px;
+	width: 60px;
+}
+
+#subHeader4.color_black .topWishlist .icon,
+#subHeader4.color_theme .topWishlist .icon,
+#subHeader5.color_black .topWishlist .icon,
+#subHeader5.color_theme .topWishlist .icon,
+#subHeader6.color_black .topWishlist .icon,
+#subHeader6.color_theme .topWishlist .icon,
+#subHeader7.color_black .topWishlist .icon,
+#subHeader7.color_theme .topWishlist .icon,
+#subHeader8.color_black .topWishlist .icon,
+#subHeader8.color_theme .topWishlist .icon{
+	background: url(images/wishlistH4w.png) 50% 50% no-repeat transparent;
+	display: inline-block;
+	height: 40px;
+	width: 60px;
+}
+
+.topWishlist .active .icon:hover{
+	opacity: 0.7;
+}
+
+.topWishlist .active .icon:active{
+	position: relative;
+	top: 1px;
+}
+
+.topWishlist .value{
+	border: 2px solid #d1d1d1;
+	background-color: #ffffff;
+	border-radius: 50%;
+	position: absolute;
+	text-align: center;
+	overflow: hidden;
+	font-size: 12px;
+	color: #d1d1d1;
+	height: 20px;
+	width: 20px;
+	right: 8px;
+	top: 0;
+}
+
+#subHeader5.color_black .topWishlist .value,
+#subHeader6.color_black .topWishlist .value,
+#subHeader7.color_black .topWishlist .value,
+#subHeader8.color_black .topWishlist .value{
+	background-color: #2b2b2b;
+}
+
+
+.topWishlist .active .value:active{
+	top: 1px;
+}

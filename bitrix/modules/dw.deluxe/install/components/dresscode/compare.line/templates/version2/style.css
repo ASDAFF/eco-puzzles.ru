@@ -1,0 +1,55 @@
+.topCompare{
+	position: relative;
+	margin-right: 24px;
+}
+
+.topCompare .icon{
+	background: url(images/compareH2.png) 0 0 no-repeat transparent;
+	border: 1px solid #f3f3f3;
+	display: block;
+	height: 50px;
+	width: 50px;
+}
+
+
+#subHeader2.color_black .topCompare .icon,
+#subHeader2.color_theme .topCompare .icon{
+	background: url(images/compareH2W.png) 0 0 no-repeat transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.topCompare .icon:active{
+	position: relative;
+	top: 1px;
+}
+
+.topCompare .text{
+	background-color: #dedede;
+	text-decoration: none;
+	display: inline-block;
+	position: absolute;
+	border-radius: 50%;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 0 7px;
+	right: 4px;
+	top: -4px;
+}
+
+#subHeader2.color_black .topCompare .text{
+	background-color: rgba(0, 0, 0, 1);
+	color: #ffffff;
+}
+
+#subHeader2.color_theme .topCompare .text{
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+.topCompare .text:active{
+	top: -3px;
+}
+
+#subHeader2.color_theme .topCompare .text.active{
+	background-color: rgba(255, 255, 255, 0.4);
+}

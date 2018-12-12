@@ -1,0 +1,428 @@
+.new-service-detail {
+	margin-bottom: 24px;
+	border: 1px solid #e7e8ea;
+}
+
+.new-service-detail .image {
+	vertical-align: middle;
+	padding: 36px 36px 24px;
+	width: 40%;
+	box-sizing: border-box;
+}
+
+.new-service-detail .image img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+}
+
+.new-service-detail .text {
+	vertical-align: top;
+	padding: 36px 36px 24px 0;
+}
+
+.new-service-detail h1 {
+	margin-bottom: 18px;
+	padding-bottom: 12px;
+	font-size: 24px;
+	border-bottom: 1px solid #e7e8ea;
+}
+
+.new-service-detail .detail-text-wrap {
+	margin: 0;
+}
+
+.new-service-detail .price-container {
+	margin-bottom: 24px;
+	font-size: 0;
+}
+
+.new-service-detail .price-wrap {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 12px;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.new-service-detail .price {
+	position: relative;
+	display: inline-block;
+	margin-right: 42px;
+	font-size: 24px;
+	font-family: "robotobold";
+}
+.new-service-detail .price .old-price{
+	font-family: 'roboto_condensedlight';
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	color: #888888;
+}
+.new-service-detail .price.requestPrice {
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.new-service-detail .price.requestPrice:hover {
+	opacity: 0.8;
+}
+
+.new-service-detail .btn-simple {
+	vertical-align: top;
+}
+
+@media screen and (max-width: 1024px){
+	.new-service-detail .image { padding: 18px 12px; }
+	.new-service-detail .text { padding: 18px 18px 12px 0; }
+}
+
+@media screen and (max-width: 900px){
+	.new-service-detail .image { display: block; width: 60%; margin: 0 auto; padding: 12px; }
+	.new-service-detail .text { display: block; padding: 12px; }
+
+}
+
+@media screen and (max-width: 500px){
+	.new-service-detail h1 { font-size: 20px; line-height: 24px; }
+	.new-service-detail .price-container { margin-bottom: 12px; }
+	.new-service-detail .price-wrap { display: block; margin-bottom: 12px; }
+	.new-service-detail .price { font-size: 20px; }
+	.new-service-detail .image { width: 100%; }
+}
+
+#pictureContainer .pictureSlider{
+	table-layout: fixed;
+}
+
+#pictureContainer .pictureSlider .item:first-child{
+	display: block;
+}
+
+#pictureContainer .pictureSlider .item{
+	vertical-align: middle;
+	display: none;
+}
+
+#pictureContainer .item a{
+	text-align: center;
+	display: block;
+}
+
+#pictureContainer .item a img{
+	vertical-align: middle;
+	max-height: 100%;
+	max-width: 90%;
+}
+
+#moreImagesCarousel{
+	transition: all 0.3s ease-in-out;
+	visibility: hidden;
+	position: relative;
+	overflow: hidden;
+	margin-top: 24px;
+	padding-top: 24px;
+	opacity: 0;
+}
+
+#moreImagesCarousel.show{
+	visibility: visible;
+	opacity: 1;
+}
+
+#moreImagesCarousel.hide{
+	display: none;
+}
+
+#moreImagesCarousel #moreImagesLeftButton,
+#moreImagesCarousel #moreImagesRightButton{
+	background: url(images/carouselArrowSmall.png) 0 0 no-repeat transparent;
+	position: absolute;
+	margin-top: 3px;
+	height: 16px;
+	opacity: 0.5;
+	z-index: 2;
+	width: 14px;
+	top: 50%;
+}
+
+#moreImagesCarousel #moreImagesLeftButton:hover,
+#moreImagesCarousel #moreImagesRightButton:hover{
+	opacity: 0.8;
+}
+
+#moreImagesCarousel #moreImagesLeftButton:active,
+#moreImagesCarousel #moreImagesRightButton:active{
+	opacity: 1;
+}
+
+#moreImagesCarousel #moreImagesLeftButton{
+	left: 0;
+}
+
+#moreImagesCarousel #moreImagesRightButton{
+	background-position: -14px 0;
+	right: 0;
+}
+
+#moreImagesCarousel .carouselWrapper{
+	overflow: hidden;
+	margin: auto;
+	width: 100%;
+}
+
+#moreImagesCarousel .slideBox{
+	position: relative;
+	overflow: hidden;
+	list-style: none;
+	height: 62px;
+	padding: 0;
+	margin: 0;
+}
+
+#moreImagesCarousel .slideBox .item{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+
+	position: relative;
+	text-align: center;
+	line-height: 50px;
+	opacity: 0.5;
+	height: 50px;
+	float: left;
+}
+
+#moreImagesCarousel .slideBox .item.selected{
+	opacity: 1;
+}
+
+#moreImagesCarousel .slideBox .item.selected:after{
+	transform: translateX(-50%);
+	border-bottom: 2px solid #000000;
+	position: absolute;
+	display: block;
+	content: "";
+	width: 30%;
+	left: 50%;
+	bottom : -12px;
+}
+
+#moreImagesCarousel .slideBox .item a{
+	display: block;
+	line-height: 50px;
+	height: 50px;
+}
+
+
+#moreImagesCarousel .slideBox .item img{
+	vertical-align: middle;
+	margin-top: -4px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#morePhotoSlider{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin: 24px 48px 0 48px;
+}
+
+#morePhotoSlider .morePhotos{
+	-webkit-transition: opacity 0.6s ease-in-out;
+	-o-transition: opacity 0.6s ease-in-out;
+	transition: opacity 0.6s ease-in-out;
+	visibility: hidden;
+	overflow: hidden;
+	opacity: 0;
+}
+
+#morePhotoSlider .morePhotos .photoItem{
+	/*transform: scale(0.7);*/
+	position: relative;
+	text-align: center;
+	opacity: 0.6;
+	float: left;
+}
+
+#morePhotoSlider .morePhotos .photoItem.selected{
+	padding-bottom: 24px;
+	/*transform: scale(1);*/
+	opacity: 1;
+}
+
+#morePhotoSlider .morePhotos .photoItem.selected:after{
+	transform: translateX(-50%);
+	border-bottom: 2px solid #000000;
+	position: absolute;
+	display: block;
+	content: "";
+	width: 30%;
+	left: 50%;
+	bottom : 0px;
+}
+
+#morePhotoSlider .morePhotos .photoItem a{
+	display: inline-block;
+	line-height: 100px;
+	height: 100px;
+}
+
+#morePhotoSlider .morePhotos .photoItem img{
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
+}
+
+#zoomer{
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(0.7);
+}
+
+#zoomer.opened{
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+}
+
+#zoomer #zoomerExitLink{
+	background: url(images/exitBig.png) 0 0  no-repeat transparent;
+	height: 50px;
+	opacity: 0.5;
+	width: 50px;
+}
+
+#zoomer #zoomerExitLink:hover{
+	opacity: 0.8;
+}
+
+#zoomer #zoomerExitLink:active{
+	height: 48px;
+	opacity: 1;
+	top: 25px;
+}
+
+#zoomerMoreImagesContainerWrapper .item{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+#zoomerMoreImagesContainerWrapper .item:hover{
+	opacity: 0.9 !important;
+}
+
+#zoomerMoreImagesContainerWrapper .selected{
+	opacity: 1 !important;
+}
+
+#zoomerBigPrevMore,
+#zoomerBigNextMore{
+	background: url(images/carouselArrowsBig.png) 0 0 no-repeat transparent;
+	opacity: 0.5;	
+}
+
+#zoomerBigNextMore{
+	background-position: -57px 0;
+}
+
+#zoomerNextMore,
+#zoomerPrevMore{
+	background: url(images/carouselArrows.png) 0 0 no-repeat transparent;
+	opacity: 0.5;
+}
+
+
+#zoomerNextMore{
+	background-position: -80px 0;
+}
+
+#zoomerPrevMore:hover,
+#zoomerNextMore:hover,
+#zoomerBigPrevMore:hover,
+#zoomerBigNextMore:hover{
+	opacity: 0.8;
+}
+
+#zoomerPrevMore:active,
+#zoomerNextMore:active,
+#zoomerBigPrevMore:active,
+#zoomerBigNextMore:active{
+	opacity: 1;
+}
+
+#zoomerNextMore:active{
+	right: -1px !important;
+}
+
+#zoomerPrevMore:active{
+	left: -1px !important;
+}
+
+#zoomerBigPrevMore:active{
+	left: 23px !important;
+}
+
+#zoomerBigNextMore:active{
+	right: 23px !important;
+}
+
+#zoomerMoreImagesContainerWrapper .link:active{
+	position: relative;
+	top: 1px;
+}
+
+@media all and (max-width: 550px) {
+
+	#moreImagesCarousel{
+		padding: 0;
+		margin-top: 12px;
+	}
+
+	#moreImagesCarousel .carouselWrapper{
+		width: 90%;
+	}
+
+	#moreImagesCarousel #moreImagesLeftButton{
+		margin-top: -12px;
+		left: 0;
+	}
+
+	#moreImagesCarousel #moreImagesRightButton{
+		margin-top: -12px;
+		right: 0;
+	}
+
+	#moreImagesCarousel .slideBox .item{
+		box-sizing: border-box;
+		padding: 0 6px;
+	}
+
+	#moreImagesCarousel .slideBox .item{
+		height: 30px;
+	}
+
+	#moreImagesCarousel .slideBox .item a{
+		height: 30px;
+		line-height: 30px;
+	}
+
+	#moreImagesCarousel .slideBox{
+		height: 36px;
+	}
+
+	#moreImagesCarousel .slideBox .item.selected:after{
+		bottom: -6px;
+	}
+
+}

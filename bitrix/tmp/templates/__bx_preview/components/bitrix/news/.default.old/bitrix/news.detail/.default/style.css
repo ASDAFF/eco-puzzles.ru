@@ -1,0 +1,38 @@
+#newsDetail{
+	margin-top: 24px;
+}
+
+#newsDetail .newsDate{
+	margin-top: 24px;
+	color: #888888;
+}
+
+#newsDetail .description{
+	border-top: 1px solid #e7e8ea;
+	padding-top: 24px;
+	line-height: 21px;
+	margin-top: 24px;
+	max-width: 850px;
+	font-size: 14px;
+}
+
+#newsDetail .more{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 12px;
+	color: #ffffff;
+	padding: 4px 12px;
+}
+
+
+#newsDetail .more:active{
+	position: relative;
+	top: 1px;
+}
+
+#newsDetail .bigPicture img{
+	max-width: 100%;
+}

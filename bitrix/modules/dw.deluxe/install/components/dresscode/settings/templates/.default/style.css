@@ -1,0 +1,1285 @@
+.txSwitcher{
+	background-color: #ffffff;
+	-webkit-box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.3);
+	box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.3);
+	transform: translateX(500px);
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-align: center;
+	/*overflow: hidden;*/
+	position: fixed;
+	z-index: 9998;
+	width: 360px;
+	height: 100%;
+	right: 0px;
+	top: 0px;
+}
+
+.txSwitcher.opened{
+	transform: translateX(0px);
+}
+
+.txSwitcherScroll{
+	overflow: auto;
+	height: 100%;
+	width: 390px;
+}
+
+.txSwitcherScrollContainer{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 24px 0px;
+	padding: 0 24px;
+	width: 360px;
+}
+
+.txSwitcherSettings{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	animation-name: bounceInDown;
+	animation-duration: 2s;
+ 	animation-fill-mode: both;
+	text-align: center;
+	margin-top: -100px;
+	line-height: 50px;
+	cursor: pointer;
+	position: fixed;
+	z-index: 9999;
+	height: 198px;
+	width: 51px;
+	right: 0px;
+	top: 50%;
+}
+
+.txSwitcherSettings.noAnimate{
+	animation-name: none;	
+}
+
+.txSwitcherSettings.active{
+	right: 360px;
+}
+
+.txSwitcherSettings:hover{
+	opacity: 0.9;
+}
+
+.txSwitcherSettings.active .txSwitcherSettingsPicture{
+	/*transform: rotate(360deg);*/
+}
+
+.txSwitcherSettings:hover{
+    background-color: #2b2b2b;
+}
+
+.txSwitcher .switcherTabs .switcherTab{
+	display: none;
+}
+
+.txSwitcher .switcherTabs .switcherTab.active{
+	display: block;
+}
+
+.txSwitcher .switcherChangeTabItem:first-child{
+	margin-top: 0px;
+}
+
+.txSwitcher .switcherChangeTabItem{
+	margin-top: 12px;
+}
+
+.txSwitcher .switcherChangeTab{
+	transition: all 0.1s ease-in-out;
+	background-color: #ffffff;
+    border: 1px solid #ff9601;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 40px;
+    padding: 0 24px;
+    color: #ff9601;
+    height: 40px;
+    width: 90%;
+}
+
+.txSwitcher .switcherChangeTab.active{
+    background-color: #ff9601;
+    color: #ffffff;
+}
+
+.txSwitcherSettingsPicture{
+	background: url(images/setting.png) 50% 50% no-repeat transparent;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	vertical-align: middle;
+	display: inline-block;
+	height: 198px;
+	width: 51px;
+}
+
+.txSwitcher .switcherList{
+	overflow: hidden;
+}
+
+.txSwitcher .switcherCreateProductProperties,
+.txSwitcher .switcherCreateSkuProperties{
+	border-bottom: 1px dashed #000000;
+	text-decoration: none;
+	display: inline-block;
+	color: #000000;
+}
+
+.txSwitcher .switcherCreateProductProperties:hover,
+.txSwitcher .switcherCreateSkuProperties:hover{
+	opacity: 0.8;
+}
+
+.txSwitcher .switcherCreateProductProperties:active,
+.txSwitcher .switcherCreateSkuProperties:active{
+	position: relative;
+	top: 1px;
+}
+
+.txSwitcher .switcherListItem{
+	background-color: #ffffff;
+	border: 1px solid #ff9601;
+	display: inline-block;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+}
+
+.txSwitcher .switcherListItem:hover{
+	border-color: #ffa800;
+}
+
+.txSwitcher .switcherListItem.active{
+	background-color: #ff9601;
+	color: #ffffff;
+}
+
+.txSwitcher .switcherListItem.active a{
+	color: #ffffff;
+}
+
+.txSwitcher .switcherListItem:first-child{
+	margin-right: 12px;
+}
+
+.txSwitcher .switcherListItem a{
+	text-decoration: none;
+	padding: 0 24px;
+	color: #ff9601;
+	display: block;
+}
+
+.txSwitcher .switcherListItem a:active{
+	position: relative;
+	top: 1px;
+}
+
+.txSwitcher .settingsEdit{
+	transition: all 0.2s ease-in-out;
+	background: url(images/edit.png) 0 0 no-repeat transparent;
+	vertical-align: middle;
+	text-decoration: none;
+	display: inline-block;
+	margin-left: 6px;
+	color: #ff0000;
+	height: 14px;
+	width: 16px;
+}
+
+.txSwitcher .settingsEdit:hover{
+	opacity: 0.7;
+}
+
+.txSwitcher .settingsEdit:active{
+	position: relative;
+	top: 1px;
+}
+
+.txSwitcher .switcherHeading{
+	font-family: "robotomedium";
+	margin-bottom: 18px;
+	padding: 0 24px;
+	font-size: 16px;
+}
+
+.txSwitcher .switcherBigHeading{
+	border-bottom: 1px solid #f3f3f3;
+	text-transform: uppercase;
+	padding-bottom: 24px;
+	margin-bottom: 24px;
+	padding-right: 24px;
+	padding-left: 24px;
+	font-size: 18px;
+}
+
+.txSwitcher .switcherBigHeading .switcherClose{
+	text-decoration: none;
+	margin-top: -1px;
+	font-size: 21px;
+	color: #ff0000;
+	float: right;
+}
+
+.txSwitcher .switcherBigHeading .switcherClose:hover{
+	opacity: 0.7;
+}
+
+.txSwitcher .switcherBigHeading .switcherClose:active{
+	position: relative;
+	top: 1px;
+}
+
+.txSwitcher .switcherHeading2{
+	font-family: "robotomedium";
+	margin-bottom: 12px;
+	padding: 0 24px;
+}
+
+.txSwitcher .switcherBigHeading + .switcherRowBlock{
+	padding-top: 0px;
+	border-top: 0px;
+}
+
+.txSwitcher .switcherRowBlock{
+	border-top: 1px solid #f3f3f3;
+	padding-top: 24px;
+	margin-top: 24px;
+}
+
+.txSwitcher .switcherSelect{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #f3f3f3;
+	cursor: pointer;
+	padding: 0 12px;
+	outline: none;
+	height: 40px;
+	width: 90%;
+}
+
+.txSwitcher .switcherSelect[multiple]{
+	padding-bottom: 12px;
+	padding-top: 12px;
+    height: auto;
+}
+
+.txSwitcher .switcherCheckboxItems{
+	display: inline-block;
+	margin-top: 12px;
+}
+
+.txSwitcher .switcherCheckboxItem{
+	text-align: left;
+}
+
+.txSwitcher .switcherImageContainer{
+	margin-top: 24px;
+}
+
+.txSwitcher .switcherImageContainerLink{
+	transition: all 0.2s ease-in-out;
+}
+
+.txSwitcher .switcherImageContainerLink:hover{
+	opacity: 0.8;
+}
+
+.txSwitcher .switcherImageContainerLink:active{
+	position: relative;
+	top: 1px;
+}
+
+.txSwitcher .switcherImageContainerImage{
+	max-height: 100px;
+	max-width: 200px;
+}
+
+.txSwitcher .switcherShowAll,
+.txSwitcher .switcherHideAll{
+	transition: all 0.2s ease-in-out;
+	border-bottom: 1px dashed #000000;
+	display: inline-block;
+	text-decoration: none;
+	margin-top: 12px;
+	color: #000000;
+}
+
+.txSwitcher .switcherShowAll:hover,
+.txSwitcher .switcherHideAll:hover{
+	opacity: 0.7;
+}
+
+.txSwitcher .switcherShowAll:active,
+.txSwitcher .switcherHideAll:active{
+	position: relative;
+	top: 1px;
+}
+
+.txSwitcher .switcherShowAll.hidden,
+.txSwitcher .switcherHideAll.hidden{
+	display: none;
+}
+
+.txSwitcher input{
+	transition: all 0.2s ease-in-out;
+	border-radius: 2px;
+}
+
+.txSwitcher input[type="number"],
+.txSwitcher input[type="text"]{
+	background-color: #ffffff;
+	border: 1px solid #e7e8ea;
+	box-sizing: border-box;
+	padding: 0 6px;
+	height: 30px;
+	width: 70%;
+}
+
+.txSwitcher input[type="checkbox"] + label,
+.txSwitcher input[type="radio"] + label {
+    text-overflow: ellipsis;
+    vertical-align: middle;
+	display: inline-block;
+    white-space: nowrap;
+    max-width: 230px;
+    overflow: hidden;
+	cursor: pointer;
+}
+
+.txSwitcher input[type="checkbox"]:not(checked),
+.txSwitcher input[type="radio"]:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+.txSwitcher input[type="checkbox"]:not(checked) + label,
+.txSwitcher input[type="radio"]:not(checked) + label {
+	position: relative;
+	padding-left: 28px;
+}
+
+.txSwitcher input[type="checkbox"] + label:before {
+	background: url(images/checkBox.png) 0 0 no-repeat transparent;
+}
+
+.txSwitcher input[type="radio"] + label:before {
+	background: url(images/radio.png) 0 0 no-repeat transparent;
+}
+
+.txSwitcher input[type="checkbox"]:not(checked) + label:before,
+.txSwitcher input[type="radio"]:not(checked) + label:before {
+	position: absolute;
+	content: " ";
+    height: 17px;
+	width: 17px;
+	left: 0;
+	top: 0px;
+}
+
+.txSwitcher input[type="checkbox"]:not(checked) + label:hover:before,
+.txSwitcher input[type="radio"]:not(checked) + label:hover:before {
+	background-position: 0 -17px;
+}
+
+.txSwitcher input[type="checkbox"]:checked + label:before,
+.txSwitcher input[type="radio"]:checked + label:before {
+	background-position: 0 -34px;
+}
+
+.txSwitcher input[type="checkbox"]:checked + label:hover:before,
+.txSwitcher input[type="radio"]:checked + label:hover:before {
+	background-position: 0 -51px;
+}
+
+.txSwitcher input[type="checkbox"]:disabled + label,
+.txSwitcher input[type="radio"]:disabled + label {
+	cursor: default;
+}
+
+.txSwitcher input[type="checkbox"]:disabled + label:before,
+.txSwitcher input[type="radio"]:disabled + label:before {
+	background-position: 0 -68px !important;
+}
+
+.txSwitcher input:focus{
+	background-color: #fcfcfc;
+	border-color: #cccccc;
+}
+
+.txSwitcher .switcherIcons{
+	margin-bottom: 24px;
+}
+
+.txSwitcher .switcherDescription{
+	font-size: 13px;
+	color: #888888;
+}
+
+.txSwitcher .switcherBackgroundItems{
+	text-align: center;
+	overflow: hidden;
+}
+
+.txSwitcher .switcherThemes{
+	margin-top: 24px;
+	overflow: hidden;
+}
+
+.txSwitcher .switcherThemesItem{
+	display: inline-block;
+	margin-bottom: 12px;
+	margin-left: 12px;
+	height: 30px;
+	width: 30px;
+}
+
+.txSwitcher .switcherBackgroundItem{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+}
+
+.txSwitcher .switcherBackgroundItem:first-child{
+	margin-right: 12px;
+}
+
+.txSwitcher .switcherThemesItem a,
+.txSwitcher .switcherBackgroundItem a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	position: relative;
+	border-radius: 2px;
+	display: block;
+	height: 30px;
+	width: 30px;
+}
+
+.txSwitcher .switcherThemesItem a:active,
+.txSwitcher .switcherBackgroundItem a:active{
+	position: relative;
+	top: 1px;
+}
+
+.txSwitcher .switcherThemesItem.selected a,
+.txSwitcher .switcherBackgroundItem.selected a{
+	background-image: url(images/check.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.txSwitcher .switcherThemesItem .color1{
+	background-color: #ff9601;
+}
+
+.txSwitcher .switcherThemesItem .color1:hover{
+	background-color: #ffb800;
+}
+
+.txSwitcher .switcherThemesItem .color2{
+	background-color: #fb9bad;
+}
+
+.txSwitcher .switcherThemesItem .color2:hover{
+	background-color: #f3889d;
+}
+
+.txSwitcher .switcherThemesItem .color3{
+	background-color: #ff855f;
+}
+
+.txSwitcher .switcherThemesItem .color3:hover{
+	background-color: #e77652;
+}
+
+.txSwitcher .switcherThemesItem .color4{
+	background-color: #daa550;
+}
+
+.txSwitcher .switcherThemesItem .color4:hover{
+	background-color: #e4a540;
+}
+
+.txSwitcher .switcherThemesItem .color5{
+	background-color: #b15b49;
+}
+
+.txSwitcher .switcherThemesItem .color5:hover{
+	background-color: #a05a4b;
+}
+
+.txSwitcher .switcherThemesItem .color6{
+	background-color: #f44336;
+}
+
+.txSwitcher .switcherThemesItem .color6:hover{
+	background-color: #d42d20;
+}
+
+.txSwitcher .switcherThemesItem .color7{
+	background-color: #acce11;
+}
+
+.txSwitcher .switcherThemesItem .color7:hover{
+	background-color: #94b20e;
+}
+
+.txSwitcher .switcherThemesItem .color8{
+	background-color: #27c148;
+}
+
+.txSwitcher .switcherThemesItem .color8:hover{
+	background-color: #19cc3f;
+}
+
+.txSwitcher .switcherThemesItem .color9{
+	background-color: #27bfc1;
+}
+
+.txSwitcher .switcherThemesItem .color9:hover{
+	background-color: #25ccce;
+}
+
+.txSwitcher .switcherThemesItem .color10{
+	background-color: #3498db;
+}
+
+.txSwitcher .switcherThemesItem .color10:hover{
+	background-color: #2395e1;
+}
+
+.txSwitcher .switcherThemesItem .color11{
+	background-color: #2a65d0;
+}
+
+.txSwitcher .switcherThemesItem .color11:hover{
+	background-color: #0d57dc;
+}
+
+.txSwitcher .switcherThemesItem .color12{
+	background-color: #0061b2;
+}
+
+.txSwitcher .switcherThemesItem .color12:hover{
+	background-color: #006ac2;
+}
+
+.txSwitcher .switcherThemesItem .color13{
+	background-color: #c651d0;
+}
+
+.txSwitcher .switcherThemesItem .color13:hover{
+	background-color: #d75ee1;
+}
+
+.txSwitcher .switcherThemesItem .color14{
+	background-color: #c12752;
+}
+
+.txSwitcher .switcherThemesItem .color14:hover{
+	background-color: #c61c4b;
+}
+
+.txSwitcher .switcherThemesItem .color15{
+	background-color: #ed1c24;
+}
+
+.txSwitcher .switcherThemesItem .color15:hover{
+	background-color: #ff232b;
+}
+
+.txSwitcher .switcherThemesItem .custom:before{
+	background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #003dfd, #05c7e6, #4bd58d);
+	-webkit-animation: rainbow 4s ease infinite;
+	animation: rainbow 4s ease infinite;
+	background-size: 1200% 1200%;
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	content: "";
+	left: 0px;
+	top: 0px;
+}
+
+.txSwitcher .switcherThemesItem.selected .custom:after{
+	background-image: url(images/check.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	content: "";
+	z-index: 2;
+	left: 0px;
+	top: 0px;
+}
+
+.txSwitcher .switcherThemesItem .custom:hover{
+	opacity: 0.9;
+}
+
+.txSwitcher .switcherBackgroundItem .white{
+	background-color: #eeeeee;
+}
+
+.txSwitcher .switcherBackgroundItem .black{
+	background-color: #000000;
+}
+
+.txSwitcher .switcherBoolItem:first-child {
+    margin-right: 12px;
+}
+
+.txSwitcher .switcherBoolItem{
+    display: inline-block;
+    height: 30px;
+    width: 40px;
+}
+
+.txSwitcher .switcherBoolItem .switcherBoolButton{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	border: 1px solid #e7e8ea;
+	vertical-align: middle;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	border-radius: 2px;
+	line-height: 30px;
+	color: #000000;
+	display: block;
+	width: 40px;
+}
+
+.txSwitcher .switcherBoolItem .switcherBoolButton:hover{
+	opacity: 0.8;
+}
+
+.txSwitcher .switcherBoolItem .switcherBoolButton:active{
+	top: 1px;
+}
+
+.txSwitcher .switcherBoolItem.selected .switcherBoolButton{
+	background-color: #ff9601;
+	border-color: #ff9601;
+	color: #ffffff;
+}
+
+.txSwitcher .switcherSave{
+	transition: opacity 0.4s ease-in-out;
+}
+
+.txSwitcher .switcherSave.loading{
+	background-image: url(images/loader.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	pointer-events: none;
+	opacity: 0.7;
+}
+
+.txSwitcher .switcherSave.error{
+	background-color: #ff0000;
+	pointer-events: none;
+	opacity: 0.7;
+}
+
+.txSwitcherWindow{
+	-webkit-transition: 0.1s all ease-in-out;
+    -o-transition: 0.1s all ease-in-out;
+    transition: 0.1s all ease-in-out;
+    white-space: nowrap;
+    text-align: center;
+    background: #0007;
+    position: fixed;
+    overflow: auto;
+    z-index: 1000;
+    display: none;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.txSwitcherWindow.loading{
+	-webkit-transition: 0.4s all ease-in-out;
+    -o-transition: 0.4s all ease-in-out;
+    transition: 0.4s all ease-in-out;
+	background: #0009;
+}
+
+.txSwitcherWindow::after{
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    content: '';
+}
+
+.txSwitcherWindow.opened{
+	display: block;
+}
+
+.txSwitcherWindow .txSwitcherWindowOffset{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.txSwitcherWindow .txSwitcherWindowContainer{
+    box-shadow: 1px 1px 12px rgba(60, 60, 60, 0.3);
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    background-color: #fff;
+    box-sizing: border-box;
+    white-space: normal;
+    padding: 24px 24px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin: 24px 0px;
+    width: 540px;
+}
+
+.txSwitcherWindow .txSwitcherWindowExit{
+    background-color: #424242;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    right: -16px;
+    height: 65px;
+    width: 65px;
+    top: -16px;
+}
+
+.txSwitcherWindow .txSwitcherWindowExitButton{
+    position: absolute;
+    display: block;
+    height: 21px;
+    width: 21px;
+    right: 26px;
+    top: 26px;
+}
+
+.txSwitcherWindow .txSwitcherWindowExitButton{
+    background: url(images/exit.png) 0 0 no-repeat transparent;
+}
+
+.txSwitcherWindow .txSwitcherWindowExitButton:hover{
+    background-position: 0 -21px ;
+}
+
+.txSwitcherWindow .txSwitcherWindowExitButton:active{
+    background-position: 0 -42px ;
+}
+
+.txSwitcherWindow .switcherWindowHeading{
+    font-family: "robotomedium";
+    line-height: 24px;
+    margin-top: 12px;
+    font-size: 21px;
+}
+
+.txSwitcherWindow .switcherWindowHeading2{
+    font-family: "robotomedium";
+    line-height: 21px;
+    margin-top: 24px;
+    font-size: 18px;	
+}
+
+.txSwitcherWindow .switcherWindowDescription{
+    line-height: 18px;
+	/*text-align: left;*/
+    margin-top: 18px;
+    font-size: 13px;
+}
+
+.txSwitcherWindow .switcherWindowIblockArea{
+	font-family: "robotomedium";
+	margin-top: 12px;
+	font-size: 14px;
+}
+
+.txSwitcherWindow .switcherWindowStartButton,
+.txSwitcherWindow .switcherWindowExit{
+	margin-top: 18px;
+	width: 50%;
+}
+
+.switcherResultTable{
+	table-layout: fixed;
+	margin-top: 18px;
+	display: table;
+	width: 100%;
+	border: 0;
+}
+
+.switcherResultTableRow{
+	display: table-row;
+}
+
+.switcherResultTableRow:nth-child(odd) .switcherResultTableCell{
+	background-color: #f9f9f9;
+}
+
+.switcherResultTableCell{
+	border-bottom: 1px dashed #f9f9f9;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+	display: table-cell;
+	white-space: nowrap;
+	text-align: center;
+	padding: 12px 12px;
+	overflow: hidden;
+	text-align: left;
+}
+
+.switcherResultTableCell:first-child{
+	width: 150px;
+}
+
+.switcherResultTableCell:nth-child(2){
+	text-align: center;
+}
+
+.switcherResultTableCell:last-child{
+	text-align: right;
+}
+
+.switcherResultTableCell.error{
+	color: #ff0000;
+}
+
+.switcherResultTableCell.success{
+	color: #54a100;
+}
+
+@media all and (max-width: 1024px) {
+	.txSwitcherSettings,
+	.txSwitcher{
+		display: none !important;
+	}
+}
+
+.txSwitcherWindow.loading .txSwitcherHolder{
+	display: block;
+}
+
+.txSwitcherHolder {
+	position: absolute;
+	display: none;
+	height: 100%;
+	width: 100%;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+}
+
+.txSwitcherPreloader {
+	animation: rotatePreloader 2s infinite ease-in;
+	transform: translateX(-50%) translateY(-50%);
+	position: absolute;
+	height: 140px;
+	width: 140px;
+	left: 50%;
+	top: 50%;
+}
+
+@keyframes rotatePreloader{
+
+	0%{
+		transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+	}
+
+	100%{
+		transform: translateX(-50%) translateY(-50%) rotateZ(-360deg);
+	}
+
+}
+
+.txSwitcherPreloader div{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.txSwitcherPreloader div:before{
+	transform: translateX(-50%);
+	background-color: #0084ff;
+	position: absolute;
+	border-radius: 50%;
+	content: "";
+	height: 10%;
+	width: 10%;
+	left: 50%;
+	top: 0%;
+}
+
+.txSwitcherPreloader div:nth-child(1){
+	transform: rotateZ(0deg);
+	animation: rotateCircle1 2s infinite linear;
+	z-index: 9;
+}
+
+@keyframes rotateCircle1{
+
+	0% {
+		opacity: 0;
+	}
+
+	0% {
+		opacity: 1;
+		transform: rotateZ(36deg);
+	}
+
+	7% {
+		transform: rotateZ(0deg);
+	}
+
+	57% {
+		transform: rotateZ(0deg);
+	}
+
+	100% {
+		transform: rotateZ(-324deg);
+		opacity: 1;
+	}
+
+}
+
+.txSwitcherPreloader div:nth-child(2){
+	transform: rotateZ(36deg);
+	animation: rotateCircle2 2s infinite linear;
+	z-index: 8;
+}
+
+@keyframes rotateCircle2{
+
+	5%{
+		opacity: 0;
+	}
+
+	5.0001%{
+		opacity: 1;
+		transform: rotateZ(0deg);
+	}
+
+	12%{
+		transform: rotateZ(-36deg);
+	}
+
+	62%{
+		transform: rotateZ(-36deg);
+	}
+
+	100%{
+		transform: rotateZ(-324deg);
+		opacity: 1;
+	}
+
+}
+
+.txSwitcherPreloader div:nth-child(3){
+	transform: rotateZ(72deg);
+	animation: rotateCircle3 2s infinite linear;
+	z-index: 7;
+}
+
+@keyframes rotateCircle3{
+
+	10%{
+		opacity: 0;
+	}
+
+	10.0002%{
+		opacity: 1;
+		transform: rotateZ(-36deg);
+	}
+
+	17%{
+		transform: rotateZ(-72deg);
+	}
+
+	67%{
+		transform: rotateZ(-72deg);
+	}
+
+	100%{
+		transform: rotateZ(-324deg);
+		opacity: 1;
+	}
+
+}
+
+.txSwitcherPreloader div:nth-child(4){
+	transform: rotateZ(108deg);
+	animation: rotateCircle4 2s infinite linear;
+	z-index: 6;
+}
+
+@keyframes rotateCircle4{
+
+	15%{
+		opacity: 0;
+	}
+
+	15.0003%{
+		opacity: 1;
+		transform: rotateZ(-72deg);
+	}
+
+	22%{
+		transform: rotateZ(-108deg);
+	}
+
+	72%{
+		transform: rotateZ(-108deg);
+	}
+
+	100%{
+		transform: rotateZ(-324deg);
+		opacity: 1;
+	}
+
+}
+
+.txSwitcherPreloader div:nth-child(5){
+	transform: rotateZ(144deg);
+	animation: rotateCircle5 2s infinite linear;
+	z-index: 5;
+}
+
+@keyframes rotateCircle5{
+
+	20%{
+		opacity: 0;
+	}
+
+	20.0004%{
+		opacity: 1;
+		transform: rotateZ(-108deg);
+	}
+
+	27%{
+		transform: rotateZ(-144deg);
+	}
+
+	77%{
+		transform: rotateZ(-144deg);
+	}
+
+	100%{
+		transform: rotateZ(-324deg);
+		opacity: 1;
+	}
+
+}
+
+.txSwitcherPreloader div:nth-child(6){
+	transform: rotateZ(180deg);
+	animation: rotateCircle6 2s infinite linear;
+	z-index: 4;
+}
+
+@keyframes rotateCircle6{
+
+	25%{
+		opacity: 0;
+	}
+
+	25.0005%{
+		opacity: 1;
+		transform: rotateZ(-144deg);
+	}
+
+	32%{
+		transform: rotateZ(-180deg);
+	}
+
+	82%{
+		transform: rotateZ(-180deg);
+	}
+
+	100%{
+		transform: rotateZ(-324deg);
+		opacity: 1;
+	}
+
+}
+
+.txSwitcherPreloader div:nth-child(7){
+	transform: rotateZ(216deg);
+	animation: rotateCircle7 2s infinite linear;
+	z-index: 3;
+}
+
+@keyframes rotateCircle7{
+
+	30%{
+		opacity: 0;
+	}
+
+	30.0006%{
+		opacity: 1;
+		transform: rotateZ(-180deg);
+	}
+
+	37%{
+		transform: rotateZ(-216deg);
+	}
+
+	87%{
+		transform: rotateZ(-216deg);
+	}
+
+	100%{
+		transform: rotateZ(-324deg);
+		opacity: 1;
+	}
+
+}
+
+.txSwitcherPreloader div:nth-child(8){
+	transform: rotateZ(252deg);
+	animation: rotateCircle8 2s infinite linear;
+	z-index: 2;
+}
+
+@keyframes rotateCircle8{
+
+	35%{
+		opacity: 0;
+	}
+
+	35.0007%{
+		opacity: 1;
+		transform: rotateZ(-216deg);
+	}
+
+	42%{
+		transform: rotateZ(-252deg);
+	}
+
+	92%{
+		transform: rotateZ(-252deg);
+	}
+
+	100%{
+		transform: rotateZ(-324deg);
+		opacity: 1;
+	}
+
+}
+
+.txSwitcherPreloader div:nth-child(9){
+	transform: rotateZ(288deg);
+	animation: rotateCircle9 2s infinite linear;
+	z-index: 1;
+}
+
+@keyframes rotateCircle9{
+
+	40%{
+		opacity: 0;
+	}
+
+	40.0008%{
+		opacity: 1;
+		transform: rotateZ(-252deg);
+	}
+
+	47%{
+		transform: rotateZ(-288deg);
+	}
+
+	97%{
+		transform: rotateZ(-288deg);
+	}
+
+	100%{
+		transform: rotateZ(-324deg);
+		opacity: 1;
+	}
+
+}
+
+.txSwitcherPreloader div:nth-child(10){
+	transform: rotateZ(324deg);
+	animation: rotateCircle10 2s infinite linear;
+	z-index: 0;
+}
+
+@keyframes rotateCircle10{
+
+	45%{
+		opacity: 0;
+	}
+
+	45.0009%{
+		opacity: 1;
+		transform: rotateZ(-288deg);
+	}
+
+	52%{
+		transform: rotateZ(-324deg);
+	}
+
+	102%{
+		transform: rotateZ(-324deg);
+	}
+
+	100%{
+		transform: rotateZ(-324deg);
+		opacity: 1;
+	}
+
+}
+
+
+@-webkit-keyframes rainbow{
+
+	0%{
+		background-position: 0% 50%;
+	}
+
+	50%{
+		background-position: 100% 50%;
+	}
+
+	100%{
+		background-position: 0% 50%;
+	}
+
+}
+
+@keyframes rainbow{
+
+	0%{
+		background-position: 0% 50%;
+	}
+
+	50%{
+		background-position: 100% 50%;
+	}
+
+	100%{
+		background-position: 0% 50%;
+	}
+
+}

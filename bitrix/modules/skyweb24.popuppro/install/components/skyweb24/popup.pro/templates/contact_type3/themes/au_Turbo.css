@@ -1,0 +1,14 @@
+#skyweb24_contact_type3 div.back:before {background: #f6e58d;}
+#skyweb24_contact_type3 div.main:before {background: #f9ca24;}
+
+#skyweb24_contact_type3 fieldset label.submit>button {background: #f9ca24; color: #fff;}
+#skyweb24_contact_type3 fieldset label.submit>button:hover {background: #f6e58d;}
+
+#skyweb24_contact_type3 fieldset label input:not([type="submit"]):empty {border: 1px solid #f9ca24;}
+#skyweb24_contact_type3 fieldset label textarea:empty {border: 1px solid #f9ca24;}
+
+#skyweb24_contact_type3 .success {color:#fff;}
+.alreadygoing.success_send {background: #f9ca24;}
+
+.skyweb24_popup_pro_timer {background: #f9ca24;}
+.popup-window.sw24PopupPro .popup-window-close-icon {background: #f9ca24;}

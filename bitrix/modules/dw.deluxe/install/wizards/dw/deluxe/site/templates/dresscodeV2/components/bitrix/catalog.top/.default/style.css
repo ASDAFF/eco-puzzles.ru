@@ -1,0 +1,77 @@
+#topProduct{
+	position: relative;
+}
+
+#topProduct .wrap{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+#topProduct .productList{
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	clear: both;
+	margin: 0px;
+	left: 0px;
+}
+
+#topProduct .productList > li{
+	float: left;
+}
+
+#topProduct .productList .item{
+	border-left: 0px !important;
+	height: 360px !important;
+	width: 100% !important;
+	float: none;
+}
+
+#topProduct .productList > li:first-child .item{
+	border-left: 1px solid #e7e8ea !important;
+}
+
+#topProduct .productList .item .tabloid{
+	height: 358px !important;
+}
+
+#topProduct .topBtnLeft,
+#topProduct .topBtnRight{
+	background: url(images/slideArrowSmall.png) 0 0 no-repeat transparent;
+	transform: translateY(-50%);
+	position: absolute;
+	height: 70px;
+	width: 35px;
+	z-index: 22;
+	top: 50%;
+}
+
+#topProduct .topBtnLeft{
+	left: 0px;
+}
+
+#topProduct .topBtnRight{
+	right: 0px;
+}
+
+#topProduct .topBtnLeft:hover{
+	background-position: -35px 0;
+}
+
+#topProduct .topBtnLeft:active{
+	background-position: -70px 0;
+}
+
+#topProduct .topBtnRight{
+	background-position: 0 -70px;
+}
+
+#topProduct .topBtnRight:hover{
+	background-position: -35px -70px;
+}
+
+#topProduct .topBtnRight:active{
+	background-position: -70px -70px;
+}

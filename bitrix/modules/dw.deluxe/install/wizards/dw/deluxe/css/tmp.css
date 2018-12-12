@@ -1,0 +1,129 @@
+.instal-bg{
+	background: url(install.jpg) 0 0 no-repeat transparent !important;
+	background-size: cover !important;
+}
+
+.inst-sequence-step-item{
+	background: #f1f1f1;
+	box-shadow: none;
+	color: #6c6e6f;
+}
+
+.inst-cont-title,
+.wizard-next-button,
+.inst-active-step{
+	background: #134d75 !important;
+	color: #ffffff !important;
+	text-shadow: none !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.inst-active-step:before{
+	display: none;
+}
+
+.wizard-next-button{
+	background: #1186d6 !important;
+}
+
+.inst-template-description{
+	height: auto !important;
+}
+
+.wizard-next-button:hover{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	opacity: 0.9;
+}
+
+.wizard-prev-button, .instal-btn, .instal-btn-inp{
+	background: #eaeaea !important;
+	color: #000000 !important;
+	text-shadow: none !important;
+	box-shadow: none !important;
+	border: none !important;
+}
+
+.wizard-field{
+	box-shadow: none !important;
+	margin-top: 12px;
+	background-color: #eaeaea;
+	border: 1px solid #cccccc;
+	color: #000000;
+}
+
+.wizard-catalog-form-item select{
+	padding: 0 12px;
+	height: 35px;
+}
+
+.inst-past-stage{
+	text-shadow: none;
+	background: #e1e1e1;
+}
+
+.inst-sequence-step-text{
+	text-shadow: none;
+}
+
+#bitrix_install_template input[type="checkbox"] + label,
+#bitrix_install_template input[type="radio"] + label {
+	cursor: pointer !important;
+}
+
+#bitrix_install_template input[type="checkbox"]:not(checked),
+#bitrix_install_template input[type="radio"]:not(checked) {
+  position: absolute !important;
+  opacity: 0 !important;
+}
+
+#bitrix_install_template input[type="checkbox"]:not(checked) + label,
+#bitrix_install_template input[type="radio"]:not(checked) + label {
+	position: relative !important;
+	padding-left: 24px !important;
+}
+
+#bitrix_install_template input[type="checkbox"] + label:before {
+	background: url(checkBox.png) 0 0 no-repeat transparent !important;
+}
+
+#bitrix_install_template input[type="radio"] + label:before {
+	background: url(radio.png) 0 0 no-repeat transparent !important;
+}
+
+#bitrix_install_template input[type="checkbox"]:not(checked) + label:before,
+#bitrix_install_template input[type="radio"]:not(checked) + label:before {
+	position: absolute !important;
+	content: " " !important;
+    height: 17px !important;
+	width: 17px !important;
+	left: 0 !important;
+	top: 0px !important;
+}
+
+#bitrix_install_template input[type="checkbox"]:not(checked) + label:hover:before,
+#bitrix_install_template input[type="radio"]:not(checked) + label:hover:before {
+	background-position: 0 -17px !important;
+}
+
+#bitrix_install_template input[type="checkbox"]:checked + label:before,
+#bitrix_install_template input[type="radio"]:checked + label:before {
+	background-position: 0 -34px !important;
+}
+
+#bitrix_install_template input[type="checkbox"]:checked + label:hover:before,
+#bitrix_install_template input[type="radio"]:checked + label:hover:before {
+	background-position: 0 -51px !important;
+}
+
+#bitrix_install_template input[type="checkbox"]:disabled + label,
+#bitrix_install_template input[type="radio"]:disabled + label {
+	cursor: default !important;
+}
+
+#bitrix_install_template input[type="checkbox"]:disabled + label:before,
+#bitrix_install_template input[type="radio"]:disabled + label:before {
+	background-position: 0 -68px !important !important;
+}

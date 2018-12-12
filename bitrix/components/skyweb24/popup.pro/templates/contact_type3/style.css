@@ -1,0 +1,130 @@
+#skyweb24_contact_type3 {margin: 0 auto; max-width: 900px; min-width: 400px; box-sizing: border-box; position: relative;}
+#skyweb24_contact_type3>.img {    position: absolute;bottom: 14px;left: 0;max-height: 400px;max-width: 300px;z-index: 200;}
+#skyweb24_contact_type3 div.back {    width: 55%;padding: 20px 0 20px 210px;font-size: 16px;margin-left: 5%;font-style: italic;float: left;color: white;z-index: 100;box-sizing: border-box;}
+#skyweb24_contact_type3 div.back:before {content: '';position: absolute;top: 4%;bottom: -20px;left: 5%;width: 55%;z-index: 100;transform: skewX(10deg);height: 150px;box-sizing: border-box;}
+#skyweb24_contact_type3 div.back span {font-size: 16px; font-style: italic; color: white; position: relative; z-index: 300;}
+#skyweb24_contact_type3 div.main {    float: left;width: 60%;margin-left: 5%;padding: 20px 0 20px 240px;position: relative;font-size: 24px;z-index: 100;box-sizing: border-box;}
+#skyweb24_contact_type3 div.main h2 {font-size: 150%; font-weight: bold; color:white; z-index:100; position:relative; text-align:left;}
+#skyweb24_contact_type3 div.main:before {content:''; background: #1999d2; position: absolute; top: 4%; bottom: 0; left: 0; right: 0;  transform: skewX(10deg);}
+#skyweb24_contact_type3 form {overflow: hidden;position: absolute;padding: 30px 80px 10px 62%;left: 5%;top: 0%;width: 100%;box-sizing: border-box;min-height: 310px;}
+#skyweb24_contact_type3 form:before {content: ''; position: absolute; background: #ecf0f1; /*transform: skewX(10deg);*/ width: 95%; height: 100%;  top: 0; left: 0;}
+#skyweb24_contact_type3 label {width: 100%; display: block; margin: 0 auto 0; padding: 0 15px; box-sizing: border-box;}
+#skyweb24_contact_type3 fieldset {position: relative;}
+#skyweb24_contact_type3 fieldset label input::-webkit-input-placeholder {font-weight: initial;}
+#skyweb24_contact_type3 fieldset label input::-moz-placeholder {font-weight: initial;}
+#skyweb24_contact_type3 fieldset label input:-moz-placeholder {font-weight: initial;}
+#skyweb24_contact_type3 fieldset label input:-ms-input-placeholder {font-weight: initial;}
+#skyweb24_contact_type3 fieldset label textarea::-webkit-input-placeholder {font-weight: initial;}
+#skyweb24_contact_type3 fieldset label textarea::-moz-placeholder {font-weight: initial;}
+#skyweb24_contact_type3 fieldset label textarea:-moz-placeholder {font-weight: initial;}
+#skyweb24_contact_type3 fieldset label textarea:-ms-input-placeholder {font-weight: initial;}
+
+#skyweb24_contact_type3 fieldset label input:focus::-webkit-input-placeholder {font-weight: initial;}
+#skyweb24_contact_type3 fieldset label input:focus::-moz-placeholder {font-weight: initial;}
+#skyweb24_contact_type3 fieldset label input:focus:-moz-placeholder {font-weight: initial;}
+#skyweb24_contact_type3 fieldset label input:focus:-ms-input-placeholder {font-weight: initial;}
+#skyweb24_contact_type3 fieldset label textarea:focus::-webkit-input-placeholder {font-weight: initial;}
+#skyweb24_contact_type3 fieldset label textarea:focus::-moz-placeholder {font-weight: initial;}
+#skyweb24_contact_type3 fieldset label textarea:focus:-moz-placeholder {font-weight: initial;}
+#skyweb24_contact_type3 fieldset label textarea:focus:-ms-input-placeholder {font-weight: initial;}
+
+#skyweb24_contact_type3 fieldset label input, #skyweb24_contact_type3 fieldset label textarea {width: 100%; display: block; box-sizing: border-box;}
+#skyweb24_contact_type3 label>span {height: 20px; font-family: 20px; line-height: 20px; color: #777;}
+#skyweb24_contact_type3 fieldset label.required sup {display: none !important;}
+#skyweb24_contact_type3 fieldset label.required sup {display: inline-block !important; color: #e74c3c;}
+#skyweb24_contact_type3 fieldset label textarea:empty {line-height: 35px; padding-left: 10px; padding-top: 10px; font-size: 14px; background: #fff;}
+#skyweb24_contact_type3 fieldset label {margin-bottom: 5px; padding: 0 5px; position: relative; box-sizing: border-box;}
+#skyweb24_contact_type3 fieldset label:first-child {margin-top: 0;}
+#skyweb24_contact_type3 fieldset label>* {display: inline-block;}
+#skyweb24_contact_type3 fieldset .notshow {display: none;}
+
+#skyweb24_contact_type3 fieldset label.one {width: 100%;}
+#skyweb24_contact_type3 fieldset label.two {width: 50%;}
+#skyweb24_contact_type3 fieldset label.three {width: 33.3%;}
+#skyweb24_contact_type3 fieldset label>textarea {width: 100%; min-height: 60px;}
+
+#skyweb24_contact_type3 fieldset label.submit {width: 100%; margin-bottom: 0;}
+#skyweb24_contact_type3 fieldset label.submit>button {width: 100%; height: 40px; line-height: 1; text-align: center; border: 0; border-radius: 5px; padding: 0; font-size: 16px; transition: .3s all;}
+#skyweb24_contact_type3 fieldset label span {width: 80%; text-align: left; display: block;}
+#skyweb24_contact_type3 fieldset label input:not([type="submit"]):empty {height: 35px; padding-left: 10px; border: 0; padding-top: 15px; outline: none; font-weight: 800; font-size: 14px; border-radius: 5px;}
+#skyweb24_contact_type3 fieldset label textarea:empty+span,
+#skyweb24_contact_type3 fieldset label input:empty+span {position: absolute; left: 10px; line-height: 35px; width: 300px; font-size: 14px; transition: all 0.3s; top: 0; font-weight: 400; cursor: text; color: #bdc3c7; line-height: 20px; display: block; font-size: 12px;}
+#skyweb24_contact_type3 fieldset label textarea:focus+span,
+#skyweb24_contact_type3 fieldset label input:focus+span,
+#skyweb24_contact_type3 fieldset label textarea:valid+span,
+#skyweb24_contact_type3 fieldset label input:valid+span {line-height: 20px; display: block; font-size: 12px;}
+
+#skyweb24_contact_type3 img {max-width: 100%;}
+#skyweb24_contact_type3 button, #skyweb24_contact_type3 input[type=submit] {cursor: pointer;}
+#skyweb24_contact_type3 fieldset label div.info input[type='checkbox'] {height: initial; width: initial; display: inline;}
+#skyweb24_contact_type3 fieldset label div.info a {display: inline;}
+#skyweb24_contact_type3 fieldset label input[name=use_consent]:empty {height: 1em; width: 1em; vertical-align: middle; display: inline-block; vertical-align: middle;}
+#skyweb24_contact_type3 .error {background: #e74c3c; color: #fff;}
+#skyweb24_contact_type3 .error p {padding: 5px 10px;}
+#skyweb24_contact_type3 .success {color: #333 !important; padding: 25px 20px 20px; font-size: 1.2em; background: #fff;}
+
+#skyweb24_contact_type3 .sw24TextCloseButton {display: inline-block; margin-bottom: 10px; margin-top: 10px; font-size: 14px; border-bottom: 1px dashed #2c3e50; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; color: #2c3e50;}
+	#skyweb24_contact_type3 .sw24TextCloseButton:hover {border-bottom: 1px dashed transparent;}
+
+@media screen and (min-width:975px) {
+	#skyweb24_contact_type3 {min-height: 297px;}
+}
+
+@media screen and (max-width:975px) {
+	#skyweb24_contact_type3>.img {display: none;}
+	#skyweb24_contact_type3 div.back {padding: 20px 0 20px 40px; width: 50%;}
+	#skyweb24_contact_type3 div.back:before {width:50%;}
+	#skyweb24_contact_type3 div.main {padding: 20px 0 20px 40px; width:55%;}
+	#skyweb24_contact_type3 form {/*padding: 10px 70px 10px 52%; width: 100%;*/}
+}
+@media screen and (max-width:885px) {
+	#skyweb24_contact_type3 div.back {width: 100%; transform: translate(4%,0%);}
+	#skyweb24_contact_type3 div.main {width: 50%; transform: translate(4%,0%);}
+	#skyweb24_contact_type3 form {padding: 10px 115px 10px 56%; width: 100%; transform: translate(0%,0%);}
+	#skyweb24_contact_type3 form:before {width: 88%; top: 0; left: 4%;}
+}
+@media screen and (max-width:800px) {
+	#skyweb24_contact_type3 {width: 100%; padding: 10%; box-sizing: border-box;}
+	.alreadygoing span.popup-window-close-icon {opacity: 0.8; right: 20px; top: 20px; z-index: 999;}
+}
+#popup-message.popup-window.sw24PopupPro .popup-window-close-icon {z-index: 300; right: 0px; top: 0px;}
+@media screen and (max-width:768px) {
+	#skyweb24_contact_type3 form:before {width: 100%; top: 0; left: 0px; position: absolute; transform: unset;}
+	#skyweb24_contact_type3 form {padding: 20px; position: relative;}
+	#skyweb24_contact_type3 div.back {display: none;}
+	#skyweb24_contact_type3 div.main {width: 100%; transform: unset;}
+	#skyweb24_contact_type3 div.main:before { transform: unset;top:0;}
+	#skyweb24_contact_type3 {width: 350px; padding: 0%; margin: 0; box-sizing: border-box;}
+	#popup-message.popup-window.sw24PopupPro .popup-window-close-icon {top: 0; right: 0;}
+	#skyweb24_contact_type3 div.main:before{left: 0;}
+	#skyweb24_contact_type3 div.main{margin-left:0;}
+	#skyweb24_contact_type3 form{left:0;}
+}
+@media screen and (max-width:736px) {
+	#skyweb24_contact_type3 {width: 320px; padding: 0%; margin: 0; box-sizing: border-box;}
+	#skyweb24_contact_type3 div.main,
+	#skyweb24_contact_type3 div.back,
+	#skyweb24_contact_type3 div.back:before,
+	#skyweb24_contact_type3 div.main:before {transform: none; width: 100%;}
+	#skyweb24_contact_type3 div.main,
+	#skyweb24_contact_type3 div.back,
+	#skyweb24_contact_type3 form {position: relative;}
+	#skyweb24_contact_type3 form {width: 100%; padding: 10px 10%;}
+	#skyweb24_contact_type3 form:before {transform: none; width: 100%; left: 0;}
+	#skyweb24_contact_type3 div.main,
+	#skyweb24_contact_type3 div.back {padding: 0 5%;}
+	#skyweb24_contact_type3 div.back h3 {margin: 10px 0;}
+	.skyweb24_popup_pro_timer{width:100%;}
+	.skyweb24_popup_pro_timer>svg{flex-basis: 0;}
+	#skyweb24_contact_type3 div.main{margin-left:0;}
+	#skyweb24_contact_type3 form{left:0;min-height: unset;http://debug.skyweb24.ru/banners/contact_type3.php}
+	#skyweb24_contact_type3 div.main h2{font-size: 20px;text-align: center;}
+	
+}
+
+.alreadygoing.success_send {padding: 25px 20px 20px;}
+.alreadygoing.success_send span.popup-window-close-icon {opacity: 0.8; right: -8px; top: 0;}
+.alreadygoing .success {font-size: 1.2em;}
+
+.success_send #skyweb24_contact_type3 {width: auto; min-height: 0;}
+#popup-message.popup-window.sw24PopupPro {box-shadow: none;}

@@ -1,0 +1,11 @@
+#skyweb24_roulette h2 {color: #16a085;}
+#skyweb24_roulette p.result_roll {color: #16a085;}
+#skyweb24_roulette label.email.input>input {border: 1px solid #16a085; color: #16a085;}
+#skyweb24_roulette button.roll_roulette {background: #16a085;}
+	#skyweb24_roulette button.roll_roulette:hover {background: #1abc9c;}
+
+#skyweb24_roulette div.arrow path:nth-child(1) {fill: #1abc9c!important}
+#skyweb24_roulette div.arrow path:nth-child(2) {fill: #16a085!important}
+
+.skyweb24_popup_pro_timer {background: #16a085;}
+.popup-window.sw24PopupPro .popup-window-close-icon {background: #16a085;}

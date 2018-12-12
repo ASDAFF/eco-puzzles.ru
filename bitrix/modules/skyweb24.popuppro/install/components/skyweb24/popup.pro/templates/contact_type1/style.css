@@ -1,0 +1,70 @@
+#skyweb24_contact_type1 {margin: 0 auto; width: 600px; background: #fff; font-family: 'Roboto', sans-serif;}
+	#skyweb24_contact_type1 .bgColorBlock {padding: 5px 15px;}
+	#skyweb24_contact_type1 img#img_going_s1 {display: block; max-height: 300px; margin: 0 auto; margin-top: 20px;}
+	#skyweb24_contact_type1 h2 {width: 100%; font-size: 36px; font-weight: bold; text-transform: uppercase; text-align: center; color: #fff; margin: 10px 0px 15px 0px; padding: 0;}
+	#skyweb24_contact_type1 h3 {width: 100%; font-size: 24px; font-weight: bold; text-transform: uppercase; text-align: center; color: #fff;}
+
+	#skyweb24_contact_type1 label {margin-bottom: 10px; padding: 0 5px; position: relative; box-sizing: border-box;}
+	#skyweb24_contact_type1 .fieldset {align-items: center; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; display: flex; align-content: stretch; box-sizing: border-box;}
+	#skyweb24_contact_type1 .fieldset.last {display: block;}
+	#skyweb24_contact_type1 .fieldset label {display: inline-block; width: 100%;}
+	#skyweb24_contact_type1 .fieldset label input[type=text] {width: 100%;}
+	#skyweb24_contact_type1 .fieldset .notshow {display: none; flex: none;}
+	#skyweb24_contact_type1 .fieldset label.textarea {width: 100%; flex: none;}
+	#skyweb24_contact_type1 .fieldset label span {display: inline-block; box-sizing: border-box; width: 30%;}
+	#skyweb24_contact_type1 .fieldset label sup {display:none!important;}
+	#skyweb24_contact_type1 .fieldset label.required sup {display: inline-block!important; color: #e74c3c;}
+	#skyweb24_contact_type1 .fieldset label.submit {width: 100%; flex: none;}
+	#skyweb24_contact_type1 .fieldset label.submit>button {width: 100%; height: 40px; line-height: 1; text-align: center; border: 0; border-radius: 5px; padding: 0; color: #fff; font-size: 18px; font-weight: 100; transition: .3s; outline: none;}
+	#skyweb24_contact_type1 .fieldset label textarea {width: 100%; margin: 0; padding: 0; border: 0; box-sizing: border-box;}
+	#skyweb24_contact_type1 .fieldset label input:not([type="submit"]):empty {height: 35px; padding-left: 10px; border: 0; padding-top: 15px; outline: none; font-weight: 800; font-size: 14px; box-sizing:border-box;}
+	#skyweb24_contact_type1 .fieldset label textarea:empty {line-height: 35px; padding-left:10px; padding-top: 10px; font-size: 14px; background: #fff;}
+	#skyweb24_contact_type1 .fieldset label textarea:empty+span,
+	#skyweb24_contact_type1 .fieldset label input:empty+span {position: absolute; left: 10px; width: 140px; transition: all 0.3s; top: 0; font-weight: 400; cursor: text; color: #bdc3c7; line-height: 20px; display: block; font-size: 12px;}
+	#skyweb24_contact_type1 .fieldset label textarea:focus+span,
+	#skyweb24_contact_type1 .fieldset label input:focus+span,
+	#skyweb24_contact_type1 .fieldset label textarea:valid+span,
+	#skyweb24_contact_type1 .fieldset label input:valid+span {line-height: 20px; display: block; font-size: 12px;}
+	#skyweb24_contact_type1 .error {background:#fff; color:#e74c3c;}
+	#skyweb24_contact_type1 .error p {padding: 5px 10px;}
+	#skyweb24_contact_type1 .success {color: #fff; padding: 25px 20px 20px; font-size: 1.2em;}
+
+	#skyweb24_contact_type1 .fieldset label input::-webkit-input-placeholder {font-weight: initial;}
+	#skyweb24_contact_type1 .fieldset label input::-moz-placeholder {font-weight: initial;}
+	#skyweb24_contact_type1 .fieldset label input:-moz-placeholder {font-weight: initial;}
+	#skyweb24_contact_type1 .fieldset label input:-ms-input-placeholder {font-weight: initial;}
+	#skyweb24_contact_type1 .fieldset label textarea::-webkit-input-placeholder {font-weight: initial;}
+	#skyweb24_contact_type1 .fieldset label textarea::-moz-placeholder {font-weight: initial;}
+	#skyweb24_contact_type1 .fieldset label textarea:-moz-placeholder {font-weight: initial;}
+	#skyweb24_contact_type1 .fieldset label textarea:-ms-input-placeholder {font-weight: initial;}
+
+	#skyweb24_contact_type1 .fieldset label input:focus::-webkit-input-placeholder {font-weight: initial;}
+	#skyweb24_contact_type1 .fieldset label input:focus::-moz-placeholder {font-weight: initial;}
+	#skyweb24_contact_type1 .fieldset label input:focus:-moz-placeholder {font-weight: initial;}
+	#skyweb24_contact_type1 .fieldset label input:focus:-ms-input-placeholder {font-weight: initial;}
+	#skyweb24_contact_type1 .fieldset label textarea:focus::-webkit-input-placeholder {font-weight: initial;}
+	#skyweb24_contact_type1 .fieldset label textarea:focus::-moz-placeholder {font-weight: initial;}
+	#skyweb24_contact_type1 .fieldset label textarea:focus:-moz-placeholder {font-weight: initial;}
+	#skyweb24_contact_type1 .fieldset label textarea:focus:-ms-input-placeholder {font-weight: initial;}
+
+	#skyweb24_contact_type1 button,
+	#skyweb24_contact_type1 input[type=submit] {cursor: pointer;}
+	#skyweb24_contact_type1 .fieldset label div.info input[type='checkbox'] {height: initial;}
+	#skyweb24_contact_type1 .fieldset label div.info a {color: white;}
+	#skyweb24_contact_type1 .fieldset label input[name=use_consent]:empty {height: 13px; vertical-align: middle;}
+	#skyweb24_contact_type1 .consentBlock {margin: 3px 0 15px;}
+		#skyweb24_contact_type1 .consentBlock a {color: #fff; text-decoration: underline;}
+		
+	#skyweb24_contact_type1 .sw24TextCloseButton {display: inline-block; margin-bottom: 10px; font-size: 14px; border-bottom: 1px dashed #2c3e50; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; color: #2c3e50;}
+	#skyweb24_contact_type1 .sw24TextCloseButton:hover {border-bottom: 1px dashed transparent;}
+
+@media(max-width:767px) {
+	#skyweb24_contact_type1 {width: 320px;}
+		#skyweb24_contact_type1 img#img_going_s1 {max-height: 150px; max-width: 100%;}
+		#skyweb24_contact_type1 h2 {font-size: 22px; margin: 10px 0px;}
+		#skyweb24_contact_type1 h3 {font-size: 14px; margin: 5px 0px;}
+		#skyweb24_contact_type1 p {font-size: 18px;}
+		#skyweb24_contact_type1 .fieldset {display: block;}
+		#skyweb24_contact_type1 .fieldset label {width: 100%!important;}
+		#skyweb24_contact_type1 .fieldset label textarea {min-height: 80px;}
+}

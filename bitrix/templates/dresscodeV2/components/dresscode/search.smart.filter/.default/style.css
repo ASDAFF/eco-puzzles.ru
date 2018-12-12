@@ -1,0 +1,755 @@
+#smartFilter {
+	margin-top: 24px;
+	border: 1px solid #e7e8ea;
+	position: relative;
+	border-radius: 4px;
+}
+
+#smartFilterForm{
+	padding-bottom: 24px;
+}
+
+#smartFilter span.heading{
+    font-family: 'robotobold';
+    text-transform: uppercase;
+	background: #f3f3f3;
+	text-align: center;
+    padding-left: 0px;
+    cursor: pointer;
+	font-size: 14px;
+	color: #000000;
+}
+
+#smartFilter .paramsBox {
+    border-bottom: 1px solid #e7e8ea;
+	padding: 24px;
+	position: relative;
+	clear: both;
+	font-size: 14px;
+}
+
+#smartFilter .paramsBoxTitle {
+	display: inline-block;
+    margin-bottom: 18px;
+	position: relative;
+    font-size: 14px;
+	line-height: 20px;
+}
+
+#smartFilter .paramsBoxTitle span{
+	cursor: pointer;
+}
+
+#smartFilter .propExpander {
+	background: url(images/expander.png) 50% 8px no-repeat transparent;
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	line-height: 16px;
+	cursor: pointer;
+	height: 26px;
+    width: 21px;
+	top: 0px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+#smartFilter .propExpander.expanded {
+	-moz-transform: rotate(90deg); 
+	-ms-transform: rotate(90deg); 
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg); 
+	transform: rotate(90deg);
+}
+
+#smartFilter .showALL:active{
+	position: relative;
+	top: 1px;
+}
+
+#smartFilter .params {
+	transition: all .2s ease;
+	clear: both;
+	opacity: 1;
+}
+
+#smartFilter .params.collapsed {
+	display: block;
+	margin-top: -18px;
+	overflow: hidden;
+	opacity: 0;
+	max-height: 0;
+}
+
+#smartFilter .radio,
+#smartFilter .checkbox  {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#smartFilter .radio li,
+#smartFilter .checkbox li {
+	padding-bottom: 12px;
+}
+
+#smartFilter .radio label,
+#smartFilter .checkbox label{
+	-webkit-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	transition: all 0.1s;
+}
+
+#smartFilter .radio .off,
+#smartFilter .checkbox .off {
+	display: none;
+}
+
+#smartFilter .radio li:last-child,
+#smartFilter .checkbox li:last-child {
+	padding-bottom: 0;
+}
+
+#smartFilter .disabled {
+	cursor: default !important;
+	color: #888;
+}
+
+#smartFilter .disabled .wrap {
+	opacity: .6;
+}
+
+#smartFilter .dropdown {
+	background-color: #ffffff;
+    border: 1px solid #e7e8ea;
+	position: relative;
+	line-height: 13px;
+	font-size: 13px;
+	display: block;
+	-webkit-user-select: none; 
+	-moz-user-select: none;     
+	-ms-user-select: none; 
+	border-radius: 4px;
+}
+
+#smartFilter .checkedItem {
+	padding: 12px 30px 12px 8px !important;
+	border-radius: 4px;
+	background: url(images/selectArrow.png) 97% 50% no-repeat transparent;
+	display: block;
+	cursor: pointer;
+}
+
+#smartFilter .dropdown label:before,
+#smartFilter .checkboxList label:before {
+	display: none;
+}
+
+#smartFilter .dropdownList {
+	background-color: #ffffff;
+    border: 1px solid #e7e8ea;
+    position: absolute;
+    list-style: none;
+    margin: 0 -1px;
+    opacity: 0;
+    padding: 0;
+    z-index: 2;
+    top: 47px;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+#smartFilter .dropdownList.opened {
+	visibility: visible;
+	opacity: 1;
+}
+
+#smartFilter .pics .dropdownList {
+	top: 52px;
+}
+
+#smartFilter .dropdownList .item {
+	padding: 8px !important;
+	display: block;
+}
+
+#smartFilter .dropdownList .selected,
+#smartFilter .dropdownList .item:hover {
+	cursor: pointer;
+	color: #ffffff;
+}
+
+#smartFilter .dropdown input {
+	top: -44px;
+}
+
+#smartFilter .rangeSlider input[type="text"] {
+	background-color: #ffffff;
+	border-color: #e7e8ea;
+	border-radius: 4px;
+	color: #888888;
+	height: 26px;
+	width: 68px;
+}
+
+#smartFilter .rangeSlider input[type="text"]:nth-of-type(1) {
+	margin-right: 12px;
+}
+
+#smartFilter .rangeSlider label {
+	display: inline-block;
+	margin-right: 12px;
+}
+
+#smartFilter .slider {
+	background: url(images/uiBg.png) 3px 0 repeat-x transparent;
+	margin: 24px auto 0;
+	position: relative;
+	max-width: 300px;
+	height: 54px;
+	width: 100%;
+}
+
+#smartFilter .slider .trans {
+	-webkit-transition: width 0.2s ease-in-out, visibility 0.2s linear;
+	-moz-transition: width 0.2s ease-in-out, visibility 0.2s linear;
+	-o-transition: width 0.2s ease-in-out, visibility 0.2s linear;
+	transition: width 0.2s ease-in-out, visibility 0.2s linear;
+}
+
+#smartFilter .handler {
+	position: absolute;
+    cursor: pointer;
+    height: 14px;
+    width: 100%;
+    top: 19px;
+}
+
+#smartFilter .slider .blackoutLeft,
+#smartFilter .slider .blackoutRight {
+    background: url(images/handler.png) 0 0 repeat-x transparent;
+    position: absolute;
+    height: 14px;
+    width: 0;
+    top: 0;
+}
+
+#smartFilter .slider .blackoutLeft {
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	left: 0px;
+}
+
+#smartFilter .slider .blackoutRight {
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-bottomright: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	right: 0px;
+}
+
+#smartFilter .slider ins {
+	background: url(images/motionButton.png) 0 0 no-repeat transparent;
+    position: absolute;
+    cursor: pointer;
+	display: block;
+	height: 34px;
+    width: 34px;
+    z-index: 10;
+    top: -10px;
+}
+
+#smartFilter .slider ins:hover {
+	background-position: -34px 0;
+}
+
+#smartFilter .slider ins:active {
+	background-position: -68px 0;
+}
+
+#smartFilter .slider .left {
+	right: -24px;
+}
+
+#smartFilter .slider .right {
+	left:  -24px;
+}
+
+#smartFilterControls {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 0px 12px;
+	margin: 24px 0 0;
+	overflow: hidden;
+	list-style: none;
+}
+
+#smartFilterControls li {
+	width: 48%;
+	float: left;
+}
+
+#smartFilterControls li:last-child{
+	float: right;
+}
+
+#set_filter, #del_filter {
+	line-height: 46px;
+	font-size: 16px;
+	height: 46px;
+}
+
+#set_filter {
+
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+
+	text-decoration: none;
+	border-radius: 4px;
+	font-size: 13px;
+	display: block;
+	color: #fff;
+}
+
+
+#set_filter:active{
+	position: relative;
+	top: 1px;
+}
+
+#del_filter {
+
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+
+	background-color: #2b2b2b;
+	text-decoration: none;
+	border-radius: 4px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 13px;
+	display: block;
+	border: none;
+}
+
+#del_filter:hover{
+	background-color: #1e1e1e;
+}
+
+#del_filter:active{
+	position: relative;
+	top: 1px;
+}
+
+#smartFilter .checkboxList {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#smartFilter .checkboxList li {
+	padding-bottom: 12px;
+	position: relative;
+	cursor: pointer;
+}
+
+#smartFilter .checkboxList li:last-child {
+	padding-bottom: 0;
+}
+
+#smartFilter .checkboxList label {
+	padding-left: 0 !important;
+	display: block;
+	vertical-align: middle;
+}
+
+#smartFilter .checkboxList.inline li {
+	display: inline-block;
+}
+
+#smartFilter .checkboxList input {
+	top: 10px;
+}
+
+#smartFilter .checkboxList .icon,
+#smartFilter .dropdown .icon {
+	vertical-align: middle;
+	border: 1px solid #e7e8ea;
+	display: inline-block;
+	margin-right: 12px;
+	padding: 6px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-transition: border-color .3s ease;
+	-moz-transition: border-color .3s ease;
+	-o-transition: border-color .3s ease;
+	transition: border-color .3s ease;
+}
+
+#smartFilter .checkboxList .disabled .icon,
+#smartFilter .dropdown .disabled .icon {
+	border-color: #e7e8ea !important;
+}
+
+#smartFilter .checkboxList .icon .wrap,
+#smartFilter .dropdown .icon .wrap {
+	-webkit-background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;
+	vertical-align: middle;
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+}
+
+#smartFilter .dropdown .icon {
+	padding: 4px;
+}
+
+#smartFilter .dropdown .icon .wrap {
+	height: 20px;
+	width: 20px;
+}
+
+#smartFilter .checkboxList .value,
+#smartFilter .dropdown .value {
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 16px;
+}
+
+#smartFilter .filterCalendar {
+	position: relative;
+	display: block;
+	float: left;
+	width: 45%;
+}
+
+#smartFilter .filterCalendar + .filterCalendar {
+	margin-left: 10%;
+}
+
+#smartFilter .filterCalendar .calendar-icon {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 2;
+	opacity: 0;
+}
+
+#smartFilter .filterCalendar .fakeCalendarIcon {
+	position: absolute;
+	top: 6px;
+	right: 5px;
+	z-index: 1;
+	height: 20px;
+	width: 20px;
+	background-color: #ccc;
+}
+
+#smartFilter .filterCalendar input[type="text"] {
+	background-color: #2d2d2d;
+    border-color: #454545;
+	padding-right: 30px;
+	text-align: center;
+	display: block;
+    height: 32px;
+	width: 100%;
+}
+
+#smartFilter .hint {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin-right: 6px;
+	cursor: pointer;
+	height: 18px;
+	width: 18px;
+}
+
+#smartFilter .hint:hover {
+	background-position: -18px 0;
+}
+
+#smartFilter .hintValue {
+	background-color: #ffffff;
+	border: 1px solid #e7e8ea;
+	position: absolute;
+	line-height: 18px;
+	min-width: 250px;
+	margin-top: 8px;
+	font-size: 13px;
+	cursor: default;
+	display: none;
+	padding: 16px;
+	z-index: 3;
+	top: 100%;
+}
+
+#smartFilter .hintValue .heading {
+	line-height: 18px;
+	font-size: 16px;
+	margin: 0 0 8px;
+	color: #FFF;
+	padding: 0;
+}
+
+#smartFilter .hintValue .close {
+	text-decoration: none;
+    position: absolute;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 2;
+    right: 6px;
+    top: 6px;
+}
+
+#smartFilter button, 
+#smartFilter input, 
+#smartFilter select, 
+#smartFilter textarea {
+	box-sizing: border-box;
+}
+
+#smartFilter button:focus, 
+#smartFilter input:focus, 
+#smartFilter select:focus, 
+#smartFilter textarea:focus {
+	outline: none;
+}
+
+#smartFilter button, 
+#smartFilter select {
+	text-transform: none;
+}
+
+#smartFilter button {
+	overflow: visible;
+}
+
+#smartFilter input[type="submit"],
+#smartFilter input[type="reset"],
+#smartFilter button {
+	cursor: pointer;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+#smartFilter input[type="file"] {
+	background: transparent;
+	border: 1px solid transparent;
+}
+
+#smartFilter input[type="text"],
+#smartFilter input[type="password"],
+#smartFilter input[type="email"],
+#smartFilter input[type="tel"],
+#smartFilter input[type="url"],
+#smartFilter textarea,
+#smartFilter select {
+	background: rgba(0,0,0,.5);
+	border: 1px solid #373737;
+	height: 42px;
+	padding: 0px 8px;
+	font-size: 13px;
+	color: #fff;
+	margin: 0;
+}
+
+#smartFilter textarea{
+	padding: 4px 8px;
+}
+
+#smartFilter input[type="text"]:focus,
+#smartFilter input[type="email"]:focus,
+#smartFilter input[type="password"]:focus,
+#smartFilter input[type="tel"]:focus,
+#smartFilter input[type="url"]:focus,
+#smartFilter textarea:focus,
+#smartFilter select:focus {
+	border-color: #cccccc;
+}
+
+#smartFilter input[type="checkbox"] + label,
+#smartFilter input[type="radio"] + label {
+	cursor: pointer;
+}
+
+#smartFilter input[type="checkbox"]:not(checked),
+#smartFilter input[type="radio"]:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+#smartFilter input[type="checkbox"]:not(checked) + label,
+#smartFilter input[type="radio"]:not(checked) + label {
+	position: relative;
+	padding-left: 28px;
+}
+
+#smartFilter input[type="checkbox"] + label:before {
+	background: url(images/checkBox.png) 0 0 no-repeat transparent;
+}
+
+#smartFilter input[type="radio"] + label:before {
+	background: url(images/radio.png) 0 0 no-repeat transparent;
+}
+
+#smartFilter input[type="checkbox"]:not(checked) + label:before,
+#smartFilter input[type="radio"]:not(checked) + label:before {
+	position: absolute;
+	content: " ";
+    height: 17px;
+	width: 17px;
+	left: 0;
+	top: 1px;
+}
+
+#smartFilter input[type="checkbox"]:not(checked) + label:hover:before,
+#smartFilter input[type="radio"]:not(checked) + label:hover:before {
+	background-position: 0 -17px;
+}
+
+#smartFilter input[type="checkbox"]:checked + label:before,
+#smartFilter input[type="radio"]:checked + label:before {
+	background-position: 0 -34px;
+}
+
+#smartFilter input[type="checkbox"]:checked + label:hover:before,
+#smartFilter input[type="radio"]:checked + label:hover:before {
+	background-position: 0 -51px;
+}
+
+#smartFilter input[type="checkbox"]:disabled + label,
+#smartFilter input[type="radio"]:disabled + label {
+	cursor: default;
+}
+
+#smartFilter input[type="checkbox"]:disabled + label:before,
+#smartFilter input[type="radio"]:disabled + label:before {
+	background-position: 0 -68px !important;
+}
+
+#smartFilter textarea {
+	resize: vertical;
+	overflow: auto;
+	height: auto;
+}
+
+#smartFilter button::-moz-focus-inner,
+#smartFilter input::-moz-focus-inner {
+	padding:0;
+	border:0
+}
+
+#smartFilter input::-moz-placeholder,
+#smartFilter textarea::-moz-placeholder {
+	color: #fff;
+}
+
+#smartFilter input:focus::-moz-placeholder,
+#smartFilter textarea:focus::-moz-placeholder {
+    color: transparent;	
+}
+
+#smartFilter input::-ms-input-placeholder,
+#smartFilter textarea::-ms-input-placeholder {
+	color: #fff;
+}
+
+#smartFilter input:focus::-webkit-input-placeholder,
+#smartFilter textarea:focus::-webkit-input-placeholder {
+	color: #fff;
+}
+
+#smartFilter input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+#smartFilter textarea:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+
+#smartFilter input[type="search"] {
+	-webkit-appearance: textfield;
+}
+
+#smartFilter input[type="search"]::-webkit-search-cancel-button,
+#smartFilter input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+#modef {
+    -webkit-transition: top .2s ease;
+    -moz-transition: top .2s ease;
+    -o-transition: top .2s ease;
+    transition: top .2s ease;
+   	position: absolute;
+   	line-height: 38px;
+   	padding-left: 7px;
+   	text-align: center;
+    font-size: 12px;
+   	width: 193px;
+   	height: 38px;
+   	left: 400px;
+    color: #fff;
+    z-index: 99;
+}
+
+#modef .close {
+	background: url(images/closeModef.png) 0 0 no-repeat;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 8px;
+    margin-top: -2px;
+    height: 12px;
+    width: 12px;
+}
+
+#modef .close:hover {
+	opacity: .8;
+}
+
+
+#modef .close:active {
+	position: relative;
+	top: 1px;
+}
+
+#modef_send {
+	margin-left: 8px;
+	color: #ffffff;
+}
+
+#modef_send:hover {
+	opacity: 0.9;
+}
+
+#modef_num{
+	display: inline-block;
+}
+
+#modef_send{
+	display: inline-block;
+}
+
+#smartFilter .elCount {
+	text-decoration: none;
+}
+

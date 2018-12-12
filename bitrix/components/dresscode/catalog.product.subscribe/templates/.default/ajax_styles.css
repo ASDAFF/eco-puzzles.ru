@@ -1,0 +1,276 @@
+.catalog-subscribe{
+    -webkit-transition: 0.1s all ease-in-out;
+    -o-transition: 0.1s all ease-in-out;
+    transition: 0.1s all ease-in-out;
+    background: #0006;
+    position: fixed;
+    overflow: auto;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.catalog-subscribe-container{
+    box-shadow: 1px 1px 12px rgba(60, 60, 60, 0.3);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    background-color: #fff;
+    box-sizing: border-box;
+    position: absolute;
+    padding: 24px 24px;
+    text-align: center;
+    overflow: hidden;
+    width: 420px;
+    left: 50%;
+    top: 50%;
+}
+
+.catalog-subscribe-container__exit{
+    background-color: #424242;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    right: -16px;
+    height: 65px;
+    width: 65px;
+    top: -16px;
+}
+
+.subscribe-container-exit__button{
+    position: absolute;
+    display: block;
+    height: 21px;
+    width: 21px;
+    right: 26px;
+    top: 26px;
+}
+
+.subscribe-container-exit__button{
+    background: url(images/exit.png) 0 0 no-repeat transparent;
+}
+
+.subscribe-container-exit__button:hover{
+    background-position: 0 -21px ;
+}
+
+.subscribe-container-exit__button:active{
+    background-position: 0 -42px ;
+}
+
+.catalog-subscribe-container__heading{
+    font-family: "robotomedium";
+    margin-top: 12px;
+    font-size: 24px;
+}
+
+.catalog-subscribe-container__text{
+    line-height: 18px;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+.catalog-subscribe-container__form{
+    margin-top: 12px;
+}
+
+.subscribe-container-form__field{
+    margin-top: 12px;
+}
+
+.subscribe-container-form__field:first-child{
+    margin-top: 0px;
+}
+
+.subscribe-container-form__field input[type="text"]{
+	transition: all 0.2s ease-in-out;
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+    padding: 0 12px;
+    color: #000000;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    border: 0px;
+}
+
+.subscribe-container-form__field input[type="text"]:focus{
+	background-color: #e9e9e9;
+}
+
+.subscribe-container-form__field input[type="text"].error{
+    border: 1px solid #ff0000;
+}
+
+.container-form-field__submit{
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0px;
+    height: 50px;
+}
+
+.container-form-field__submit.loading{
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.form-field__image{
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 12px;
+    margin-top: -4px;
+}
+
+.subscribe-container-form__field input[type="text"]:focus,
+.subscribe-container-form__field input[type="email"]:focus,
+.subscribe-container-form__field input[type="password"]:focus,
+.subscribe-container-form__field input[type="tel"]:focus,
+.subscribe-container-form__field input[type="url"]:focus,
+.container-form__field textarea:focus,
+.container-form__field select:focus{
+    border-color: #cccccc;
+}
+
+.subscribe-container-form__field input[type="checkbox"] + label,
+.subscribe-container-form__field input[type="radio"] + label{
+    cursor: pointer;
+}
+
+.subscribe-container-form__field input[type="checkbox"]:not(checked),
+.subscribe-container-form__field input[type="radio"]:not(checked){
+  position: absolute;
+  opacity: 0;
+}
+
+.subscribe-container-form__field input[type="checkbox"]:not(checked) + label,
+.subscribe-container-form__field input[type="radio"]:not(checked) + label{
+    position: relative;
+    padding-left: 24px;
+}
+
+.subscribe-container-form__field input[type="checkbox"] + label:before{
+    background: url(images/checkBox.png) 0 0 no-repeat transparent;
+}
+
+.subscribe-container-form__field input[type="radio"] + label:before{
+    background: url(images/radio.png) 0 0 no-repeat transparent;
+}
+
+.subscribe-container-form__field input[type="checkbox"]:not(checked) + label:before,
+.subscribe-container-form__field input[type="radio"]:not(checked) + label:before{
+    position: absolute;
+    content: " ";
+    height: 17px;
+    width: 17px;
+    left: 0;
+    top: -1px;
+}
+
+.subscribe-container-form__field input[type="checkbox"]:not(checked) + label:hover:before,
+.subscribe-container-form__field input[type="radio"]:not(checked) + label:hover:before{
+    background-position: 0 -17px;
+}
+
+.subscribe-container-form__field input[type="checkbox"]:checked + label:before,
+.subscribe-container-form__field input[type="radio"]:checked + label:before{
+    background-position: 0 -34px;
+}
+
+.subscribe-container-form__field input[type="checkbox"]:checked + label:hover:before,
+.subscribe-container-form__field input[type="radio"]:checked + label:hover:before{
+    background-position: 0 -51px;
+}
+
+.subscribe-container-form__field input[type="checkbox"]:disabled + label,
+.subscribe-container-form__field input[type="radio"]:disabled + label{
+    cursor: default;
+}
+
+.subscribe-container-form__field input[type="checkbox"]:disabled + label:before,
+.subscribe-container-form__field input[type="radio"]:disabled + label:before{
+    background-position: 0 -68px !important;
+}
+
+.subscribe-container-form__field input[type="checkbox"].error + label span{
+	border-bottom: 1px solid #ff0000;
+}
+
+.catalog-subscribe-success,
+.catalog-subscribe-error{
+    box-shadow: 1px 1px 12px rgba(60, 60, 60, 0.3);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    background-color: #fff;
+    box-sizing: border-box;
+    position: absolute;
+    padding: 24px 24px;
+    text-align: center;
+    overflow: hidden;
+    display: none;
+    width: 420px;
+    left: 50%;
+    top: 50%;
+}
+
+.catalog-subscribe-success.open,
+.catalog-subscribe-error.open{
+    display: block;
+}
+
+.catalog-subscribe-success__heading,
+.catalog-subscribe-error__heading{
+    font-family: "robotomedium";
+    margin-top: 12px;
+    font-size: 24px;
+}
+
+.catalog-subscribe-success__text,
+.catalog-subscribe-error__text{
+    line-height: 18px;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+.catalog-subscribe-success__close,
+.catalog-subscribe-error__close{
+    margin-top: 12px;
+}
+
+.subscribe-success-close__button,
+.subscribe-error-close__button{
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0px;
+    height: 50px;
+}
+
+@media all and (max-width: 500px){
+    
+    .catalog-subscribe-container,
+    .catalog-subscribe-success,
+    .catalog-subscribe-error{
+        width: 380px;
+    }
+
+}
+
+@media all and (max-width: 420px){
+    
+    .catalog-subscribe-container,
+    .catalog-subscribe-success,
+    .catalog-subscribe-error{
+        width: 290px;
+    }
+
+}

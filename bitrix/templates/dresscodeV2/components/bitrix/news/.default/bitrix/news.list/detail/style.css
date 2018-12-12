@@ -1,0 +1,113 @@
+.newsHeading{
+	font-family: "roboto_ltregular";
+    border-top: 1px solid #e7e8ea;
+    margin: 24px 0 24px;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: left;
+    color: #000000;
+     display: block;
+    padding-top: 24px;
+}
+
+#newsContainer{
+	margin: 0 -12px;
+	overflow: hidden;
+}
+
+#newsContainer .column{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 12px;
+	width: 33.33333%;
+	float: left;
+}
+
+#newsContainer .column .items{
+	overflow: hidden;
+}
+
+#newsContainer .column .item{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #e7e8ea;
+	padding: 0 24px 24px 24px;
+	margin-bottom: 24px;
+}
+
+#newsContainer .column .item .bigPicture{
+	margin-top: 24px;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+#newsContainer .column .item .bigPicture a:active{
+	position: relative;
+	top: 1px;
+}
+
+#newsContainer .column .item .bigPicture img{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	vertical-align: middle;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#newsContainer .column .item .bigPicture img:hover{
+	opacity: 0.9;
+}
+
+#newsContainer .column .item .title{
+	margin-top: 24px;
+}
+
+#newsContainer .column .item .title a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	font-size: 16px;
+	color: #000000;
+	display: block;
+}
+
+#newsContainer .column .item .title a:active{
+	position: relative;
+	top: 1px;
+}
+
+#newsContainer .column .item .newsDate{
+	margin-top: 12px;
+	color: #888888;
+}
+
+#newsContainer .column .item .newsDate .pic{
+	vertical-align: middle;
+	padding-right: 4px;
+	margin-top: -4px;
+}
+
+#newsContainer .column .item .description{
+	margin-top: 12px;
+	color: #888888;
+}
+
+#newsContainer .column .item .more{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 12px;
+	color: #ffffff;
+	padding: 4px 12px;
+}
+
+#newsContainer .column .item .more:active{
+	position: relative;
+	top: 1px;
+}

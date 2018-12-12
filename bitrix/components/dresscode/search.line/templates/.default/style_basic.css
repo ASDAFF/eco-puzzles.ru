@@ -1,0 +1,287 @@
+#topSearch{
+	background-color: #2b2b2b;
+	position: absolute;
+	line-height: 102px;
+	min-width: 320px;
+	height: 102px;
+	display: none;
+	width: 100%;
+	z-index: 35;
+	left: 0;
+}
+
+#topSearch form{
+	height: 95px;
+	line-height: 95px;
+	padding: 0 12px;
+}
+
+#topSearch table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#topSearch .submit{
+	width: 60px;
+	padding-left: 12px;
+}
+
+#topSearch input[type="text"]{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	height: 50px;
+	float: left;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.298);
+	border: 1px solid #000;
+	padding: 0 1%;
+	font-size: 18px;
+	color: #ccc;
+	font-weight: normal;
+	margin-top: 22px;
+}
+
+#topSearch input[type="submit"]{
+	background: url(images/modalSearch.png) 0% 50% no-repeat rgba(0, 0, 0, 0.298);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #000000;
+	color: transparent;
+	margin-top: 22px;
+	cursor: pointer;
+	font-size: 0px;
+	height: 50px;
+	width: 60px;
+	float:right;
+}
+
+#topSearch input[type="submit"]:hover{
+	background-position: -60px 50%;
+}
+
+#topSearch input[type="submit"]:active{
+	background-position: -120px 50%;
+}
+
+#topSearch input[type="text"].loading{
+	background-color: rgba(0, 0, 0, 0.398);
+}
+
+#topSearch .searchField{
+	position: relative;
+}
+
+#topSeachCloseForm{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	position: absolute;
+	color: #ffffff;
+	right: 24px;
+}
+
+#topSeachCloseForm:hover{
+	color: #ffa900;
+}
+
+#searchResult{
+	background-color: #ffffff;
+	position: absolute;
+	display: none;
+	height: auto;
+	z-index: 999;
+	width: 100%;
+	top: 133px;
+	left: 0;
+}
+
+#searchResult h1{
+    border-top: 1px solid #e7e8ea;
+    font-family: 'robotobold';
+    text-transform: uppercase;
+    background-color: #ffffff;
+    position: relative;
+    text-align: center;
+    line-height: 85px;
+    font-size: 18px;
+    height: 85px;
+    margin: 0px;
+}
+
+#searchResult.visible{
+	display: block;
+}
+
+#searchResult .productList{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 24px;
+	padding: 0 24px;
+}
+
+#searchResult .item{
+	width: 16.666666%;
+}
+
+#searchResult .product{
+	
+	border: 0; /* clear */
+
+	border-right: 1px solid #e7e8ea;
+	border-bottom: 1px solid #e7e8ea;
+
+}
+
+#searchResult .product:nth-child(6n+1) {
+    border-left: 1px solid #e7e8ea;
+}
+
+#searchResult .product:nth-child(1),
+#searchResult .product:nth-child(2),
+#searchResult .product:nth-child(3),
+#searchResult .product:nth-child(4),
+#searchResult .product:nth-child(5),
+#searchResult .product:nth-child(6) {
+    border-top: 1px solid #e7e8ea;
+	height: 347px;
+}
+
+#searchResult .searchAllResult{
+	-webkit-transition: all 0.2 ease-in-out;
+	-o-transition: all 0.2 ease-in-out;
+	transition: all 0.2 ease-in-out;
+	border-top: 1px solid #e7e8ea;
+    background-color: #f3f3f3;
+    font-family: 'robotobold';
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    line-height: 85px;
+    font-size: 14px;
+    display: block;
+    color: #000000;
+    height: 85px;
+}
+
+#searchResult .searchAllResult:hover{
+	background-color: #eeeeee;
+}
+
+#searchResult .searchAllResult span{
+	border-bottom: 1px dashed #000000;
+	padding-bottom: 4px;
+}
+
+#searchResult .errorMessage{
+	margin: 24px 36px 24px 36px;
+	text-align: center;
+	font-size: 14px;
+}
+
+#searchProductsClose{
+	background: url(images/exit.png) 0 0 no-repeat transparent;
+	position: absolute;
+	margin-top: -9px;
+	display: block;
+	height: 18px;
+	width: 18px;
+	right: 24px;
+	top: 50%;
+}
+
+#searchProductsClose:hover{
+	background-position: -18px 0;
+}
+
+#searchProductsClose:active{
+	background-position: -36px 0;	
+}
+
+.bx-pagination {
+	margin: 10px 0;
+}
+.bx-pagination .bx-pagination-container {
+	text-align: center;
+	position: relative;
+}
+.bx-pagination .bx-pagination-container ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: inline-block;
+}
+.bx-pagination .bx-pagination-container ul li {
+	display: inline-block;
+	margin: 0 2px 15px 2px;
+}
+.bx-pagination .bx-pagination-container ul li span{
+    -webkit-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+       -moz-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    	-ms-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    	 -o-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    		transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+	background: #eff0f1;
+	padding: 0 8px;
+	display: block;
+	height: 32px;
+	min-width: 32px;
+	line-height: 32px;
+	color: #444;
+	font-size: 14px;
+	border-radius: 16px;
+	vertical-align: middle;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.bx-pagination .bx-pagination-container ul li a {
+	text-decoration: none;
+	display: block;
+	border-radius: 16px;
+	display: block;
+	height: 32px;
+	min-width: 32px;
+	line-height: 32px;
+	color: #444;
+	vertical-align: middle;
+}
+.bx-pagination .bx-pagination-container ul li a:hover span{
+	background: #DADADA;
+}
+.bx-pagination .bx-pagination-container ul li.bx-active span{
+/*	    background: #ff9601;
+	color: #fff;*/
+}
+.bx-pagination .bx-pagination-container ul li.bx-pag-all a span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-prev a span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-next a span {
+	background: #fff;
+	border: 2px solid #eff0f1;
+	line-height: 28px;
+	padding: 0 18px;
+	color: #444;
+}
+.bx-pagination .bx-pagination-container ul li.bx-pag-all span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-prev span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-next span{
+	color: #aab1b4;
+	background: #fff;
+	border: 2px solid #eff0f1;
+	line-height: 28px;
+	padding: 0 18px;
+}
+.bx-pagination .bx-pagination-container ul li.bx-pag-all a:hover span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-prev a:hover span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-next a:hover span {
+	background: #fff;
+	border-color: #DADADA;
+	color: #000;
+}

@@ -1,0 +1,165 @@
+#catalogSection{
+	margin-top: 24px;
+}
+
+#catalogSection .sectionItems{
+	overflow: hidden;
+}
+
+#catalogSection .sectionItems .item{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 24px 24px;
+	border-top: 0;
+}
+
+#catalogSection .sectionItems .item .itemContainer{
+	table-layout: fixed;
+	display: table;
+	width: 100%;
+}
+
+#catalogSection .sectionItems .item .itemContainer .column{
+	vertical-align: middle;
+	display: table-cell;
+}
+
+#catalogSection .sectionItems .item .itemContainer .bigPicture{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	padding-right: 24px;
+	text-align: center;
+	position: relative;
+	width: 450px;
+}
+
+#catalogSection .sectionItems .item .itemContainer .bigPicture:hover{
+	opacity: 0.9;
+}
+
+#catalogSection .sectionItems .item .itemContainer .bigPicture .markerContainer{
+	position: absolute;
+	z-index: 2;
+	left: 0px;
+	top: 0px;
+}
+
+#catalogSection .sectionItems .item .itemContainer .bigPicture img{
+	max-width: 100%;
+}
+
+#catalogSection .sectionItems .item .itemContainer .bigPicture .marker {
+	font: normal normal 12px "roboto_ltregular" , arial , sans-serif;
+	margin-bottom: 8px;
+	padding: 3px 4px;
+	line-height: 16px;
+	z-index: 2;
+}
+
+#catalogSection .sectionItems .item .itemContainer .bigPicture a:active{
+	position: relative;
+	top: 1px;
+}
+
+#catalogSection .sectionItems .item .itemContainer .bigTitle{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-transform: uppercase;
+	font-family: 'robotobold';
+	text-decoration: none;
+	margin-bottom: 24px;
+	font-size: 20px;
+	display: block;
+}
+
+#catalogSection .sectionItems .item .itemContainer .bigTitle:active{
+	position: relative;
+	top: 1px;
+}
+
+#catalogSection .sectionItems .item .itemContainer .description{
+	margin-bottom: 24px;
+	font-size: 12px;
+}
+
+#catalogSection .sectionItems .item .itemContainer .sectionList{
+	overflow: hidden;
+}
+
+#catalogSection .sectionItems .item .itemContainer .sectionList .section{
+	margin-bottom: 12px;
+	width: 33.333333%;
+	float: left;
+}
+
+#catalogSection .sectionItems .item .itemContainer .sectionList .section:nth-child(3n) a{
+	margin-right: 0;
+}
+
+#catalogSection .sectionItems .item .itemContainer .sectionList .section a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	padding-bottom: 12px;
+	margin-right: 24px;
+	font-size: 14px;
+	display: block;
+}
+
+#catalogSection .sectionItems .item .itemContainer .sectionList .section a:active{
+	position: relative;
+	top: 1px;
+}
+
+#catalogSection .sectionItems .item .itemContainer .sectionList .section img{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	vertical-align: middle;
+	padding-right: 12px;
+}
+
+#catalogSection .sectionItems .item .itemContainer .sectionList .section a:hover img{
+	opacity: 0.6;
+}
+
+@media all and (max-width: 1700px) {
+	#catalogSection .sectionItems .item .itemContainer .sectionList .section{
+		width: 50%;
+	}
+}
+
+@media all and (max-width: 1500px) {
+	#catalogSection .sectionItems .item .itemContainer .sectionList .section{
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 1366px) {
+	
+	#catalogSection .sectionItems .item .itemContainer .column{
+		display: block;
+	}
+
+	#catalogSection .sectionItems .item .itemContainer .bigPicture{
+		width: auto;
+	}
+
+	#catalogSection .sectionItems .item .itemContainer .sectionList .section{
+		width: 33.333333%;
+	}
+
+}
+
+@media all and (max-width: 1100px) {
+	#catalogSection .sectionItems .item .itemContainer .sectionList .section{
+		width: 100%;
+	}
+}

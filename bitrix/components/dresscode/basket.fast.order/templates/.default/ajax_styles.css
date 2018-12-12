@@ -1,0 +1,292 @@
+.fast-basket{
+    -webkit-transition: 0.1s all ease-in-out;
+    -o-transition: 0.1s all ease-in-out;
+    transition: 0.1s all ease-in-out;
+    white-space: nowrap;
+    text-align: center;
+    background: #0006;
+    position: fixed;
+    overflow: auto;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.fast-basket::after {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    content: '';
+}
+
+.fast-basket-offset{
+    display: inline-block;
+    vertical-align: middle;    
+}
+
+.fast-basket-container{
+    box-shadow: 1px 1px 12px rgba(60, 60, 60, 0.3);
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    background-color: #fff;
+    box-sizing: border-box;
+    white-space: normal;
+    padding: 24px 24px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin: 24px 0px;
+    width: 420px;
+}
+
+.fast-basket-container__exit{
+    background-color: #424242;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    right: -16px;
+    height: 65px;
+    width: 65px;
+    top: -16px;
+}
+
+.basket-container-exit__button{
+    position: absolute;
+    display: block;
+    height: 21px;
+    width: 21px;
+    right: 26px;
+    top: 26px;
+}
+
+.basket-container-exit__button{
+    background: url(images/exit.png) 0 0 no-repeat transparent;
+}
+
+.basket-container-exit__button:hover{
+    background-position: 0 -21px ;
+}
+
+.basket-container-exit__button:active{
+    background-position: 0 -42px ;
+}
+
+.fast-basket-container__heading{
+    font-family: "robotomedium";
+    margin-top: 12px;
+    font-size: 24px;
+}
+
+.fast-basket-container__text{
+    line-height: 18px;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+.fast-basket-container__form{
+    margin-top: 12px;
+}
+
+.basket-container-form__field{
+    margin-top: 12px;
+}
+
+.basket-container-form__field:first-child{
+    margin-top: 0px;
+}
+
+.basket-container-form__field input[type="text"]{
+	transition: all 0.2s ease-in-out;
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+    padding: 0 12px;
+    color: #000000;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    border: 0px;
+}
+
+.basket-container-form__field input[type="text"]:focus{
+	background-color: #e9e9e9;
+}
+
+.basket-container-form__field input[type="text"].error{
+    border: 1px solid #ff0000;
+}
+
+.container-form-field__submit{
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0px;
+    height: 50px;
+}
+
+.container-form-field__submit.loading{
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.form-field__image{
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 12px;
+    margin-top: -4px;
+}
+
+.basket-container-form__field input[type="text"]:focus,
+.basket-container-form__field input[type="email"]:focus,
+.basket-container-form__field input[type="password"]:focus,
+.basket-container-form__field input[type="tel"]:focus,
+.basket-container-form__field input[type="url"]:focus,
+.container-form__field textarea:focus,
+.container-form__field select:focus{
+    border-color: #cccccc;
+}
+
+.basket-container-form__field input[type="checkbox"] + label,
+.basket-container-form__field input[type="radio"] + label{
+    cursor: pointer;
+}
+
+.basket-container-form__field input[type="checkbox"]:not(checked),
+.basket-container-form__field input[type="radio"]:not(checked){
+  position: absolute;
+  opacity: 0;
+}
+
+.basket-container-form__field input[type="checkbox"]:not(checked) + label,
+.basket-container-form__field input[type="radio"]:not(checked) + label{
+    position: relative;
+    padding-left: 24px;
+}
+
+.basket-container-form__field input[type="checkbox"] + label:before{
+    background: url(images/checkBox.png) 0 0 no-repeat transparent;
+}
+
+.basket-container-form__field input[type="radio"] + label:before{
+    background: url(images/radio.png) 0 0 no-repeat transparent;
+}
+
+.basket-container-form__field input[type="checkbox"]:not(checked) + label:before,
+.basket-container-form__field input[type="radio"]:not(checked) + label:before{
+    position: absolute;
+    content: " ";
+    height: 17px;
+    width: 17px;
+    left: 0;
+    top: -1px;
+}
+
+.basket-container-form__field input[type="checkbox"]:not(checked) + label:hover:before,
+.basket-container-form__field input[type="radio"]:not(checked) + label:hover:before{
+    background-position: 0 -17px;
+}
+
+.basket-container-form__field input[type="checkbox"]:checked + label:before,
+.basket-container-form__field input[type="radio"]:checked + label:before{
+    background-position: 0 -34px;
+}
+
+.basket-container-form__field input[type="checkbox"]:checked + label:hover:before,
+.basket-container-form__field input[type="radio"]:checked + label:hover:before{
+    background-position: 0 -51px;
+}
+
+.basket-container-form__field input[type="checkbox"]:disabled + label,
+.basket-container-form__field input[type="radio"]:disabled + label{
+    cursor: default;
+}
+
+.basket-container-form__field input[type="checkbox"]:disabled + label:before,
+.basket-container-form__field input[type="radio"]:disabled + label:before{
+    background-position: 0 -68px !important;
+}
+
+.basket-container-form__field input[type="checkbox"].error + label span{
+	border-bottom: 1px solid #ff0000;
+}
+
+.fast-basket-success,
+.fast-basket-error{
+    box-shadow: 1px 1px 12px rgba(60, 60, 60, 0.3);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    background-color: #fff;
+    box-sizing: border-box;
+    white-space: normal;
+    position: absolute;
+    padding: 24px 24px;
+    text-align: center;
+    overflow: hidden;
+    display: none;
+    width: 420px;
+    left: 50%;
+    top: 50%;
+}
+
+.fast-basket-success.open,
+.fast-basket-error.open{
+    display: block;
+}
+
+.fast-basket-success__heading,
+.fast-basket-error__heading{
+    font-family: "robotomedium";
+    margin-top: 12px;
+    font-size: 24px;
+}
+
+.fast-basket-success__text,
+.fast-basket-error__text{
+    line-height: 18px;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+.fast-basket-success__close,
+.fast-basket-error__close{
+    margin-top: 12px;
+}
+
+.basket-success-close__button,
+.basket-error-close__button{
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0px;
+    height: 50px;
+}
+
+
+@media all and (max-width: 500px){
+    
+    .fast-basket-container,
+    .fast-basket-success,
+    .fast-basket-error{
+        width: 380px;
+    }
+
+}
+
+@media all and (max-width: 420px){
+    
+    .fast-basket-container,
+    .fast-basket-success,
+    .fast-basket-error{
+        width: 300px;
+    }
+
+}

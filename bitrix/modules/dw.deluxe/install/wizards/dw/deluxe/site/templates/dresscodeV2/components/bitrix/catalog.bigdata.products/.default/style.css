@@ -1,0 +1,98 @@
+#bigDataCarousel .wrap{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    /*margin: 0 24px;*/
+}
+#bigDataCarousel .slideBox > li{
+    float: left;
+}
+
+#bigDataCarousel .productList .item{
+    /*border-left: 0px;*/
+    border-top: 1px solid #e7e8ea;
+    width: 100%;
+    float: none;
+}
+
+#bigDataCarousel .productList .item .tabloid{
+    height: 100%;
+}
+
+#bigDataCarousel .bigDataBtnLeft,
+#bigDataCarousel .bigDataBtnRight{
+    background: url(images/slideArrowSmall.png) 0 0 no-repeat transparent;
+    transform: translateY(-50%);
+    position: absolute;
+    height: 70px;
+    width: 35px;
+    z-index: 22;
+    top: 50%;
+}
+
+#bigDataCarousel .bigDataBtnLeft{
+    left: 24px;
+}
+
+#bigDataCarousel .bigDataBtnRight{
+    right: 24px;
+}
+
+#bigDataCarousel .bigDataBtnLeft:hover{
+    background-position: -35px 0;
+}
+
+#bigDataCarousel .bigDataBtnLeft:active{
+    background-position: -70px 0;
+}
+
+#bigDataCarousel .bigDataBtnRight{
+    background-position: 0 -70px;
+}
+
+#bigDataCarousel .bigDataBtnRight:hover{
+    background-position: -35px -70px;
+}
+
+#bigDataCarousel .bigDataBtnRight:active{
+    background-position: -70px -70px;
+}
+
+@media all and (max-width: 700px){
+
+    #bigDataCarousel .bigDataBtnLeft,
+    #bigDataCarousel .bigDataBtnRight{
+        background: url(images/slideArrowMicro.png) 0 0 no-repeat transparent;
+        transform: translateY(-50%);
+        position: absolute;
+        height: 48px;
+        width: 24px;
+        z-index: 22;
+        top: 50%;
+    }
+
+    #bigDataCarousel .bigDataBtnLeft:hover{
+        background-position: -24px 0;
+    }
+
+    #bigDataCarousel .bigDataBtnLeft:active{
+        background-position: -48px 0;
+    }
+    #bigDataCarousel .bigDataBtnLeft{
+        left: 0;
+    }
+    #bigDataCarousel .bigDataBtnRight{
+        right: 0;
+        background-position: 0 -48px;
+    }
+
+    #bigDataCarousel .bigDataBtnRight:hover{
+        background-position: -24px -48px;
+    }
+
+    #bigDataCarousel .bigDataBtnRight:active{
+        background-position: -48px -48px;
+    }
+
+}

@@ -1,0 +1,8 @@
+<?
+$MESS["JS_UI_VIEWER_DEFAULT_ERROR_TITLE"] = "Произошла ошибка";
+$MESS["JS_UI_VIEWER_IMAGE_VIEW_FULL_SIZE"] = "Показать полностью";
+$MESS["JS_UI_VIEWER_ITEM_ACTION_DOWNLOAD"] = "Скачать";
+$MESS["JS_UI_VIEWER_ITEM_ACTION_EDIT"] = "Редактировать";
+$MESS["JS_UI_VIEWER_ITEM_ACTION_SHARE"] = "Поделиться";
+$MESS["JS_UI_VIEWER_ITEM_ACTION_DELETE"] = "Удалить";
+?>

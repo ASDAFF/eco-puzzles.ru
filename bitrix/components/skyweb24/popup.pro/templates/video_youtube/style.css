@@ -1,0 +1,19 @@
+#skyweb24_video_youtube {margin: 0 auto; max-width: 720px; width: 720px; height: calc(720px * 0.5625);}
+#skyweb24_video_youtube iframe{
+	height: 100%;
+}
+#skyweb24_video_youtube .sw24TextCloseButton {position: absolute; left: 0; bottom: 0; color: #fff; padding: 10px 15px; opacity: .8; background: #000; transition: opacity 0.2s linear;}
+#skyweb24_video_youtube .sw24TextCloseButton:hover {opacity: 1;}
+
+@media screen and (max-width:750px) {
+	#skyweb24_video_youtube {width: 600px;height: calc(600px * 0.5625);}
+}
+@media screen and (max-width:620px) {
+	#skyweb24_video_youtube {width: 500px;height: calc(500px * 0.5625);}
+}
+@media screen and (max-width:520px) {
+	#skyweb24_video_youtube {width: 400px;height: calc(400px * 0.5625);}
+}
+@media screen and (max-width:420px) {
+	#skyweb24_video_youtube {width: 320px;height: calc(320px * 0.5625);}
+}

@@ -1,0 +1,20 @@
+#skyweb24_popup_action {margin: 0 auto; width: 600px; padding: 0 0 0 4px; box-sizing: border-box; text-align: center;}
+	#skyweb24_popup_action img {margin: 20px 20px 0 0; padding: 10px; width: calc(50% - 20px); display: inline-block; vertical-align: middle; box-sizing: border-box;
+		float: right;}
+	#skyweb24_popup_action .text {margin: 0 0 0 -4px; padding: 20px 20px; width: 50%; display: inline-block; vertical-align: middle; font-size: 16px; line-height: 25px; box-sizing: border-box;}
+	#skyweb24_popup_action h2 {margin: 0 0 10px; font-size: 24px; line-height: 40px; width: 100%;}
+	#skyweb24_popup_action h3 {margin: 0 0 20px; font-size: 20px; line-height: 30px;}
+	#skyweb24_popup_action .info {margin: 0 0 10px;}
+	#skyweb24_popup_action .going_link {margin: 0 0 0; padding: 0 25px; height: 40px; display: inline-block; line-height: 40px; font-weight: bold; border-radius: 5px; color: #ffffff; text-decoration: none; transition: all 0.3s ease; -webkit-transition: all 0.3s ease;}
+		#skyweb24_popup_action .going_link:hover {text-decoration: none;}
+		
+	#skyweb24_popup_action .sw24TextCloseButton {display: inline-block; margin-bottom: 10px; font-size: 14px; border-bottom: 1px dashed #2c3e50; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; color: #2c3e50;}
+	#skyweb24_popup_action .sw24TextCloseButton:hover {border-bottom: 1px dashed transparent;}
+
+@media screen and (max-width:720px) {
+	#skyweb24_popup_action {width: auto; padding: 0;}
+		#skyweb24_popup_action .going_link,	#skyweb24_popup_action .text {width: 100%;}
+		#skyweb24_popup_action img{ width: 100%; margin: 0;}
+		#skyweb24_popup_action h2, #skyweb24_popup_action h3, #skyweb24_popup_action .info,	#skyweb24_popup_action .going_link {text-align: center; padding: 0 0;}
+		#skyweb24_popup_action .text {padding: 0px 20px 20px 20px;}
+}

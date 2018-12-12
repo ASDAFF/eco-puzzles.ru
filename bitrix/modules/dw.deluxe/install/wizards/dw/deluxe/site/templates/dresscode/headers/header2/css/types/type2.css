@@ -1,0 +1,16 @@
+#subHeader2 #topCallback .icon{
+	border-radius: 2px;
+}
+
+#topSearch2 .searchContainerInner{
+	border-radius: 2px;
+}
+
+.topWishlist .icon,
+.topCompare .icon{
+	border-radius: 2px;
+}
+
+.cart .heading{
+	border-radius: 2px;
+}

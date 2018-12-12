@@ -1,0 +1,211 @@
+#left .heading .arrow{
+	background-position: -27px 50%;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+#left .heading.opened .arrow{
+	-moz-transform:    rotate(90deg);
+	-o-transform:      rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform:         rotate(90deg);
+}
+
+#nextSection{
+	border-right: 1px solid #e7e8ea;
+	border-left: 1px solid #e7e8ea;
+	border-top: 1px solid #e7e8ea;
+	margin-bottom: 24px;
+	border-radius: 4px;
+	margin-top: 24px;
+}
+
+#nextSection .title{
+	background-color: #f3f3f3;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 12px;
+	cursor: pointer;
+	padding-top: 12px;
+	font-size: 14px;
+	display: block;
+}
+
+#nextSection ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#nextSection li,
+#nextSection .title{
+	border-bottom: 1px solid #e7e8ea;
+}
+
+/*#nextSection li{
+	padding: 12px 24px;
+}*/
+
+#nextSection li a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	display: inline-block;
+    padding: 12px 24px;
+	font-size: 13px;
+	color: #000000;
+}
+
+#nextSection li a:hover,
+#nextSection li .selected{
+	color: #ffa800;
+}
+
+#nextSection li .cnt{
+	color: #888888;
+	float: right;
+}
+
+.collection-banner.banner-elem{
+	height: 470px;
+	margin-bottom: 30px;
+}
+.collection-banner.banner-elem h1{
+	margin-bottom: 18px;
+}
+.collection-banner.banner-elem .h2{
+	margin-bottom: 8px;
+}
+.collection-banner.banner-elem .text-wrap #breadcrumbs + .tb .text-wrap{
+	padding: 12px 0 0;
+}
+.collection-banner.banner-elem .descr{
+	margin-bottom: 8px;
+	font-size: 14px;
+	line-height: 24px;
+	max-height: 120px;
+}
+.collection-banner.banner-elem .descr p{
+	margin: 0;
+}
+.collection-banner.banner-elem .image{
+	vertical-align: middle;
+	width: 60%;
+}
+.collection-banner.banner-elem .image img{
+	max-height: 470px;
+}
+
+@media screen and (max-width: 1600px){
+	.collection-banner.banner-elem{
+		height: 440px;
+	}
+	.collection-banner.banner-elem .image img{
+		max-height: 440px;
+	}
+}
+
+@media screen and (max-width: 1400px){
+	.collection-banner.banner-elem{
+		height: 380px;
+	}
+	.collection-banner.banner-elem .image{
+		width: 50%;
+	}
+	.collection-banner.banner-elem .image img{
+		max-height: 380px;
+	}
+}
+
+@media screen and (max-width: 1300px){
+	.collection-banner.banner-elem{
+		height: 300px;
+	}
+	.collection-banner.banner-elem .image img{
+		max-height: 300px;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.collection-banner.banner-elem h1{
+		margin-bottom: 12px;
+	}
+}
+@media screen and (max-width: 1024px){
+	.collection-banner.banner-elem{
+		height: 240px;
+	}
+	.collection-banner.banner-elem .text-wrap{
+		/*padding-top: 24px;*/
+	}
+	.collection-banner.banner-elem h1{
+		margin-bottom: 10px;
+	}
+	.collection-banner.banner-elem .image{
+		width: 45%;
+	}
+	.collection-banner.banner-elem .image img{
+		max-height: 240px;
+	}
+	.collection-banner.banner-elem .descr{
+		line-height: 20px;
+		max-height: 80px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.collection-banner.banner-elem{
+		height: 200px;
+	}
+	.collection-banner.banner-elem .text-wrap{
+		/*padding-top: 42px;*/
+	}
+	.collection-banner.banner-elem .image{
+		width: 40%;
+	}
+	.collection-banner.banner-elem .image img{
+		max-height: 200px;
+	}
+	.collection-banner.banner-elem .descr{
+		max-height: 60px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.collection-banner.banner-elem{
+		height: 180px;
+	}
+	.collection-banner.banner-elem .image img{
+		max-height: 180px;
+	}
+	.collection-banner.banner-elem #breadcrumbs{
+		left: 12px;
+		width: auto;
+		right: 0;
+		margin-top: 12px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.collection-banner.banner-elem .descr{
+		display: none;
+		max-height: 40px;
+	}
+	.collection-banner.banner-elem .image{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 350px){
+	.collection-banner.banner-elem{
+		height: 140px;
+	}
+	.collection-banner.banner-elem .image img{
+		max-height: 140px;
+	}
+	.collection-banner.banner-elem .text-wrap{
+		/*padding-top: 42px;*/
+	}
+}

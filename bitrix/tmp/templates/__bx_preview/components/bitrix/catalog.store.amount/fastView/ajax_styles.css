@@ -1,0 +1,184 @@
+#fastViewStores{
+    -webkit-transition: 0.1s all ease-in-out;
+    -o-transition: 0.1s all ease-in-out;
+    transition: 0.1s all ease-in-out;
+
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    z-index: 1001;
+    left: 0px;
+    top: 0px;
+    
+    /*display: none;*/
+}
+
+#fastViewStores .fastViewStoresContainer{
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; 
+    box-shadow: 1px 1px 12px rgba(60, 60, 60, 0.3);
+    background-color: #ffffff;
+    margin-left: -400px;
+    margin-top: -275px;
+    position: absolute;
+    height: 600px;
+    width: 800px;
+    left: 50%;
+    top: 50%;
+}
+
+#fastViewStores  .fastViewStoresHeading{
+    background-color: #424242;
+    position: relative;
+    text-align: center;
+    line-height: 60px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#fastViewStores .fastViewStoresExit{
+    position: absolute;
+    display: block;
+    height: 21px;
+    width: 21px;
+    right: 20px;
+    top: 20px;
+}
+
+#fastViewStores .fastViewStoresMap{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    overflow: hidden;
+    padding: 12px;
+    height: 300px;
+}
+
+#fastViewStores .storeTable{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    padding: 12px;
+    height: 216px;
+}
+
+#fastViewStores .storeTableContainer{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    padding-bottom: 50px;
+    height: 216px;
+    width: 850px;
+}
+
+#fastViewStores .storeTableContainerOverflow{
+    width: 776px
+}
+
+#fastViewStores .storeTable:after{
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0);
+    pointer-events: none;
+    position: absolute;
+    display: block;
+    height: 55px;
+    bottom: 0px;
+    content: '';
+    width: 100%;
+}
+
+#fastViewStores .storeTableList{
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+#fastViewStores .storeTableList tr:last-child td{
+    position: relative;
+    z-index: 99;
+}
+
+#fastViewStores .storeTableList tr:nth-child(odd) td{
+    background-color: #f9f9f9;
+}
+
+#fastViewStores  .storeTableList th{
+    background-color: #f3f3f3;
+    padding: 12px 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#fastViewStores .storeTableList td{
+    /*border-top: 1px solid #e7e8ea;*/
+    text-align: center;
+    padding: 14px 24px;
+}
+
+#fastViewStores .storeTableList .name{
+    text-align: left;
+    width: 50%;
+}
+
+#fastViewStores .storeTableList td.name{
+    text-align: left;
+}
+
+#fastViewStores .storeTableList .lb{
+    display: inline-block;
+    text-align: left;
+}
+
+#fastViewStores .storeTableList .icon{
+    vertical-align: middle;
+    padding-right: 6px;
+    margin-top: -4px;
+}
+
+#fastViewStores .storeTableList .green{
+    /*font-weight: 800;*/
+    color: #73b24e;
+}
+
+#fastViewStores .storeTableList .red{
+    color: #ff0000;
+}
+
+#fastViewStores .storeTableList .picture{
+    vertical-align: middle;
+    padding-right: 12px;
+}
+
+#fastViewStores .storeTableList a{
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;    
+    text-decoration: none;
+    color: #000000;
+}
+
+#fastViewStores .storeTableList a span{
+    border-bottom: 1px dashed #bbbbbb;
+    line-height: 26px;
+    padding-bottom: 4px;
+}
+
+#fastViewStores .storeTableList a:hover{
+    color: #888888;
+}
+
+#fastViewStores .storeTableList a:active{
+    position: relative;
+    top: 1px;
+}

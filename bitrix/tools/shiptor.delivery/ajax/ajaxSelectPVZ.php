@@ -1,0 +1,1 @@
+<?php require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/shiptor.delivery/tools/ajax/ajaxSelectPVZ.php");?>

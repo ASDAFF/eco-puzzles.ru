@@ -1,0 +1,185 @@
+#topHeader.color_default{
+	border-bottom: 1px solid #f3f3f3;
+	background-color: #fbfbfb;
+	color: #000000;
+}
+
+#subHeader.color_theme,
+#subHeader.color_black{
+	color: #ffffff;
+}
+
+#subHeader.color_black{
+	border-bottom: 1px solid #313131;
+	background: #2b2b2b;
+}
+
+#topHeader.color_black{
+	background: #2b2b2b;
+	color: #ffffff;
+}
+
+#topHeader.color_theme{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#topHeader.color_default #topMenu li a{
+	color: #000000;
+}
+
+#topHeader.color_theme #topMenu li a{
+	color: #ffffff;
+}
+
+#topHeader.color_theme #topMenu li a:hover{
+	opacity: 0.8;
+}
+
+#topHeader.color_theme #topMenu li .selected{
+	opacity: 0.7;
+}
+
+#topHeader.color_default #topMenu,
+#topHeader.color_default #topService{
+	border-left: 1px solid #f3f3f3;
+}
+
+#topHeader.color_default #topService li{
+	border-right: 1px solid #f3f3f3;
+}
+
+#topHeader.color_default #topService > li > a,
+#topHeader.color_default .user-geo-position-label,
+#topHeader.color_default .user-geo-position-value,
+#topHeader.color_default .user-geo-position-value-link{
+	color: #000000;
+}
+
+#topHeader.color_theme #topMenu,
+#topHeader.color_theme #topService{
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#topHeader.color_theme #topService li{
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#topHeader.color_theme .user-geo-position-label,
+#topHeader.color_theme .user-geo-position-value,
+#topHeader.color_theme .user-geo-position-value-link{
+	color: #ffffff;
+}
+
+@media all and (min-width: 500px){
+	#topHeader.color_theme #topService > li > a{
+		color: #ffffff;
+	}
+}
+
+#topHeader.color_theme #topService > li > a:hover,
+#topHeader.color_theme .user-geo-position-value-link:hover{
+	color: #ffffff;
+	opacity: 0.8;
+}
+
+#subHeader.color_theme #logo{
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#subHeader.color_black #logo{
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#subHeader.color_theme #topHeading{
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#subHeader.color_black #topHeading{
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#subHeader.color_theme #topHeading p,
+#subHeader.color_black #topHeading p{
+	color: #ffffff;
+}
+
+#subHeader.color_theme #headerTools .tools .heading,
+#subHeader.color_black #headerTools .tools .heading{
+	color: #ffffff;
+}
+
+#subHeader.color_theme #headerTools .text,
+#subHeader.color_black #headerTools .text{
+	color: #ffffff;
+}
+
+#subHeader.color_theme #headerTools{
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#subHeader.color_black #headerTools{
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#subHeader.color_theme #headerTools .tools li{
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#subHeader.color_black #headerTools .tools li{
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#subHeader.color_theme #headerTools .tools .link{
+	color: #ffffff;
+}
+
+#subHeader.color_theme #headerTools .tools .link:hover,
+#subHeader.color_black #headerTools .tools .link:hover{
+	opacity: 0.8;
+}
+
+#subHeader.color_theme #headerTools .cart ins,
+#subHeader.color_black #headerTools .cart ins{
+	background-color: rgba(255, 255, 255, 0.4);
+	color: #000000;
+}
+
+#subHeader.color_theme #headerTools .cart ins.active{
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+#subHeader.color_black #headerTools .cart ins.active:active{
+	position: relative;
+	top: 1px;
+}
+
+#subHeader.color_black #headerTools .cart ins.active{
+	color: #ffffff;
+}
+
+#subHeader.color_theme #headerTools .search .icon,
+#subHeader.color_black #headerTools .search .icon{
+	background-image: url(images/searchHeadW.png);
+}
+
+#subHeader.color_theme #headerTools .telephone .icon,
+#subHeader.color_black #headerTools .telephone .icon{
+	background-image: url(images/callbackHeadW.png);
+}
+
+#subHeader.color_theme #headerTools .wishlist .icon,
+#subHeader.color_black #headerTools .wishlist .icon{
+	background-image: url(images/wishlistHeadW.png);
+}
+
+#subHeader.color_theme #headerTools .compare .icon,
+#subHeader.color_black #headerTools .compare .icon{
+	background-image: url(images/compareHeadW.png);
+}
+
+#subHeader.color_theme #headerTools .cart .icon,
+#subHeader.color_black #headerTools .cart .icon{
+	background-image: url(images/cartHeadW.png);
+}

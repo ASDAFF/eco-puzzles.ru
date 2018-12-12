@@ -1,0 +1,39 @@
+#subMenu{
+	display: inline-block;
+	white-space: nowrap;
+	visibility: hidden;
+	text-align: center;
+	list-style: none;
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#subMenu li{
+	border-right: 1px solid #f4f4f4;
+	display: inline-block;
+	position: relative;
+	list-style: none;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+}
+
+#subMenu li:last-child{
+	border: 0;
+}
+
+#subMenu li a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0 36px;
+	color: #000000;
+}
+
+#subMenu li a:active{
+	position: relative;
+	top: 1px;
+}

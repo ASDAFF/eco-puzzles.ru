@@ -1,0 +1,502 @@
+.webformModal{
+    -webkit-transition: 0.1s all ease-in-out;
+    -o-transition: 0.1s all ease-in-out;
+    transition: 0.1s all ease-in-out;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    color: #000000;
+    overflow: hidden;
+    display: none;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.webformModalHideScrollBar{
+	position: relative;
+	overflow: auto;
+    height: 100%;
+    width: 120%;
+}
+
+.webformModalcn100{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	width: 100vw; /* css3 */
+}
+.webformModal.visible{
+	display: block;
+}
+
+.webformModalContainer{
+	box-shadow: 1px 1px 12px rgba(60, 60, 60, 0.3);
+	transform: translateX(-50%) translateY(0%);
+    /*transform: translateX(-50%) translateY(-50%);*/
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    background-color: #ffffff;
+    position: absolute;
+   	-webkit-box-sizing: border-box;
+   	-moz-box-sizing: border-box;
+   	box-sizing: border-box;
+   	margin-bottom: 100px;
+    max-width: 500px;
+    min-width: 320px;
+    width: 100%;
+    top: 100px;
+    left: 50%;
+}
+
+.small .webformModalContainer{
+	transform: translateX(-50%) translateY(-50%);
+	margin-bottom: 0px;
+	top: 50%;
+}
+
+.webFormDw form{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.webFormDw form.loading{
+	pointer-events: none;
+	opacity: 0.8;
+}
+
+.webFormModalHeading{
+    background-color: #424242;
+    position: relative;
+    text-align: center;
+    line-height: 60px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.webformModal .webFormModalHeadingExit{
+	position: absolute;
+	display: block;
+	height: 21px;
+	width: 21px;
+    right: 20px;
+    top: 20px;
+}
+
+.webformModal .webFormModalHeadingExit{
+	background: url(images/exit.png) 0 0 no-repeat transparent;
+}
+
+.webformModal .webFormModalHeadingExit:hover{
+	background-position: 0 -21px ;
+}
+
+.webformModal .webFormModalHeadingExit:active{
+	background-position: 0 -42px ;
+}
+
+.webFormDescription{
+	margin: 24px 0 0 0;
+	max-width: 800px;
+}
+
+.webformModal .webFormDescription{
+	padding: 0 24px;
+}
+
+.webformModal .webFormItems,
+.webformModal .webFormTools,
+.webformModal .webFormError{
+	padding: 0 24px;
+}
+
+.webFormItem{
+	margin-top: 24px;
+}
+
+.webFormItemCaption{
+	font-family: "robotoMedium";
+	margin-bottom: 12px;
+	line-height: 21px;
+}
+
+.webFormItemImage{
+	vertical-align: middle;
+	display: inline-block;
+	padding-right: 6px;
+}
+
+.webFormItemLabel{
+	vertical-align: middle;
+	display: inline-block;
+	color: #555555;
+}
+
+.webFormItemRequired{
+	display: inline-block;
+	padding-left: 4px;
+	color: #ff0000;
+}
+
+.webFormItemFieldVariant{
+	display: inline-block;
+	margin-left: 12px;
+}
+
+.webFormItemFieldVariant:first-child{
+	margin-left: 0px;
+}
+
+.webFormItemField input[type="password"],
+.webFormItemField input[type="text"],
+.webFormItemField select{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "roboto_ltregular";
+	border: 1px solid #e7e7e7;
+	padding-left: 12px;
+	line-height: 55px;
+	/*max-width: 600px;*/
+	max-width: 100%;
+	font-size: 14px;
+	color: #555555;
+	outline: none;
+	height: 55px;
+	width: 100%;
+}
+
+.webFormItemField textarea{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "roboto_ltregular";
+	border: 1px solid #e7e7e7;
+	padding-left: 12px;
+	line-height: 21px;
+	padding-top: 12px;
+	/*max-width: 600px;*/
+	max-width: 100%;
+	font-size: 14px;
+	color: #555555;
+	height: 150px;
+	outline: none;
+	width: 100%;
+}
+
+.webFormItemField input[id*="form_date_"]{
+	margin-bottom: 6px;
+}
+
+.webFormItemField input[type="text"]:focus,
+.webFormItemField input[type="password"]:focus,
+.webFormItemField textarea:focus{
+	border: 1px solid #aaaaaa;
+}
+
+.webFormItemField input[type="checkbox"] + label,
+.webFormItemField input[type="radio"] + label {
+	cursor: pointer;
+}
+
+.webFormItemField input[type="checkbox"]:not(checked),
+.webFormItemField input[type="radio"]:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+.webFormItemField input[type="checkbox"]:not(checked) + label,
+.webFormItemField input[type="radio"]:not(checked) + label {
+	position: relative;
+	padding-left: 28px;
+}
+
+.webFormItemField input[type="checkbox"].error + label:before{
+	border: 1px solid #ff0000 !important;
+}
+
+.webFormItemField input[type="checkbox"] + label:before {
+	background: url(images/checkBox.png) 0 0 no-repeat transparent;
+}
+
+.webFormItemField input[type="radio"] + label:before {
+	background: url(images/radio.png) 0 0 no-repeat transparent;
+}
+
+.webFormItemField input[type="checkbox"]:not(checked) + label:before,
+.webFormItemField input[type="radio"]:not(checked) + label:before {
+	position: absolute;
+	content: " ";
+    height: 17px;
+	width: 17px;
+	left: 0;
+	top: 0px;
+}
+
+.webFormItemField input[type="checkbox"]:not(checked) + label:hover:before,
+.webFormItemField input[type="radio"]:not(checked) + label:hover:before {
+	background-position: 0 -17px;
+}
+
+.webFormItemField input[type="checkbox"]:checked + label:before,
+.webFormItemField input[type="radio"]:checked + label:before {
+	background-position: 0 -34px;
+}
+
+.webFormItemField input[type="checkbox"]:checked + label:hover:before,
+.webFormItemField input[type="radio"]:checked + label:hover:before {
+	background-position: 0 -51px;
+}
+
+.webFormItemField input[type="checkbox"]:disabled + label,
+.webFormItemField input[type="radio"]:disabled + label {
+	cursor: default;
+}
+
+.webFormItemField input[type="checkbox"]:disabled + label:before,
+.webFormItemField input[type="radio"]:disabled + label:before {
+	background-position: 0 -68px !important;
+}
+
+.webFormItemField img.calendar-icon {
+    vertical-align: middle !important;
+    margin: 0 0 0 0px !important;
+    border: 0 !important;
+}
+
+.webFormItemField [multiple]{
+	line-height: 120px;
+	height: 120px;
+	padding: 12px;
+}
+
+.webFormCaptchaPicture{
+	margin-top: 12px;
+}
+
+.webFormCaptchaPicture img{
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+.webFormCaptchaLabel{
+	margin-bottom: 12px;
+	margin-top: 12px;
+}
+
+.webFormItemField input.captcha_word{
+	max-width: 300px;
+}
+
+.webFormTools{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: 24px;
+}
+
+.webFormTools input[type="submit"],
+.webFormTools input[type="reset"]{
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "roboto_ltregular";
+	border: 1px solid #e7e7e7;
+	text-align: center;
+	line-height: 55px;
+	font-size: 14px;
+	cursor: pointer;
+	color: #ffffff;
+	outline: none;
+	height: 55px;
+	width: 100%;
+	padding: 0;
+}
+
+.webFormTools .tc:first-child{
+	padding-right: 12px;
+}
+
+.webFormTools .tc:last-child{
+	padding-left: 12px;
+}
+
+.webFormTools input[type="submit"]:active{
+	position: relative;
+	top: 1px;
+}
+
+.webFormTools input[type="submit"].loading{
+	background-image: url(images/loading.gif);
+	background-color: #000000 !important;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border: 1px solid #000000;
+	pointer-events: none;
+	color: #dddddd;
+	opacity: 0.1;
+}
+
+.webFormTools input[type="reset"]{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	border: 1px solid #aaaaaa;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.webFormTools input[type="reset"]:hover{
+	border: 1px solid #cccccc;
+}
+
+.webFormTools input[type="reset"]:active{
+	position: relative;
+	top: 1px;
+}
+
+.webFormItemError,
+.webFormError{
+	font-family: "robotoMedium";
+	margin-bottom: 12px;
+	font-size: 12px;
+	color: #ff0000;
+	display: none;
+}
+
+.webFormError{
+	margin-bottom: 0px;
+	margin-top: 24px;
+}
+
+.webFormItemError.visible,
+.webFormError.visible{
+	display: block;
+}
+
+.webFormItemField .error{
+	border: 1px solid #ff0000 !important;
+}
+
+.webFormMessage{
+	-webkit-transition: 0.1s all ease-in-out;
+    -o-transition: 0.1s all ease-in-out;
+    transition: 0.1s all ease-in-out;
+    background: rgba(0, 0, 0, 0.4);
+    line-height: 250px;
+    position: fixed;
+    overflow: auto;
+    color: #000000;
+    display: none; 
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.webFormMessageContainer{
+	box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+	background-color: #ffffff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-left: -225px;
+	position: absolute;
+	text-align: center;
+	margin-top: -125px;
+	border-radius: 2px;
+	padding: 0px 24px;
+	height: 250px;
+	width: 450px;
+	left: 50%;
+	top: 50%;
+}
+
+.webFormMessageMiddle{
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 21px;
+}
+
+.webFormMessageHeading{
+	margin-bottom: 24px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.webFormMessageDescription{
+	text-align: center;
+}
+
+.webFormMessageExit{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	background-color: #000000;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	border-radius: 2px;
+	line-height: 40px;
+	margin-top: 24px;
+	padding: 0 24px;
+	color: #ffffff;
+	height: 40px;
+}
+
+.webFormMessageExit:hover{
+	opacity: 0.8;
+}
+
+.webFormMessageExit:active{
+	position: relative;
+	top: 1px;
+}
+
+@media all and (max-width: 650px) {
+	
+	.webFormItemField input[id*="form_date_"]{
+		margin-bottom: 12px;
+	}	
+
+
+	.webFormItemField img.calendar-icon{
+		margin-left: 0px !important;
+	}
+
+	.webFormTools input[type="submit"],
+	.webFormTools input[type="reset"]{
+		max-width: 150px;
+	}
+
+}
+
+@media all and (max-width: 400px) {
+	.webFormTools input[type="submit"],
+	.webFormTools input[type="reset"]{
+		margin-bottom: 24px;
+		max-width: 300px;
+		display: block;
+		width: 100%;
+	}
+}

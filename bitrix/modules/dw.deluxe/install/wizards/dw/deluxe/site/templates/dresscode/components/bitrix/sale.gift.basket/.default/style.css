@@ -1,0 +1,15 @@
+.cartGifts{
+	margin-top: 24px;
+}
+
+.cartGifts .title{
+	font-family: "robotobold";
+	text-transform: uppercase;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0 0 24px;
+    font-size: 16px;
+    color: #000000;
+    display: block;
+}

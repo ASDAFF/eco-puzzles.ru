@@ -1,0 +1,9 @@
+#skyweb24_popup_action {background: #2c3e50;}
+	#skyweb24_popup_action .text {color: #7f8c8d;}
+		#skyweb24_popup_action .text h2 {color: #95a5a6;}
+		#skyweb24_popup_action .text h3 {color: #95a5a6;}
+        #skyweb24_popup_action .text .going_link {background: #7f8c8d; color: #2c3e50;}
+			#skyweb24_popup_action .text .going_link:hover {background: #95a5a6;}
+
+.skyweb24_popup_pro_timer {background: #7f8c8d;}
+.popup-window.sw24PopupPro .popup-window-close-icon {background: #7f8c8d;}

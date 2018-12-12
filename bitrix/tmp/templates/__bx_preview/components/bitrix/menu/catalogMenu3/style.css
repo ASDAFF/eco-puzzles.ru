@@ -1,0 +1,305 @@
+#mainMenuContainer{
+	height: 50px;
+}
+
+#mainMenuContainer .minCatalogButton{
+	font-family: "roboto_ltregular";
+	text-decoration: none;
+	padding-left: 24px;
+	line-height: 65px;
+    font-weight: 400;
+    font-size: 18px;
+	display: none;
+	height: 65px;
+}
+
+#mainMenuContainer .minCatalogButton img{
+	vertical-align: middle;
+	padding-right: 12px;
+	margin-top: -2px;
+}
+
+#menuCatalogSection{
+	border-left: 1px solid #222222;
+	height: 50px;
+	float: left;
+}
+
+#menuCatalogSection .catalogButton{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-transform: uppercase;
+	background-color: #111111;
+	text-decoration: none;
+	line-height: 50px;
+	padding: 0 32px;
+	color: #ffffff;
+	display: block;
+}
+
+#menuCatalogSection .catalogButton:hover{
+    background-color: #000000;
+}
+
+#menuCatalogSection .catalogButton:active{
+	position: relative;
+	top: 1px;
+}
+
+#menuCatalogSection .catalogButton img{
+	vertical-align: middle;
+	padding-right: 12px;
+	margin-top: -2px;
+}
+
+#mainMenu{
+	list-style: none;
+	overflow: hidden;
+	padding: 0px;
+	height: 60px;
+	margin: 0px;
+}
+
+#mainMenu .removedItemsLink > a{
+	background: url(images/menuSlicedIcon.png) 50% 50% no-repeat transparent;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	height: 60px;
+	float: left;
+	width: 40px;
+}
+
+#mainMenu .removedItemsLink > a:hover{
+	opacity: 0.8;
+}
+
+#mainMenu .removedItemsLink .removedItemsList{
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
+	margin: 0px 0px 0px -211px;
+	background-color: #1a1a1a;
+	position: absolute;
+	list-style: none;
+	display: none;
+	padding: 0px;
+	z-index: 100;
+	width: 300px;
+	top: 60px;
+	left: 0px;
+}
+
+#mainMenu .removedItemsLink:hover .removedItemsList{
+	display: block;
+}
+
+#mainMenu .removed{
+	border-top: 1px solid #222222;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+#mainMenu .removed:hover{
+	background-color: #202020;
+}
+
+/*#mainMenu .removed:first-child{
+	border-top: 0px;
+}
+*/
+#mainMenu .removed a{
+	text-decoration: none;
+	line-height: 24px;
+	padding: 18px 24px;
+	display: block;
+}
+
+#mainMenu a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	display: block;
+}
+
+#mainMenu > li{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	border-right: 1px solid #222222;
+	line-height: 60px;
+	float: left;
+}
+
+#mainMenu > li:first-child{
+	border-left: 1px solid #222222;
+}
+
+#mainMenu > li:hover{
+	background-color: #202020;
+}
+
+#mainMenu > li:first-child{
+	margin-left: 0px;
+}
+
+#mainMenu > li > a{
+	text-decoration: none;
+	padding: 0 24px;
+}
+
+#mainMenu > li img{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	vertical-align: middle;
+	padding-right: 12px;
+}
+
+#mainMenu > li a:hover img{
+	opacity: 0.8;
+}
+
+#menuCatalogSection .sectionMenuArrow{
+	padding-left: 12px;
+}
+
+/* drop sections */
+#menuCatalogSection .drop{
+	box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid #dddddd;
+	background-color: #ffffff;
+	position: absolute;
+	padding: 24px 0px;
+	display: none;
+	z-index: 100;
+	width: 100%;
+	top: 150px;
+	left: 0;
+}
+
+#menuCatalogSection .drop ul{
+	margin: -24px 0 0 0;
+	overflow: hidden;
+	list-style: none;
+	padding: 0px;
+}
+
+#menuCatalogSection .drop .menuSectionContainer{
+	overflow: hidden;
+}
+
+#menuCatalogSection .drop ul li{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	line-height: 180px;
+	text-align: center;
+	margin-top: 24px;
+	height: 180px;
+	float: left;
+	width: 20%;
+}
+
+#menuCatalogSection .drop ul li:nth-child(5n+1){
+	border-left: 0;
+}
+
+#menuCatalogSection .drop ul li .container{
+	vertical-align: middle;
+	width: auto !important;
+	display: inline-block;
+	line-height: 21px;
+}
+
+#menuCatalogSection .drop ul li a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-transform: uppercase;
+	font-family: 'robotobold';
+	text-decoration: none;
+	font-size: 14px;
+	display: block;
+	color: #000000;
+}
+
+#menuCatalogSection .drop ul li .picture{
+	margin-bottom: 12px;
+	line-height: 130px;
+	height: 130px;
+}
+
+#menuCatalogSection .drop ul li .picture img{
+	vertical-align: middle;
+}
+
+#menuCatalogSection .drop ul li .picture:hover{
+	opacity: 0.9;
+}
+
+#mainMenu .drop{
+	box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid #dddddd;
+	background-color: #ffffff;
+	position: absolute;
+	padding: 24px 0px;
+	display: none;
+	z-index: 99;
+	width: 100%;
+	top: 60px;
+	left: 0;
+}
+
+#mainMenu .drop .nextColumn{
+	line-height: 21px;
+	list-style: none;
+	float: left;
+	width: 20%;
+	padding: 0;
+	margin: 0;
+}
+
+#mainMenu .drop .nextColumn > li{
+	margin-top: 12px;
+	display: block;
+}
+
+#mainMenu .drop .nextColumn > li:first-child{
+	margin-top: 0px;
+}
+
+#mainMenu .drop .nextColumn > li > a{
+	text-transform: uppercase;
+	font-family: 'robotobold';
+	text-decoration: none;
+	color: #000000;
+}
+
+#mainMenu .drop .nextColumn .menu2Link{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 12px;
+	overflow: hidden;
+}
+
+#mainMenu .drop .nextColumn .menu2Link img{
+	padding-bottom: 12px;
+}
+
+#mainMenu .drop .nextColumn ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#mainMenu .drop .nextColumn ul li{
+	margin-top: 12px;
+	display: block;
+}
+
+#mainMenu .drop .nextColumn ul li a{
+	text-decoration: none;
+	color: #000000;
+}

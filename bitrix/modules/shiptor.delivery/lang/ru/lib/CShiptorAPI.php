@@ -1,0 +1,71 @@
+<?
+$MESS["SHITOR_API_METHOD_GET_SETTLEMENT"] = "Метод получения справочника населенных пунктов";
+$MESS["SHITOR_API_METHOD_SUGGEST_SETTLEMENT"] = "Метод возвращает набор подходящих населенных пунктов";
+$MESS["SHITOR_API_METHOD_GET_SHIPPING_VARIANTS"] = "Метод получения справочника способов доставки";
+$MESS["SHITOR_API_METHOD_GET_DELIVERY_POINTS"] = "Метод получения списка ПВЗ";
+$MESS["SHITOR_API_METHOD_GET_DELIVERY_TIME"] = "Метод получения интервалов забора";
+$MESS["SHITOR_API_METHOD_GET_DAYS_OFF"] = "Метод получения выходных и праздничных дней";
+$MESS["SHITOR_API_METHOD_CALCULATE_SHIPMENT"] = "Метод расчета стоимости доставки";
+$MESS["SHITOR_API_METHOD_ADD_PACKAGE"] = "Метод добавления ожидаемой посылки";
+$MESS["SHITOR_API_METHOD_ADD_PACKAGES"] = "Метод добавления нескольких посылок";
+$MESS["SHITOR_API_METHOD_REMOVE_PACKAGE"] = "Метод удаления посылки";
+$MESS["SHITOR_API_METHOD_GET_PACKAGE"] = "Метод получения статуса посылки";
+$MESS["SHITOR_API_METHOD_GET_PACKAGES"] = "Метод получения списка посылок";
+$MESS["SHITOR_API_METHOD_ADD_PRODUCT"] = "Метод добавления товара";
+$MESS["SHITOR_API_METHOD_ADD_SERVICE"] = "Метод добавления услуги";
+$MESS["SHITOR_API_METHOD_ADD_PICKUP"] = "Метод оформления забора груза";
+$MESS["SHITOR_API_METHOD_CANCEL_PICKUP"] = "Метод отмены забора груза";
+$MESS["SHITOR_API_METHOD_GET_PICKUP"] = "Метод получения информации о заборе груза";
+$MESS["SHITOR_API_METHOD_GET_PICKUP_TIME"] = "Метод получения списка интервалов забора";
+$MESS["SHITOR_API_METHOD_GET_COURIER_PICKUP_TIME"] = "Метод получения списка интервалов забора для курьерской службы";
+$MESS["SHITOR_API_METHOD_GET_PRODUCTS"] = "Метод получения списка добавленных товаров";
+$MESS["SHITOR_API_METHOD_GET_TRACKING"] = "Метод отслеживания посылки по ее трек номеру";
+
+$MESS["SHIPTOR_API_ERROR_1001"] = "Доступ запрещен";
+$MESS["SHIPTOR_API_ERROR_1002"] = "Некорректный заголовок аутентификации";
+$MESS["SHIPTOR_API_ERROR_1100"] = "Пропущено обязательное поле фильтра";
+$MESS["SHIPTOR_API_ERROR_1103"] = "Пропущен обязательный параметр метода";
+$MESS["SHIPTOR_API_ERROR_1104"] = "Некорректное значение параметра";
+$MESS["SHIPTOR_API_ERROR_1201"] = "Сущность не найдена";
+$MESS["SHIPTOR_API_ERROR_1087"] = "Некорректные данные";
+$MESS["SHIPTOR_API_ERROR_2033"] = "Пропущены обязательные поля";
+$MESS["SHIPTOR_API_ERROR_2044"] = "Значение не может быть структурой";
+$MESS["SHIPTOR_API_ERROR_2045"] = "Значение не может быть скалярным";
+$MESS["SHIPTOR_API_ERROR_2055"] = "Пустая коллекция";
+$MESS["SHIPTOR_API_ERROR_2022"] = "Некорректный тип значения";
+$MESS["SHIPTOR_API_ERROR_1400"] = "Внутренняя ошибка сервера";
+$MESS["SHIPTOR_API_ERROR_1401"] = "Ошибка импорта";
+$MESS["SHIPTOR_API_ERROR_-32700"] = "Некорректный метод запроса; Некорректный или пустой заголовок Content-Type; Ошибка JSON структуры.";
+$MESS["SHIPTOR_API_ERROR_-32600"] = "Пустой id в JSON структуре; Пустой method в JSON структуре; Пустой params в JSON структуре.";
+$MESS["SHIPTOR_API_ERROR_-32602"] = "Запрошенный метод не найден; Ошибка вызова метода.";
+$MESS["SHIPTOR_API_ERROR_UNKNOWN"] = "Неизвестная ошибка";
+
+$MESS["SHIPTOR_API_REQUEST_ERROR_WRONG_TYPE"] = "Имя метода имеет нескалярное значение!";
+$MESS["SHIPTOR_API_REQUEST_ERROR_UNKNOWN_METHOD"] = "Метод имеет неопределенную функцию!";
+$MESS["SHIPTOR_API_REQUEST_ERROR_NOT_ARRAY"] = "Параметры должны быть переданы в виде массива!";
+$MESS["SHIPTOR_API_RESPONSE_ERROR_404"] = "Не удалось подключиться к #URL#";
+$MESS["SHIPTOR_API_RESPONSE_ERROR_WRONG"] = "Получен неверный ответ сервера: request id = #ID#, response id = #RES_ID#!";
+
+$MESS["SHIPTOR_API_INCOMING_STATUS_AWAITS"] = "ожидается на складе";
+$MESS["SHIPTOR_API_INCOMING_STATUS_IN_STOCK"] = "на складе";
+$MESS["SHIPTOR_API_INCOMING_STATUS_REMOVED"] = "удалена";
+
+$MESS["SHIPTOR_API_PICKUP_STATUS_WAITING"] = "Ожидает обработки";
+$MESS["SHIPTOR_API_PICKUP_STATUS_IN_WORK"] = "В работе";
+$MESS["SHIPTOR_API_PICKUP_STATUS_IN_STORE"] = "На складе";
+$MESS["SHIPTOR_API_PICKUP_STATUS_CANCELED"] = "Отменен";
+$MESS["SHIPTOR_API_PICKUP_STATUS_COMPLETED"] = "Завершен, выставлен счет за услугу";
+
+$MESS["SHIPTOR_API_OUTGOING_STATUS_NEW"] = "Сформирована пользователем";
+$MESS["SHIPTOR_API_OUTGOING_STATUS_IN_QUEUE"] = "В очереди на упаковку";
+$MESS["SHIPTOR_API_OUTGOING_STATUS_PROCESSING"] = "Упаковывается";
+$MESS["SHIPTOR_API_OUTGOING_STATUS_AWAITS_PAYMENT"] = "Ожидается оплата";
+$MESS["SHIPTOR_API_OUTGOING_STATUS_AWAITS_SENDING"] = "Ожидается отправка";
+$MESS["SHIPTOR_API_OUTGOING_STATUS_SENT"] = "Отправлена";
+$MESS["SHIPTOR_API_OUTGOING_STATUS_RECIEVED"] = "Получена";
+$MESS["SHIPTOR_API_OUTGOING_STATUS_AWAITS_DISBAND"] = "Ожидает расформирования";
+$MESS["SHIPTOR_API_OUTGOING_STATUS_DISBANDED"] = "Расформирована";
+$MESS["SHIPTOR_API_OUTGOING_STATUS_AWAITS_RECYCLE"] = "Ожидает утилизации";
+$MESS["SHIPTOR_API_OUTGOING_STATUS_RECYCLED"] = "Утилизирована";
+$MESS["SHIPTOR_API_OUTGOING_STATUS_REMOVED"] = "Удалена";
+$MESS['SHIPTOR_API_OUTGOING_STATUS_WAITING_IN_PVZ'] = 'Ожидает в пункте выдачи';

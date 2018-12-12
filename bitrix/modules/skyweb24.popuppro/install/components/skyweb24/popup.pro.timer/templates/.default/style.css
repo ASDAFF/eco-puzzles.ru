@@ -1,0 +1,20 @@
+.skyweb24_popup_pro_timer {position: absolute; background: rgba(0, 0, 0, 0.7); color: white; height: 50px; display: flex; animation: none; max-width: 350px; width: 350px; padding: 10px; box-sizing:border-box;}
+	.skyweb24_popup_pro_timer:after {content: ' ';}
+	.skyweb24_popup_pro_timer>* {flex: 0 1;}
+	.skyweb24_popup_pro_timer>svg {flex-basis: 30px;}
+	.skyweb24_popup_pro_timer>.title {width: 120px; flex-basis: 120px;}
+	.skyweb24_popup_pro_timer>.timer {width: 172px; flex-basis: 172px; display: flex; flex-wrap: wrap; justify-content: space-around;}
+		.skyweb24_popup_pro_timer>.timer>div.clock {font-size: 20px; line-height: 1; max-width: 170px; text-align: center; width: 170px; display: flex; justify-content: space-around;}
+			.skyweb24_popup_pro_timer>.timer>div:not(.clock) {flex: 0 1 38px; width: 38px; text-align: center; font-size: 10px;}
+			.skyweb24_popup_pro_timer>.timer>div.clock>span {width: 38px; flex: 0 1 38px;}
+				.skyweb24_popup_pro_timer>.timer>div.clock>span.sep {width: 5px; flex: 0 1 5px;}
+	.skyweb24_popup_pro_timer.top {top: -50px;}
+	.skyweb24_popup_pro_timer.bottom {top: 100%;}
+	.skyweb24_popup_pro_timer.left {left: 0;}
+	.skyweb24_popup_pro_timer.right {left: calc(100% - 350px);}
+
+@media screen and (max-width:400px) {
+	.skyweb24_popup_pro_timer {width: 320px; max-width: 320px;}
+		.skyweb24_popup_pro_timer>svg {display: none;}
+		.skyweb24_popup_pro_timer.right {left: calc(100% - 320px);}
+}

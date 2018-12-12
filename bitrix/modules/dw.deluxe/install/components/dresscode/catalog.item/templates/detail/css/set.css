@@ -1,0 +1,677 @@
+
+#set{
+	padding-bottom: 24px;
+	box-sizing: border-box;
+	/*margin-top: 24px;*/
+}
+
+#set .heading{
+	border-top: 1px solid #e7e8ea;
+	font-family: 'robotobold';
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-top: 30px;
+	padding: 36px 24px;
+	font-weight: 800;
+	font-size: 20px;
+	display: block;
+}
+
+#set .setList .heading2{
+	margin-bottom: 12px;
+	font-size: 14px;
+	display: block;
+}
+
+#set .setList {
+	overflow: hidden;
+}
+
+#set .setTools {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	border: 1px solid #e6e6e6;
+	line-height: 60px;
+	list-style: none;
+	overflow: hidden;
+	padding: 0 0 0 24px;
+	height: 60px;
+	margin: 12px 24px 0 24px;
+}
+
+#set .setTools li{
+	float: left;
+}
+
+#set .setTools .rt{
+	float: right;
+}
+
+#set .setTools .heading2{
+	margin-right: 24px;
+	font-size: 14px;
+}
+
+#set .setTools .price{
+	font-family: 'robotobold';
+	text-decoration: none;
+	position: relative;
+	font-size: 18px;
+	display: block;
+	color: #000000;
+}
+
+#set .setTools .price #setDisnt{
+	font-family: 'roboto_ltregular';
+	display: inline-block;
+	padding-left: 12px;
+	font-size: 14px;
+	color: #888888;
+}
+
+#setDisnt.hidden,
+#setWDisnt.hidden{
+	visibility: hidden;
+}
+
+#set .setTools .addCart{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	line-height: 60px;
+	color: #ffffff;
+	height: 60px;
+	font-size: 16px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	width: 250px;
+	text-decoration: none;
+}
+
+#set .setTools .icon{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+#set .setTools .addCart .icon{
+	padding-right: 12px;
+	margin-top: -6px;
+}
+
+#set .setTools .addSet{
+	font-family: 'roboto_condensedlight';
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	background: #f8f8f8;
+	line-height: 60px;
+	color: #000000;
+	height: 60px;
+	font-size: 14px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	width: 250px;
+	text-decoration: none;
+	border-left: 1px solid #e6e6e6;
+}
+
+#set .setTools .addSet:hover{
+	background: #f6f6f6;
+}
+
+#set .disabled .wrap{
+	transform: scale(0.9);	
+	opacity: 0.5;
+}
+
+#set .setElement{
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/*border-left: 1px solid #e7e8ea;*/
+	position: relative;
+	padding: 0 24px;
+	float: left;
+	width: 25%;
+}
+
+#set .setElement .wrap{
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#set .setElement:first-child{
+	border: 0;
+}
+
+#set .setElement:after{
+	font-family: 'roboto_thregular';
+	transform: translateY(-50%);
+	position: absolute;
+	font-size: 48px;
+	display: block;
+	color: #888888;
+	content: "+";
+	right: -8px;
+	top: 50%;
+
+}
+
+#set .setElement:last-child:after{
+	/*	right: 4px;
+		content: "=";*/
+		display: none;	
+}
+
+#set .setElement .picture{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	line-height: 250px;
+	text-align: center;
+	margin-top: 12px;
+	display: block;
+	height: 250px;
+	/*opacity: 0.8;*/
+}
+
+#set .setElement:hover .picture,
+#set .setElement.general .picture{
+	opacity: 1;
+}
+
+#set .setElement.disabled .picture{
+	opacity: 0.8;
+} 
+
+#set .setElement .picture img{
+	vertical-align: middle;
+	max-height: 90%;
+	max-width: 90%;
+}
+
+#set .setElement .name{
+
+	-webkit-transition: 0.2s all ease-in-out;
+	-o-transition: 0.2s all ease-in-out;
+	transition: 0.2s all ease-in-out;
+	margin-top: 12px;
+	font-size: 14px;
+	color: #000000;
+	display: block;
+	text-decoration: none;
+	margin-bottom: 12px;
+	height: 44px;
+	line-height: 44px;
+	overflow: hidden;
+
+}
+
+#setWindowTable .setElement .name{
+	font-size: 13px;
+}
+
+#set .setElement .middle{
+	line-height: 21px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+#set .setElement .price{
+	font-family: 'robotobold';
+	text-decoration: none;
+	margin-bottom: 12px;
+	position: relative;
+	font-size: 16px;
+	display: block;
+	color: #000000;
+}
+
+#set .setElement .price .discount{
+	font-family: 'roboto_ltregular';
+	display: inline-block;
+	padding-left: 8px;
+	font-size: 14px;
+	color: #888888;
+}
+
+
+#set .sCheck,
+#set .sWindowCheck{
+	background: url(../images/sCheck.png) 0 0 no-repeat transparent;
+	position: absolute;
+	cursor: pointer;
+	display: block;
+	height: 30px;
+	width: 30px;
+	right: 0px;
+	z-index: 2;
+	top: 12px;
+}
+
+#set .sCheck{
+	right: 24px;
+}
+
+#set .sCheck:hover,
+#set .sWindowCheck:hover{
+	background-position: -30px 0;
+}
+
+#set .sCheck:active,
+#set .sWindowCheck:active{
+	background-position: -60px 0;
+}
+
+#set .sCheck.disabled,
+#set .sWindowCheck.disabled{
+	background-position: -90px 0;
+}
+
+#set .sCheck.disabled:hover,
+#set .sWindowCheck.disabled:hover{
+	background-position: -120px 0;
+}
+
+#set .sCheck.disabled:active,
+#set .sWindowCheck.disabled:active{
+	background-position: -150px 0;
+}
+
+
+#setWindow{
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	display: none;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+	left: 0px;
+	top: 0px;
+}
+
+#setWindow .container{
+	transform: translateX(-50%) translateY(-50%);
+	background-color: #ffffff;
+	position: relative;
+	max-height: 440px;
+	overflow: hidden;
+	width: 900px;
+	left: 50%;
+	top: 50%;
+}
+
+#setWindow .container .wp{
+	overflow: hidden;
+}
+
+#setWindow #setWindowTable{
+	width: 100%;
+	table-layout: fixed;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+#setWindow #setWindowTable td{
+	padding: 0;
+}
+
+#setWindow .heading3{
+	background-color: #424242;
+	position: relative;
+	text-align: center;
+	line-height: 60px;
+	font-size: 18px;
+	color: #ffffff;
+	height: 60px;
+}
+
+#setWindow .container .wElement{
+	width: 240px;
+}
+
+#setWindow .setElement .picture{
+	height: 140px;
+	line-height: 140px;
+}
+
+#setWindow #wProduct{
+	border-right: 1px solid #e7e8ea;
+	width: 100%;
+}
+
+#setWindow #wProduct .picture{
+	opacity: 1
+}
+
+#setWindow .fr{
+	display: inline-block;
+	padding-top: 12px;
+	font-size: 13px;
+}
+
+#setWindow .setElement:last-child:after{
+	display: none;
+}
+
+#setWindow .close{
+	background: url(../images/exit.png) 0 0 no-repeat transparent;
+	position: absolute;
+	display: block;
+	height: 21px;
+	width: 21px;
+    right: 20px;
+    top: 20px;
+}
+
+#setWindow .close:hover{
+	background-position: 0 -21px ;
+}
+
+#setWindow .close:active{
+	background-position: 0 -42px ;
+}
+
+#setWindowPrice{
+	background-color: #424242;
+	position: relative;
+	text-align: center;
+	line-height: 60px;
+	overflow: hidden;
+	font-size: 18px;
+	color: #ffffff;
+	height: 60px;
+}
+
+#setWindowPrice ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#setWindowPrice li{
+	float: left;
+}
+
+#setWindowPrice li:last-child{
+	text-align: right;
+	color: #ffffff;
+	float: right;
+}
+
+#setWindowPrice li .heading4{
+	margin-right: 12px;
+	padding-left: 12px;
+	font-size: 14px;
+}
+
+#setWindowPrice .discount{
+    font-family: 'roboto_ltregular';
+    display: inline-block;
+    margin-left: 12px;
+    padding-left: 8px;
+    font-size: 14px;
+    color: #888888;
+}
+
+#setWindowPrice .addCart{
+	font-family: 'roboto_condensedlight';
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	min-width: 152px;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	line-height: 60px;
+	padding: 0 24px;
+	font-size: 16px;
+	color: #ffffff;
+	height: 60px;
+}
+
+#setWindowPrice .icon{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+#setWindowPrice .addCart .icon{
+	padding-right: 12px;
+	margin-top: -6px;
+}
+
+#setWindowPrice .closeWindow{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	border-left: 1px solid #4c4c4c;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 0 24px;
+	color: #ffffff;
+	float: left;
+}
+
+#setWindowPrice .closeWindow:hover{
+	background-color: #262626;
+}
+
+#setWindowPrice .closeWindow img{
+	vertical-align: middle;
+	margin-right: 12px;
+}
+
+#setWindow .container .slideBox,
+#setCarousel{
+	position: relative;
+	border: 0;
+}
+
+#setWindow .setBtnLeft,
+#setWindow .setBtnRight{
+	background: url(../images/slideArrowSmall.png) 0 0 no-repeat transparent;
+	transform: translateY(-50%);
+	position: absolute;
+	height: 70px;
+	width: 35px;
+	z-index: 22;
+	top: 50%;
+}
+
+#setWindow .setBtnLeft{
+	left: 0;
+}
+
+#setWindow .setBtnRight{
+	right: 0;
+}
+
+#setWindow .setBtnLeft:hover{
+	background-position: -35px 0;
+}
+
+#setWindow .setBtnLeft:active{
+	background-position: -70px 0;
+}
+
+#setWindow .setBtnRight{
+	background-position: 0 -70px;
+}
+
+#setWindow .setBtnRight:hover{
+	background-position: -35px -70px;
+}
+
+#setWindow .setBtnRight:active{
+	background-position: -70px -70px;
+}
+
+@media all and (max-width: 1366px) {
+	#set .setElement .picture {
+		height: 200px;
+		line-height: 200px;
+	}
+}
+
+@media all and (max-width: 900px) {
+	#set .setTools .addSet{
+		display: none;
+	}
+}
+
+@media all and (max-width: 800px) {
+	#set .setList{
+		border-top: 1px solid #e7e8ea;
+	}
+
+	#set .setElement{
+  	 	overflow: hidden;
+	    height: 140px;
+	    padding: 12px;
+  	}
+
+	#set .setElement:nth-child(n){
+		border-bottom: 1px solid #e7e8ea;
+		border-right: 1px solid #e7e8ea;
+		width: 50%;
+	}
+
+	#set .setElement:nth-child(2n){
+		border-right-width: 0px;
+	}
+
+	#set .setElement:after{
+		display: none;
+	}
+
+	.setListTable{
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	.setListColImage{
+		display: table-cell;
+		vertical-align: middle;
+		width: 110px;
+		padding-right: 12px;
+	}
+
+	.setListColText{
+		display: table-cell;
+		vertical-align: middle;
+		padding-right: 24px;
+	}
+
+	#set .setElement .picture{
+		height: 120px;
+		margin: 0;
+		line-height: 120px;
+	}
+
+	#set .sCheck{
+		top: 6px;
+		right: 6px;
+	}
+
+	#set .setElement .name{
+		margin-top: 0;
+		margin-bottom: 2px;
+		height: 36px;
+		line-height: 36px;
+	}
+
+	#set .setElement .middle{
+		line-height: 18px;
+	}
+
+	#set .setElement .price{
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+
+	#set .setElement .price .discount{
+		display: block;
+		padding: 0;
+		font-size: 13px;
+		line-height: 16px;
+	}
+	
+	#set .setTools .heading2{
+		display: none;
+	}
+
+	#set .setTools .addCart{
+		width: 200px;
+	}
+
+}
+
+@media all and (max-width: 600px){
+	#set .setElement:nth-child(n){
+		width: 100%;
+		border-right-width: 0px;
+	}
+
+	.setListColImage {
+		width: 40%;
+		min-width: 110px;
+		max-width: 160px;
+	}
+}
+
+@media all and (max-width: 550px) {
+	#set .setTools{
+		overflow: hidden;
+		padding: 0 24px;
+		height: auto;
+		margin: 0 0;
+		border: 0;
+	}
+
+	#set .setTools li{
+		float: unset;
+	}
+
+	#set .setTools .rt{
+		text-align: left;
+		display: block;
+		float: unset;
+		clear: both;
+	}
+
+	#set .setTools .addCart{
+		clear: both;
+	}
+
+	#set .setTools li{
+		line-height: 21px;
+		margin-top: 24px;
+	}
+
+	#set .setTools li:last-child{
+		/*display: none;*/
+	}
+
+	#set .setTools .heading2{
+		display: block !important;
+		font-size: 16px;
+	}
+
+}
+
+
+@media all and (max-width: 400px) {
+	.setListColImage {
+		width: 50%;
+	}
+}

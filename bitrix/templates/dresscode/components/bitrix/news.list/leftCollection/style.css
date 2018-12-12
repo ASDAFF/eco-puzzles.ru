@@ -1,0 +1,88 @@
+#collectionBlock {
+	margin-top: 24px;
+	position: relative;
+	overflow: hidden;
+	color: #888;
+	font-size: 12px;
+	line-height: 16px;
+	background-color: #ffffff;
+}
+
+#collectionBlock .sideBlockContent{
+	border: 1px solid #e7e8ea;
+	padding: 12px;
+}
+
+#collectionBlock .item{
+	margin-top: 12px;
+	overflow: hidden;
+}
+
+#collectionBlock .item:first-child{
+	margin-top: 0px;
+}
+
+#collectionBlock .name{
+
+	-webkit-transition: 0.2s all ease-in-out;
+	-o-transition: 0.2s all ease-in-out;
+	transition: 0.2s all ease-in-out;
+
+	display: block;
+	margin-bottom: 8px;
+	color: #000000;
+	font-size: 12px;
+}
+
+#collectionBlock .description{
+	height: 48px;
+    overflow: hidden;
+}
+
+#collectionBlock .link{
+	text-decoration: none;
+}
+
+#collectionBlock .link:hover{
+	color: #000000;
+}
+
+#collectionBlock .picBlock{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #e7e8ea;
+	margin-right: 6px;
+	text-align: center;
+}
+
+#collectionBlock .picBlock img{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	vertical-align: middle;
+	max-height: 90%;
+	max-width: 90%;
+}
+
+
+#collectionBlock .picBlock:hover img{
+	opacity: 0.8;
+}
+
+#collectionBlock .tools{
+	vertical-align: top;
+	display: inline-block;
+	width: 60%;
+}
+
+#collectionBlock .tools .date{
+	margin-bottom: 6px;
+	display: block;
+	color: #888888;
+}

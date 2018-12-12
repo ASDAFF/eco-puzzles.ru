@@ -1,0 +1,224 @@
+#personalInfo {
+	overflow: hidden;
+	clear: both;
+}
+
+#personalInfo span.heading {
+	display: block;
+	text-align: left !important;
+	padding-left: 24px;
+}
+
+#personalInfo input[type="checkbox"] {
+	height: 15px;
+	width: 15px;
+}
+
+#mainProfile {
+	margin-bottom: 36px;
+	overflow: hidden;
+}
+
+#mainProfile .profileSettings .heading {
+	background: none;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+}
+
+#mainProfile .profileSettings {
+	margin: 0 18px 0 0px;
+	padding: 0;
+
+}
+
+#mainProfile .profileSettings li:first-child {
+	margin-right: 48px;
+}
+
+#mainProfile .profileSettings li {
+	max-width: 600px;
+	min-width: 200px;
+	list-style: none;
+	float: left;
+	width: 100%;
+}
+
+#mainProfile .profileSettings input[type="text"] {
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #f3f3f3;
+	margin-bottom: 12px;
+	min-width: 180px;
+	padding: 0 12px;
+	height: 48px;
+	width: 100%;
+	border: 0;
+}
+
+#mainProfile .profileSettings input[type="text"]:focus {
+	background-color: #eeeeee;
+}
+
+#mainProfile .profileSettings textarea {
+	font: normal normal 13px "roboto_ltregular" , arial , sans-serif;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #f3f3f3;
+	margin-bottom: 8px;
+	padding: 12px 12px;
+	min-width: 180px;
+	outline: none;
+	height: 106px;
+	resize: none;
+	width: 100%;
+	border: 0;
+}
+
+#mainProfile .profileSettings textarea:focus {
+	background-color: #eeeeee;
+}
+
+#mainProfile .profileSettings label {
+	font-size: 14px;
+	display: block;
+	margin-bottom: 8px;
+}
+
+#mainProfile .profileSettings .submit {
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	text-align: center;
+	line-height: 48px;
+	margin-top: 8px;
+	font-size: 14px;
+	display: block;
+	color: #ffffff;
+	height: 48px;
+	width: 212px;
+}
+
+#mainProfile .profileSettings .submit:active {
+	position: relative;
+	top: 1px;
+}
+
+#mainProfile .bx_my_order_switch a {
+	height: 35px;
+	line-height: 35px;
+	background: #4192D9;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	padding: 0px 12px;
+}
+
+#mainProfile .bx_my_order_switch a:hover {
+	background: #0074d9;
+}
+
+#mainProfile .bx_my_order_switch a:active {
+	position: relative;
+	top: 1px;
+}
+
+#elementError {
+	background-color: rgba(0, 0, 0, 0.298);
+	display: none;
+	height: 100%;
+	left: 0px;
+	overflow: visible;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 998;
+}
+
+#elementErrorContainer {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.500);
+	background-color: #ffffff;
+	margin-left: -150px;
+	margin-top: -130px;
+	position: relative;
+	overflow: hidden;
+	color: #000000;
+	width: 300px;
+	z-index: 999;
+	left: 50%;
+	top: 50%;
+}
+
+#elementErrorContainer span.heading {
+	background-color: #424242;
+	color: #ffffff;
+	display: block;
+	font-size: 16px;
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+#elementErrorContainer p {
+	text-align: center;
+	color: #000000;
+	padding: 12px;
+}
+
+#elementErrorContainer #elementErrorClose {
+	background: url("images/exit.png") 0px 0px no-repeat transparent;
+	margin-bottom: 24px;
+	position: absolute;
+	display: block;
+	height: 21px;
+	right: 24px;
+	width: 21px;
+	top: 16px;
+}
+
+#elementErrorContainer #elementErrorClose:hover {
+	background: url("images/exit.png") 0px -21px no-repeat transparent;
+}
+
+#elementErrorContainer #elementErrorClose:active {
+	background: url("images/exit.png") 0px -42px no-repeat transparent;
+}
+
+#elementErrorContainer .close {
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	color: #cccccc;
+	background: #424242;
+	width: 140px;
+	text-decoration: none;
+	margin: 0px auto 12px;
+}
+
+#elementErrorContainer .close:hover {
+	background: #2b2b2b;
+}
+
+#elementErrorContainer .close:active {
+	position: relative;
+	top: 1px;
+}

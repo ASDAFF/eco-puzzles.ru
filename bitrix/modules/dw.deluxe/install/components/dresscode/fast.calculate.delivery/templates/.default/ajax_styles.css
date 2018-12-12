@@ -1,0 +1,371 @@
+.delivery-modal{
+    -webkit-transition: 0.1s all ease-in-out;
+    -o-transition: 0.1s all ease-in-out;
+    transition: 0.1s all ease-in-out;
+    white-space: nowrap;
+    text-align: center;
+    background: #0006;
+    position: fixed;
+    overflow: auto;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.delivery-modal::after {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    content: '';
+}
+
+.delivery-modal-offset{
+    display: inline-block;
+    vertical-align: middle;    
+}
+
+.delivery-modal-container{
+    box-shadow: 1px 1px 12px rgba(60, 60, 60, 0.3);
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    background-color: #fff;
+    box-sizing: border-box;
+    white-space: normal;
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+    margin: 24px 0px;
+    padding: 36px;
+    width: 760px;
+}
+
+.delivery-modal .h3{
+    font-family: "robotomedium";
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 18px;
+    display: block;
+    color: #000000;
+    padding: 0px;
+}
+
+.delivery-modal .delivery-modal-qty{
+    margin-bottom: 12px;
+    padding: 0;
+}
+
+.delivery-modal .qtyBlock{
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 42px;
+}
+
+.delivery-modal .qtyBlock label{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.delivery-modal .qtyBlock .qty{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 2px;
+    height: 19px;
+    width: 40px;
+    padding: 0 2px;
+    border: 0;
+}
+
+.delivery-modal .qtyBlock .qty{
+    background-color: #e7e8ea;
+    color: #000000;
+}
+
+.delivery-modal .qtyBlock .qty.error{
+    border: 1px solid #ff0000;
+}
+
+.delivery-modal .qtyBlock .plus,
+.delivery-modal .qtyBlock .minus{
+    vertical-align: middle;
+    display: inline-block;
+    height: 19px;
+    width: 19px;
+}
+
+.delivery-modal .qtyBlock .plus,
+.delivery-modal .qtyBlock .minus{
+    background: url(images/plusMinus.png) 0 0 no-repeat #424242;
+}
+
+.delivery-modal .qtyBlock .plus{
+    background-position: 0 -19px;
+}
+
+.delivery-modal .qtyBlock .plus:hover{
+    background-position: -19px -19px;
+}
+
+.delivery-modal .qtyBlock .plus:active{
+    background-position: -38px -19px;
+}
+
+.delivery-modal .qtyBlock .minus:hover{
+    background-position: -19px 0x;
+}
+
+.delivery-modal .qtyBlock .minus:active{
+    background-position: -38px 0px;
+}
+
+.delivery-modal .qtyBlocklabel{
+    padding-right: 12px;
+}
+
+.delivery-modal .qtyBlock a{
+    vertical-align: middle;
+}
+
+.delivery-modal .qtyBlock input{
+    vertical-align: middle;
+}
+
+.delivery-modal .delivery-count-cart{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.delivery-modal .delivery-items{
+    border-top: 1px solid #ededed;
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+.delivery-modal.loading .delivery-items{
+    background-image: url("images/wait.gif");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+.delivery-modal .delivery-item-container{
+    border-bottom: 1px solid #ededed;
+    padding: 12px 0px;
+}
+
+.delivery-modal .delivery-error{
+    line-height: 21px;
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+}
+
+.delivery-modal .delivery-item{
+    height: 72px;
+    width: 100%;
+}
+
+.delivery-modal .delivery-item:first-child{
+    border-top: 0px;
+}
+
+.delivery-modal .image{
+    text-align: left;
+    width: 120px;
+}
+
+.delivery-modal .image img{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.delivery-modal .delivery-name{
+    font-family: "robotomedium";
+}
+
+.delivery-modal .delivery-descr{
+    margin-top: 4px;
+    line-height: 18px;
+    font-size: 13px;
+    color: #888888;
+}
+
+.delivery-modal .price{
+    font-family: "robotomedium";
+    text-align: right;
+    font-size: 16px;
+    width: 150px;
+}
+
+.delivery-modal .active-link{
+    display: inline-block;
+    vertical-align: top;
+    font-family: "robotobold";
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.delivery-modal .delivery-modal-exit{
+    position: absolute;
+    display: block;
+    height: 21px;
+    width: 21px;
+    right: 38px;
+    top: 38px;
+    cursor: pointer;
+}
+
+.delivery-modal .delivery-modal-exit{
+    background: url(images/exitDark.png) 0 0 no-repeat transparent;
+}
+
+.delivery-modal .delivery-modal-exit:hover{
+    background-position: 0 -21px;
+}
+
+.delivery-modal .delivery-modal-exit:active{
+    background-position: 0 -42px;
+}
+
+.delivery-modal input[type="checkbox"] + label{
+    cursor: pointer;
+}
+
+.delivery-modal input[type="checkbox"]:not(checked){
+    position: absolute;
+    opacity: 0;
+}
+
+.delivery-modal input[type="checkbox"]:not(checked) + label{
+    position: relative;
+    padding-left: 28px;
+}
+
+.delivery-modal input[type="checkbox"] + label:before{
+    background: url(images/checkBox.png) 0 0 no-repeat transparent;
+}
+
+.delivery-modal input[type="checkbox"]:not(checked) + label:before{
+    position: absolute;
+    content: " ";
+    height: 17px;
+    width: 17px;
+    left: 0;
+    top: 0px;
+}
+
+.delivery-modal input[type="checkbox"]:not(checked) + label:hover:before{
+    background-position: 0 -17px;
+}
+
+.delivery-modal input[type="checkbox"]:checked + label:before{
+    background-position: 0 -34px;
+}
+
+.delivery-modal input[type="checkbox"]:checked + label:hover:before{
+    background-position: 0 -51px;
+}
+
+.delivery-modal input[type="checkbox"]:disabled + label{
+    cursor: default;
+}
+
+.delivery-modal input[type="checkbox"]:disabled + label:before{
+    background-position: 0 -68px !important;
+}
+
+@media all and (max-width: 1024px){
+
+    .delivery-modal .delivery-modal-container{
+        padding: 24px;
+        width: 700px;
+    }
+
+}
+
+@media all and (max-width: 750px){
+
+    .delivery-modal .delivery-modal-container{
+        padding: 12px;
+        width: 550px;
+    }
+
+    .delivery-modal .price{
+        width: 100px;
+    }
+
+    .delivery-modal .delivery-item .tc.image{
+        display: none;
+    }
+
+    .delivery-modal .h3{
+        margin-bottom: 12px;
+    }
+
+    .delivery-modal .delivery-modal-exit{
+        right: 24px;
+        top: 24px;
+    }
+
+}
+
+@media all and (max-width: 600px){
+
+    .delivery-modal .delivery-modal-container{
+        padding: 12px;
+         width: 312px;
+    }
+
+    .delivery-modal .delivery-item .tc{
+        display: block;
+    }
+
+    .delivery-modal .image{
+        width: auto;
+    }
+
+    .delivery-modal .price{
+        width: auto;
+        text-align: left;
+    }
+
+    .delivery-modal .delivery-count-cart{
+        margin-top: 12px;
+    }
+
+    .delivery-modal .h3{
+        padding-right: 36px;
+        line-height: 21px;
+        font-size: 14px;
+    }
+
+    .delivery-modal .delivery-modal-exit{
+        right: 18px;
+        top: 18px;
+    }
+
+}

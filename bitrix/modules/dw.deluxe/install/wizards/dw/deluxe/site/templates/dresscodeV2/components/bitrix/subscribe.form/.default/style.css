@@ -1,0 +1,65 @@
+#subscribe{
+	background-color: #ffffff;
+	margin-top: 24px;
+	overflow: hidden;
+}
+
+#subscribe form{
+	padding: 0 12px;
+}
+
+#subscribe input::-webkit-input-placeholder{
+    color: #888888;
+}
+
+#subscribe input::-moz-placeholder{
+   color: #888888;
+}
+
+#subscribe input:focus::-webkit-input-placeholder{
+	color: transparent;
+}
+
+#subscribe input:focus::-moz-placeholder{
+	color: transparent;
+}
+
+#subscribe input:focus:-moz-placeholder{
+	color: transparent;
+}
+
+#subscribe input:focus:-ms-input-placeholder{
+	color: transparent;
+}
+
+#subscribe input{
+
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	background: #e7e8ea;
+	text-align: center;
+	margin: 12px auto;
+	padding-left: 8px;
+	line-height: 50px;
+	font-size: 14px;
+	color: #888888;
+	display: block;
+	height: 50px;
+	width: 100%;
+	border: 0;
+}
+
+#subscribe input[type="text"]:focus{
+	background-color: #f3f3f3;
+}
+
+#subscribe .submit{
+	cursor: pointer;
+	color: #ffffff;
+}

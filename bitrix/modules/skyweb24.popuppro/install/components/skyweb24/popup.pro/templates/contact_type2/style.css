@@ -1,0 +1,82 @@
+#skyweb24_contact_type2 {margin: 0 auto; width: 400px; box-sizing: border-box; background: white;}
+	#skyweb24_contact_type2 h2 {text-align: center; text-transform: uppercase; margin: 0; padding: 20px; font-size:24px; font-weight: bold;}
+	#skyweb24_contact_type2 div.subtitle {width: 100%; max-height: 107px; overflow: hidden; position: relative; margin-bottom: 10px; height: 200px; position: relative; width: 100%; height: 350px; overflow: hidden;}
+	#skyweb24_contact_type2 div.subtitle div {width: 3000px; animation: bgMove 10s infinite ease-in-out; height: 200px;}
+	#skyweb24_contact_type2 button, #skyweb24_contact_type2 input[type=submit] {cursor: pointer;}
+	
+@keyframes bgMove {
+	0% {background-position: 0px 0px;}
+	50% {background-position: 1500px 0px;}
+	100% {background-position: 3000px 0px;}
+}
+
+	#skyweb24_contact_type2 div.subtitle h3 {position: absolute; line-height: 1; text-transform: uppercase; font-size: 20px; top: 0; bottom: 0; left: 0; right: 0; margin: auto; display: block; color: white;}
+	#skyweb24_contact_type2 div.subtitle h3>span {display: inline-block; margin: 0 auto; text-align: center; vertical-align: middle; width: 100%;}
+	#skyweb24_contact_type2 div.subtitle h3>span:first-child {font-weight: bold; margin-top: 25px; font-size: 30px;}
+	#skyweb24_contact_type2 div.subtitle img {width:100%;}
+	#skyweb24_contact_type2 label {width:100%; display:block; margin:10px auto 0; padding: 0 15px; box-sizing:border-box;}
+	#skyweb24_contact_type2 fieldset label input,
+	#skyweb24_contact_type2 fieldset label textarea {width: 100%; display: block; box-sizing: border-box;}
+	#skyweb24_contact_type2 label>span {height: 20px; font-family: 20px; line-height: 20px; color: #777;}
+	#skyweb24_contact_type2 fieldset label sup {display: none !important;}
+	#skyweb24_contact_type2 fieldset label.required sup {display: inline-block !important; color: #e74c3c;}
+	#skyweb24_contact_type2 fieldset label textarea:empty {line-height: 35px; padding-left: 10px; padding-top: 10px; font-size: 14px; background: #fff; min-height: 80px; border-radius: 5px;}
+	#skyweb24_contact_type2 fieldset label {margin-bottom: 10px; padding: 0 5px; position: relative; box-sizing: border-box;}
+	#skyweb24_contact_type2 fieldset label>* {display: inline-block;}
+	#skyweb24_contact_type2 fieldset .notshow {display: none;}
+	#skyweb24_contact_type2 fieldset label.one {width: 100%;}
+	#skyweb24_contact_type2 fieldset label.two {width: 50%;}
+	#skyweb24_contact_type2 fieldset label.three {width: 33.3%;}
+	#skyweb24_contact_type2 fieldset label>textarea {width: 100%;}
+	#skyweb24_contact_type2 fieldset label.submit {width: 100%;}
+	#skyweb24_contact_type2 fieldset label.submit>button {width: 100%; height: 40px; line-height: 1; text-align: center; border: 0; border-radius: 5px; padding: 0; font-size: 16px; transition: .3s all; outline: none; color: #fff;}
+	#skyweb24_contact_type2 fieldset label span {width:80%; text-align:left; display:block;}
+	#skyweb24_contact_type2 fieldset label input:not([type="submit"]):empty {height: 35px; padding-left: 10px; border: 0; padding-top: 15px; outline: none; font-weight: 800; font-size: 14px; border-radius:5px;}
+	#skyweb24_contact_type2 fieldset label textarea:empty+span,
+	#skyweb24_contact_type2 fieldset label input:empty+span {position: absolute; left: 10px; line-height: 35px; width: 300px; font-size: 14px; transition: all 0.3s; top: 0; font-weight: 400; cursor: text; color: #bdc3c7; line-height: 20px; display: block; font-size: 12px;}
+	#skyweb24_contact_type2 fieldset label textarea:focus+span,
+	#skyweb24_contact_type2 fieldset label input:focus+span,
+	#skyweb24_contact_type2 fieldset label textarea:valid+span,
+	#skyweb24_contact_type2 fieldset label input:valid+span {line-height: 20px;	display: block;	font-size: 12px;}
+
+	#skyweb24_contact_type2 fieldset label input::-webkit-input-placeholder {font-weight: initial;}
+	#skyweb24_contact_type2 fieldset label input::-moz-placeholder {font-weight: initial;}
+	#skyweb24_contact_type2 fieldset label input:-moz-placeholder {font-weight: initial;}
+	#skyweb24_contact_type2 fieldset label input:-ms-input-placeholder {font-weight: initial;}
+	#skyweb24_contact_type2 fieldset label textarea::-webkit-input-placeholder {font-weight: initial;}
+	#skyweb24_contact_type2 fieldset label textarea::-moz-placeholder {font-weight: initial;}
+	#skyweb24_contact_type2 fieldset label textarea:-moz-placeholder {font-weight: initial;}
+	#skyweb24_contact_type2 fieldset label textarea:-ms-input-placeholder {font-weight: initial;}
+
+	#skyweb24_contact_type2 fieldset label input:focus::-webkit-input-placeholder {font-weight: initial;}
+	#skyweb24_contact_type2 fieldset label input:focus::-moz-placeholder {font-weight: initial;}
+	#skyweb24_contact_type2 fieldset label input:focus:-moz-placeholder {font-weight: initial;}
+	#skyweb24_contact_type2 fieldset label input:focus:-ms-input-placeholder {font-weight: initial;}
+	#skyweb24_contact_type2 fieldset label textarea:focus::-webkit-input-placeholder {font-weight: initial;}
+	#skyweb24_contact_type2 fieldset label textarea:focus::-moz-placeholder {font-weight: initial;}
+	#skyweb24_contact_type2 fieldset label textarea:focus:-moz-placeholder {font-weight: initial;}
+	#skyweb24_contact_type2 fieldset label textarea:focus:-ms-input-placeholder {font-weight: initial;}
+	#skyweb24_contact_type2 fieldset label div.info input[type='checkbox'] {height: initial;	width: initial; display: inline;}
+	#skyweb24_contact_type2 fieldset label div.info a {display:inline;}
+	#skyweb24_contact_type2 fieldset label input[name=use_consent]:empty {height: 1em; width: 1em; vertical-align: middle; display: inline-block; vertical-align: middle;}
+	#skyweb24_contact_type2 fieldset .consentBlock {margin: 10px 20px; text-align: left;}
+	#skyweb24_contact_type2 .error {background:#e74c3c; color:#fff;}
+	#skyweb24_contact_type2 .error p {padding: 5px 10px;}
+	#skyweb24_contact_type2 .success {padding: 25px 20px 20px; font-size: 1.2em;}
+	
+	#skyweb24_contact_type2 .sw24TextCloseButton {display: inline-block; margin-bottom: 10px; font-size: 14px; border-bottom: 1px dashed #2c3e50; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; color: #2c3e50;}
+	#skyweb24_contact_type2 .sw24TextCloseButton:hover {border-bottom: 1px dashed transparent;}
+	
+@media screen and (max-width:720px){
+	#skyweb24_contact_type2 h2 {padding: 15px 25px; font-size: 20px;}
+}
+
+@media screen and (max-width:440px) {
+	#skyweb24_contact_type2 {width: 320px;}
+}
+@media screen and (max-width:440px){
+.skyweb24_popup_pro_timer {max-width: 320px; width: 320px;}
+.skyweb24_popup_pro_timer.right {
+    left: calc(100% - 320px);
+}
+}

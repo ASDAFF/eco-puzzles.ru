@@ -1,0 +1,52 @@
+.topWishlist{
+	display: inline-block;
+}
+
+.topWishlist .text{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	color: #000000;
+	display: block;
+	opacity: 0.5;
+}
+
+.topWishlist .text.active{
+	opacity: 1;
+}
+
+.topWishlist .text.active:hover{
+	opacity: 0.8;
+}
+
+.topWishlist .text.active:active{
+	position: relative;
+	top: 1px;
+}
+
+.topWishlist .icon,
+.topWishlist .label,
+.topWishlist .value{
+	float: left;
+}
+
+.topWishlist .icon{
+	background: url(images/wishlistH3.png) 0 0 no-repeat transparent;
+	border-radius: 0px;
+	height: 50px;
+	width: 50px;
+}
+
+.topWishlist .label{
+	margin-right: 12px;
+}
+
+.topWishlist .value{
+	border: 1px solid #f3f3f3;
+	text-align: center;
+	border-radius: 50%;
+	line-height: 27px;
+	margin-top: 10px;
+	padding: 0 8px;
+	height: 26px;
+}

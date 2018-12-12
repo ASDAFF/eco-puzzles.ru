@@ -1,0 +1,407 @@
+#compare {
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 32px;
+}
+
+#compare ul {
+	overflow: hidden;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#compare > ul > li {
+	margin-bottom: 12px;
+	font-size: 14px;
+	color: #000000;
+	float: left;
+	width: 295px;
+}
+
+#compare input[type="checkbox"] + label,
+#compare input[type="radio"] + label {
+	cursor: pointer;
+}
+
+#compare input[type="checkbox"]:not(checked),
+#compare input[type="radio"]:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+#compare input[type="checkbox"]:not(checked) + label,
+#compare input[type="radio"]:not(checked) + label {
+	position: relative;
+	padding-left: 28px;
+}
+
+#compare input[type="checkbox"] + label:before {
+	background: url(images/checkBox.png) 0 0 no-repeat transparent;
+}
+
+#compare input[type="radio"] + label:before {
+	background: url(images/radio.png) 0 0 no-repeat transparent;
+}
+
+#compare input[type="checkbox"]:not(checked) + label:before,
+#compare input[type="radio"]:not(checked) + label:before {
+	position: absolute;
+	content: " ";
+    height: 17px;
+	width: 17px;
+	left: 0;
+	top: 1px;
+}
+
+#compare input[type="checkbox"]:not(checked) + label:hover:before,
+#compare input[type="radio"]:not(checked) + label:hover:before {
+	background-position: 0 -17px;
+}
+
+#compare input[type="checkbox"]:checked + label:before,
+#compare input[type="radio"]:checked + label:before {
+	background-position: 0 -34px;
+}
+
+#compare input[type="checkbox"]:checked + label:hover:before,
+#compare input[type="radio"]:checked + label:hover:before {
+	background-position: 0 -51px;
+}
+
+#compare input[type="checkbox"]:disabled + label,
+#compare input[type="radio"]:disabled + label {
+	cursor: default;
+}
+
+#compare input[type="checkbox"]:disabled + label:before,
+#compare input[type="radio"]:disabled + label:before {
+	background-position: 0 -68px !important;
+}
+
+#compareTools {
+	clear: both;
+	margin-top: 24px;
+	font-size: 14px;
+}
+
+#compareTools a {
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	display: inline-block;
+	height: 40px;
+	font-size: 14px;
+	line-height: 40px;
+	color: #fff;
+	text-decoration: none;
+	padding: 0px 12px;
+	text-align: center;
+	margin-right: 12px;
+}
+
+#compareTools .show {
+	background-color: #2b2b2b;
+}
+
+#compareTools .show:hover {
+	background-color: #202020;
+}
+
+#compareTools a.hide:active,
+#compareTools a.show:active {
+	position: relative;
+	top: 1px;
+}
+
+#compareBlock {
+	margin-top: 48px;
+}
+
+#compareBlock table {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+#compareBlock .left {
+	width: 300px;
+	vertical-align: top;
+	font-size: 14px;
+}
+
+#compareBlock .left .wrap {
+	border: 1px solid #eee;
+}
+
+#compareBlock .left .headingTools {
+	height: 73px;
+}
+
+#compareBlock .left .headingTools div {
+	height: 35px;
+}
+
+#compareBlock .left span.heading {
+	margin-top: 36px;
+	display: block;
+	margin-left: 12px;
+	margin-bottom: 12px;
+}
+
+#compareBlock .left .propList {
+	border-top: 1px solid #eee;
+}
+
+#compareBlock .left .propList li {
+	border-bottom: 1px solid #eee;
+	padding-left: 12px;
+	text-align: left;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	white-space: nowrap;
+}
+
+#compareBlock .left .propList li.selected {
+	background-color: #f6f6f6;
+}
+
+#compareBlock .left .propList li:last-child {
+	border-bottom: 0px;
+}
+
+#compareBlock .leftTools {
+	clear: both;
+	margin-top: 24px;
+}
+
+#compareBlock .leftTools a {
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	height: 40px;
+	display: block;
+	width: 272px;
+	line-height: 40px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	margin-left: 12px;
+	margin-bottom: 12px;
+}
+
+#compareBlock .left{
+	text-align: center;
+}
+
+.compareImage {
+	padding-top: 24px;
+	margin: auto;
+	max-width: 100%;
+}
+
+#compareBlock .leftTools .different {
+	background-color: #2b2b2b;
+}
+
+#compareBlock .leftTools .different:hover {
+	background-color: #202020;
+}
+
+#compareBlock .leftTools a.all:active,
+#compareBlock .leftTools a.different:active {
+	position: relative;
+	top: 1px;
+}
+
+#compareBlockSubject {
+	width: 10px;
+	height: 10px;
+	opacity: 0;
+}
+
+#compareBlock .right {
+	width: 100%;
+	padding-left: 8px;
+	font-size: 14px;
+	vertical-align: top;
+}
+
+#topScroll {
+	margin-bottom: 10px;
+}
+
+#scrollTable, #topScroll {
+	overflow-x: auto;
+	width: 100%;
+}
+
+#fakeScroll {
+	height: 1px;
+	width: 1000px;
+}
+
+#scrollTable > ul {
+	width: 900px;
+}
+
+#scrollTable > ul > li:first-child {
+	margin-left: 0px;
+}
+
+#scrollTable > ul > li {
+	width: 298px;
+	display: block;
+	float: left;
+	border: 1px solid #eee;
+	margin-left: 8px;
+	margin-bottom: 12px;
+}
+
+#scrollTable .imgBlock {
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+	height: 190px;
+	line-height: 190px;
+	text-align: center;
+}
+
+#scrollTable .imgBlock:hover{
+	opacity: 0.7;
+}
+
+#scrollTable li img {
+	max-width: 90%;
+	max-height: 90%;
+	vertical-align: middle;
+}
+
+#scrollTable .scrollElement {
+	height: 356px;
+	position: relative;
+}
+
+#scrollTable .scrollElement ins {
+	background: url(images/delete.png) 0 0 no-repeat transparent;
+	display: block !important;
+	text-decoration: none;
+	position: absolute;
+	cursor: pointer;
+	z-index: 12;
+	height: 18px;
+	width: 18px;
+	right: 12px;
+	top: 12px;
+}
+
+#scrollTable .scrollElement ins:hover {
+	background-position: -18px 0;
+}
+
+#scrollTable .scrollElement ins:active {
+	background-position: -36px 0;
+}
+
+
+#scrollTable .scrollElement .delete {
+	background: url(images/deleteLoader.gif) 0 0 no-repeat !important;
+}
+
+#scrollTable .scrollElement .delete + .imgBlock{
+	opacity: 0.5;
+}
+
+#scrollTable .propList li:first-child {
+	border-top: 1px solid #eee;
+}
+
+#scrollTable .propList li {
+	border-top: 1px solid #eee;
+	font-size: 14px;
+	height: 35px;
+	line-height: 35px;
+	overflow: hidden;
+	padding-left: 12px;
+}
+
+#scrollTable .propList .selected {
+	background-color: #f6f6f6;
+}
+
+#scrollTable .propList a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	color: #000000;
+	display: block;
+	
+}
+
+#scrollTable .propList a:hover{
+	color: #888888;
+}
+
+#scrollTable .name {
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-decoration: underline;
+	font-size: 14px;
+	color: #000;
+	display: block;
+	text-align: center;
+	padding: 0 12px;
+	margin-top: 12px;
+	height: 34px;
+    line-height: 34px;
+	overflow: hidden;
+}
+
+
+#scrollTable .price {
+    font-family: 'robotobold';
+    color: #000000;
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 8px;
+}
+
+#scrollTable .addCart,
+#scrollTable .addSku {
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	/*font-family: 'roboto_condensedlight';*/
+	margin-bottom: 12px;
+	color: #ffffff;
+	line-height: 60px;
+	height: 60px;
+	font-size: 16px;
+	text-align: center;
+	display: block;
+	width: 250px;
+	margin: 12px auto;
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+#scrollTable .addCart .icon{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+#scrollTable .addCart .icon{
+	padding-right: 12px;
+	margin-top: -4px;
+}
+
+#scrollTable .addCart:active {
+	position: relative;
+	top: 1px;
+}
+

@@ -1,0 +1,10 @@
+#skyweb24_contact_type2 div.subtitle div {background: linear-gradient(to right, #c0392b 0%, #f39c12 40%, #f39c12 60%, #c0392b 100%);}
+#skyweb24_contact_type2 h2 {color: #c0392b;}
+#skyweb24_contact_type2 fieldset label.submit>button {background: linear-gradient(to right, #c0392b 0%, #f39c12 100%);}
+	#skyweb24_contact_type2 fieldset label.submit>button:hover {background: linear-gradient(to right, #e74c3c 0%, #f1c40f 100%);}
+
+#skyweb24_contact_type2 fieldset label input:not([type="submit"]):empty {border: 1px solid #c0392b;}
+#skyweb24_contact_type2 fieldset label textarea:empty {border: 1px solid #c0392b;}
+
+.skyweb24_popup_pro_timer {background: linear-gradient(to right, #c0392b 0%, #f39c12 100%);}
+.popup-window.sw24PopupPro .popup-window-close-icon {background: #c0392b;}

@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'robotobold';
+    src: url('roboto-bold.eot');
+    src: url('roboto-bold.eot?#iefix') format('embedded-opentype'),
+         url('roboto-bold.woff') format('woff'),
+         url('roboto-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('roboto-medium.eot');
+    src: url('roboto-medium.eot?#iefix') format('embedded-opentype'),
+         url('roboto-medium.woff') format('woff'),
+         url('roboto-medium.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_condensedlight';
+    src: url('robotocondensed-light.eot');
+    src: url('robotocondensed-light.eot?#iefix') format('embedded-opentype'),
+         url('robotocondensed-light.woff') format('woff'),
+         url('robotocondensed-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_cnregular';
+    src: url('roboto-condensed.eot');
+    src: url('roboto-condensed.eot?#iefix') format('embedded-opentype'),
+         url('roboto-condensed.woff') format('woff'),
+         url('roboto-condensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_ltregular';
+    src: url('roboto-light.eot');
+    src: url('roboto-light.eot?#iefix') format('embedded-opentype'),
+         url('roboto-light.woff') format('woff'),
+         url('roboto-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('roboto-regular.eot');
+    src: url('roboto-regular.eot?#iefix') format('embedded-opentype'),
+         url('roboto-regular.woff') format('woff'),
+         url('roboto-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_thregular';
+    src: url('roboto-thin.eot');
+    src: url('roboto-thin.eot?#iefix') format('embedded-opentype'),
+         url('roboto-thin.woff') format('woff'),
+         url('roboto-thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

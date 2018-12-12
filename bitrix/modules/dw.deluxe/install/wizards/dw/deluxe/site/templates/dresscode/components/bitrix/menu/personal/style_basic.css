@@ -1,0 +1,42 @@
+#personalMenu{
+	border-bottom: 1px solid #f1f1f1;
+	margin: 0px 0px 24px 0px;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+}
+
+#personalMenu li{
+	margin-bottom: 24px;
+	margin-right: 24px;
+	float: left;
+}
+
+#personalMenu li:last-child{
+	margin-right: 0;
+}
+
+#personalMenu li a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	/*text-transform: uppercase;*/
+	text-decoration: none;
+	font-size: 16px;
+	color: #000000;
+}
+
+#personalMenu li a:active{
+	position: relative;
+	top: 1px;
+}
+
+#personalMenu li .selected{
+	border-bottom: 1px dashed #000000;
+	font-family: 'robotobold';
+	padding-bottom: 4px;
+}
+
+#personalMenu li .selected:hover{
+	color: #000000;
+}

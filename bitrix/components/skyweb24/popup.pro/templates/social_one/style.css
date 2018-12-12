@@ -1,0 +1,29 @@
+#skyweb24_banner_default {margin: 0 auto; width: 600px; padding: 20px; box-sizing: border-box; text-align: center; position: relative; background: #fff;}
+	#skyweb24_banner_default .bottom_border, #skyweb24_banner_default .top_border {height: 8px; background-image: url('./img/border_top_bottom.jpg'); z-index: 999; position: absolute; left: 0; width: 100%; right: 0;}
+	#skyweb24_banner_default h2 {font-size: 38px; padding: 0 110px; line-height: 1;}
+	#skyweb24_banner_default .top_border {top:0;}
+	#skyweb24_banner_default .bottom_border {bottom:0;}
+	#skyweb24_banner_default .left_border, #skyweb24_banner_default .right_border {background-image: url('./img/border_left.jpg'); position: absolute; width: 8px; top: 0; bottom: 0;  margin: auto;}
+	#skyweb24_banner_default .left_border {left: 0;}
+	#skyweb24_banner_default .right_border {right: 0;}
+
+	#skyweb24_banner_default img {margin: auto; margin-bottom:-150px; padding: 10px; display: inline-block; vertical-align: middle; box-sizing: border-box;}
+	#skyweb24_banner_default #ok_group_widget,#skyweb24_banner_default #skyweb24_vk_groups {height: 316px;}
+	
+	#skyweb24_banner_default .sw24TextCloseButton {display: inline-block; margin-top: 10px; font-size: 14px; border-bottom: 1px dashed #2c3e50; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; color: #2c3e50;}
+	#skyweb24_banner_default .sw24TextCloseButton:hover {border-bottom: 1px dashed transparent;}
+
+@media screen and (max-width:720px) {
+	#skyweb24_banner_default {width:600px;}
+}
+@media screen and (max-width:620px) {
+	#skyweb24_banner_default {width:500px;}
+}
+@media screen and (max-width:520px) {
+	#skyweb24_banner_default {width:400px;}
+		#skyweb24_banner_default h2{padding: 15px 10px 5px 10px;}
+}
+@media screen and (max-width:420px) {
+	#skyweb24_banner_default {width:320px; padding:0;}
+		#skyweb24_banner_default h2{margin: 0;}
+}

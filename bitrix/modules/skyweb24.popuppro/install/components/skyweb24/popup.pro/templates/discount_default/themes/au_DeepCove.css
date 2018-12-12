@@ -1,0 +1,10 @@
+.skyweb24_discount>div.content>h2 {color: #130f40;}
+.skyweb24_discount fieldset label.submit>input {background: #130f40; border-color: #130f40;}
+	.skyweb24_discount fieldset label.submit>input:hover {background: #30336b; border-color: #30336b;}
+.skyweb24_discount>.card {background: radial-gradient(ellipse at center, #130f40 50%, #30336b 100%);}
+.skyweb24_discount>.background>span {position: absolute; border-radius: 50%;}
+	.skyweb24_discount>.background>span:nth-child(odd) {background: rgba(48, 51, 107, 0.5);}
+	.skyweb24_discount>.background>span:nth-child(even) {background: rgba(19, 15, 64, 0.75);}
+
+.skyweb24_popup_pro_timer {background: #130f40;}
+.popup-window.sw24PopupPro .popup-window-close-icon {background: #130f40;}
