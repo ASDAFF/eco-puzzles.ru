@@ -2899,7 +2899,8 @@ abstract class CAllMain
 							$arUniqDomains[] = $domain1;
 					}
 
-					$protocol = (CMain::IsHTTPS()) ? "https://" : "http://";
+					//$protocol = (CMain::IsHTTPS()) ? "https://" : "http://";
+					$protocol = "https://";
 					$arrCurUrl = parse_url($protocol.$_SERVER["HTTP_HOST"]."/".$_SERVER["REQUEST_URI"]);
 					foreach($arUniqDomains as $domain)
 					{
